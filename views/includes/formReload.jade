@@ -1,0 +1,21 @@
+block formReload
+	form.form-signin(action='/update', method='post')
+		h2.form-signin-heading Recarregar
+
+		fieldset(data-role='controlgroup')
+			label(for='gravata')
+				input.input-block-level(id='gravata', type='text', name='gravata', placeholder=mytag, autocomplete='off')
+			label(for='amount')
+				input.input-block-level(id='amount', type='text', name='amount', value='10.00', autocomplete='off')
+			button.btn.btn-large.btn-success(type='submit') Carregar!
+
+		p= ""
+		case alertType
+			when 'info'
+				div.alert.alert-info= message
+			when 'warning'
+				div.alert= message
+			when 'error'  
+				div.alert.alert-error= message
+			default
+				div.alert.alert-success= message

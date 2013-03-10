@@ -1,0 +1,11 @@
+{
+    "name": "wine-cellar",
+    "description": "Wine Cellar Application",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+	"redis": "*",
+	"jade": "latest",
+        "express": "3.x"
+    }
+}
