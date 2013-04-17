@@ -1,11 +1,14 @@
 {
-    "name": "wine-cellar",
-    "description": "Wine Cellar Application",
-    "version": "0.0.1",
+    "name": "itaipava-perfect_tie",
+    "description": "Itaipava Perfect Tie",
+    "version": "0.1.0",
     "private": true,
     "dependencies": {
 	"redis": "*",
 	"jade": "latest",
         "express": "3.x"
+    },
+    "scripts" : {
+        "start" : "NODE_ENV=development nodemon server.js",
     }
 }
