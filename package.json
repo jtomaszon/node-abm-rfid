@@ -9,6 +9,6 @@
         "express": "3.x"
     },
     "scripts" : {
-        "start" : "NODE_ENV=development nodemon server.js",
+        "start" : "NODE_ENV=development nodemon server.js"
     }
 }
