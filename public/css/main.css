@@ -13,21 +13,21 @@
         font-family: 'DemingEP';
         font-style: normal;
         font-weight: normal;
-        src: url("../fonts/DemingEP.ttf");
+        src: url("fonts/DemingEP.ttf");
 }
 
 @font-face {
         font-family: 'GoodLight';
         font-style: normal;
         font-weight: normal;
-        src: url("../fonts/GoodLig.pfm");
+        src: url("fonts/GoodLig.pfm");
 }
 
 @font-face {
         font-family: 'Valencia';
         font-style: normal;
         font-weight: normal;
-        src: url("../fonts/ValenciaRegular.otf");
+        src: url("fonts/ValenciaRegular.otf");
 }
 
 html,
