@@ -1,12 +1,11 @@
 (function(window, document, $, undefined) {
 
-    var fbbtn = '<div id="fb-login-button"><fb:login-button autologoutlink="true" perms="email,user_birthday,status_update,publish_stream"></fb:login-button></div>';
-
+    var fbbtn = '<fb:login-button autologoutlink="true" perms="email,user_birthday,status_update,publish_stream"></fb:login-button>';
     $('.fb-button').append(fbbtn);
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId: '442411119186684', 
+            appId: '118773068319648', 
             status: true, 
             cookie: true, 
             xfbml: true
@@ -14,18 +13,21 @@
 
         /* All the events registered */
         FB.Event.subscribe('auth.login', function(response) {
-            // do something with response
             login();
         });
+
         FB.Event.subscribe('auth.logout', function(response) {
-            // do something with response
             logout();
         });
 
         FB.getLoginStatus(function(response) {
-            if (response.session || response.status === 'connected') {
-                // logged in and connected user, someone you know
+            console.log(response);
+            makePost('');
+
+            if (response.session && response.status === 'connected') {
                 login();
+            } else {
+                $('.fb-button').show();
             }
         });
     };
@@ -45,61 +47,40 @@
             if(!response.error) {
                 $('#login').show();
                 $('#login').html(response.name + " succsessfully logged in!");
-                $('#fb-login-button').hide();
+                $('.fb-button').hide();
+                makePost('');
             }
-
-            console.log(response);
         });
     }
     function logout() {
         document.getElementById('login').style.display = "none";
     }
 
-    //stream publish method
-    function streamPublish(name, description, hrefTitle, hrefLink, userPrompt){
-        FB.ui(
-        {
-            method: 'stream.publish',
-            message: '',
-            attachment: {
-                name: name,
-                caption: '',
-                description: (description),
-                href: hrefLink
-            },
-            action_links: [
-                { text: hrefTitle, href: hrefLink }
-            ],
-            user_prompt_message: userPrompt
-        },
-        function(response) {
+    var firstAuth = true;
+    function makePost(msg) {
+        console.log(1);
+        /*
+            message, picture, link, name, caption, 
+            description, source, place, tags        
+        */
 
-        });
+        if(!firstAuth) {
+            return;
+        }
 
-    }
-    function showStream(){
-        FB.api('/me', function(response) {
-            //console.log(response.id);
-            streamPublish(response.name, 'Thinkdiff.net contains geeky stuff', 'hrefTitle', 'http://thinkdiff.net', "Share thinkdiff.net");
-        });
-    }
-
-    function share() {
-        var share = {
-            method: 'stream.share',
-            u: 'http://thinkdiff.net/'
+        var theFeed = {
+            message: msg,
+            caption: 'Uma cerveja ma-ra-vi-lho-sa!',
+            name: 'Itaipava',
+            description: 'Participe da parada da Itaipava, com a sua gravata e tals!',
+            picture: 'http://files.softicons.com/download/system-icons/handy-icons-by-double-j-design/png/200x200/handy-icon_15.png'
         };
 
-        FB.ui(share, function(response) { console.log(response); });
-    }
-
-    function graphStreamPublish(){
-        var body = 'Reading New Graph api & Javascript Base FBConnect Tutorial';
-        FB.api('/me/feed', 'post', { message: body }, function(response) {
+        FB.api('/me/feed', 'post', theFeed, function(response) {
             if (!response || response.error) {
-                alert('Error occured');
+                //alert('Error occured');
             } else {
-                alert('Post ID: ' + response.id);
+                //alert('Post ID: ' + response.id);
             }
         });
     }
@@ -116,27 +97,9 @@
         });
     }
 
-    function setStatus(){
-        status1 = document.getElementById('status').value;
-        FB.api(
-          {
-            method: 'status.set',
-            status: status1
-          },
-          function(response) {
-            if (response == 0){
-                alert('Your facebook status not updated. Give Status Update Permission.');
-            }
-            else{
-                alert('Your facebook status updated');
-            }
-          }
-        );
-    }
-
     window.fbapp = {
-        login: login
+        makePost: makePost
     };
 
-
 })(window, document, jQuery);
+

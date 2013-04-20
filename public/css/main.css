@@ -13,21 +13,21 @@
         font-family: 'DemingEP';
         font-style: normal;
         font-weight: normal;
-        src: url("../fonts/DemingEP.ttf");
+        src: url("fonts/DemingEP.ttf");
 }
 
 @font-face {
         font-family: 'GoodLight';
         font-style: normal;
         font-weight: normal;
-        src: url("../fonts/GoodLig.pfm");
+        src: url("fonts/GoodLig.pfm");
 }
 
 @font-face {
         font-family: 'Valencia';
         font-style: normal;
         font-weight: normal;
-        src: url("../fonts/ValenciaRegular.otf");
+        src: url("fonts/ValenciaRegular.otf");
 }
 
 html,
@@ -41,7 +41,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    height: 945px;
+height: 945px;
     /*max-width: 1300px;*/
     background-color: #cfcbbc;
     background-image: url("../img/bg.png");
@@ -49,6 +49,9 @@ body {
     background-repeat: no-repeat;
 }
 
+.telamaior{
+    height: 995px !important;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -163,8 +166,11 @@ input[type=text], input[type=password]{
     font-family: "Arial";
 }
 
-.nroCard{
+.nroCard1{
     width: 380px !important;
+}
+.nroCard{
+    width: 542px !important;
 }
 
 form{
@@ -265,15 +271,22 @@ margin-left: 50px;
     width: 200px;
 }
 
-.corpo{
+.corpo, .corpo1, .corpo2{
     padding: 10px;
     border: 2px solid #202538;
         font-family: "Arial";
     font-size: 0.8em;
 }
+.corpo1{
+    height: 290px;
+}
+.corpo2{
+    height: 165px;
+}
 
 .logoIta{
     padding-top: 30px;
+    padding-bottom: 30px;
     margin-left: 643px;
 }
 
@@ -289,6 +302,12 @@ margin-left: 50px;
     background-repeat: no-repeat;
 }
 
+.bgBar{
+    background-color: #cfcbbc;
+    background-image: url("../img/bgBar.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
 .conect{
     width: 600px;
     height: 200px;
@@ -317,6 +336,7 @@ margin-left: 50px;
 
 .boxConnect{
     width: 320px;
+    margin-top: -130px;
 }
 .boxTex{
     width: 130px;
@@ -342,6 +362,15 @@ margin-left: 50px;
     text-align: center;
 }
 
+.textGravata{
+   font-family: "DemingEP";
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+}
+
 .title2 h5{
     border-right: 2px solid #202538;
     width: 300px;
@@ -352,9 +381,20 @@ margin-left: 50px;
     padding-bottom: 10px;
     margin-left: 291px;
 }
+.borderBar{
+    border-bottom: 1px solid #841211;
+    width: 337px;
+    padding-bottom: 10px;
+    margin-left: 340px;
+}
 .brasao{
     float: left;
     margin-left: 300px;
+}
+
+.bar{
+    float: left;
+    margin-left: 460px;
 }
 
 .boxTexto1, .boxTexto2 {
@@ -384,6 +424,118 @@ margin-left: 50px;
 
 .duvida{
 padding-left: 238px;
+}
+
+/*Finalizar compra*/
+.bandeira, .valCod, .bandeira2, .nomeCard{
+    width: 100%;
+    height: 20px;
+    border-bottom: 2px solid #202538;
+    font-family: "DemingEP";
+    font-size: 0.6em;
+    float: left;
+}
+.bandeira2, .nomeCard{
+        border-top: 2px solid #202538;
+        border-bottom:none;
+        padding-top: 10px;
+        height: 10px;
+}
+.nomeCard{
+    border-top: none;
+}
+.valCod{
+    width: 50%;
+    height: 60px;
+    float: left;
+    border-top: 2px solid #202538;
+    padding-top: 10px;
+}
+.card{
+    float: left;
+    width: 24%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 2px solid #202538;
+}
+.card img, .card4 img {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.card4{
+        float: left;
+    width: 24%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+        border-right: none;
+}
+.totDeb, .totDeb1{
+    width: 60%;
+    float: left;
+    height: 30px;
+        font-family: "DemingEP";
+    font-size: 0.6em;
+    border-top: 2px solid #202538;
+    padding-top: 10px;
+}
+
+.totCarga, .totCarga1{
+    width: 39%;
+    float: left;
+    font-family: "DemingEP";
+    font-size: 0.8em;
+    text-align: right;
+        border-top: 2px solid #202538;
+        padding-top: 10px;
+}
+
+.boxTexto3 {
+    width: 600px;
+    margin-left: 240px;
+    padding-top: 535px;
+}
+.boxTexto4 {
+    width: 420px;
+    margin-left: 300px;
+    padding-top: 535px;
+}
+
+.boxNro{
+    padding-bottom: 10px;
+}
+.dtVal{
+    width: 88% !important;
+}
+.message{
+    width: 100%;
+    float: left;
+}
+
+.credito{
+    float: left;
+    margin-left: 470px;
+    padding-bottom: 20px;
+    margin-top: -30px;
+}
+.btnFin{
+width: 345px;
+padding-left: 182px;
+float: right;
+}
+
+.valueCred{
+    float: left;
+    width: 192px;
+    padding-bottom: 20px;
+}
+
+.radioVal{
+    margin-left: 92px !important;
+}
+
+.totDeb1{
+    clear: both;
 }
 
 /*.layout {
