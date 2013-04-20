@@ -20,7 +20,14 @@
         font-family: 'GoodLight';
         font-style: normal;
         font-weight: normal;
-        src: url("../fonts/GoodLight");
+        src: url("../fonts/GoodLig.pfm");
+}
+
+@font-face {
+        font-family: 'Valencia';
+        font-style: normal;
+        font-weight: normal;
+        src: url("../fonts/ValenciaRegular.otf");
 }
 
 html,
@@ -115,8 +122,8 @@ textarea {
 /*Container*/
 
 .container{
-    width: 700px;
-    height: 600px;
+    width: 800px;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -129,12 +136,13 @@ textarea {
     float:left;
     width: 130px;
     height: 356px;
-    margin-top: 30%;
+    margin-top: 33%;
+    margin-left: 80px;
 }
 
 .login {
-    margin-top: 30%;
-    margin-left: 20px;
+    margin-top: 27%;
+    margin-left: 0px;
     margin-bottom: 0px;
     width: 100px;
     height: auto;
@@ -185,8 +193,8 @@ label{
 
 .menu{
     /*float: left;*/
-    margin-top: 50%;
-    margin-left: 125px;
+    margin-top: 44%;
+    margin-left: 135px;
 }
 
 
@@ -206,7 +214,7 @@ label{
 
 .textos{
     width: 500px;
-    margin-left: 200px;
+    margin-left: 250px;
 
 }
 
@@ -233,7 +241,8 @@ margin-left: 50px;
 .boxTexto{
     width: 440px;
     margin-left: 190px;
-    padding-top: 88%;
+    margin-top: 100px;
+    float: left;
 }
 
 .title{
@@ -261,10 +270,113 @@ margin-left: 50px;
 
 .logoIta{
     padding-top: 30px;
-    float: right;
+    margin-left: 643px;
 }
 
+.btnCad{
+    margin-top: 190px;
+    margin-left: 10px;
+}
 
+.bg{
+    background-color: #cfcbbc;
+    background-image: url("../img/bgCo.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.conect{
+    width: 600px;
+    height: 200px;
+    margin-left: 200px;
+}
+
+.titCon{
+    font-family: "Valencia";
+    font-size: 14em;
+    color: #000;
+    opacity: 0.4;
+    padding-top: 70px;
+}
+
+.boxFace, .boxTwi, .boxConnect{
+    float: left;
+    height: 200px;
+    width: 130px;
+}
+.boxTwi{
+    padding-top: 50px;
+}
+.boxFace{
+    padding-top: 35px;
+}
+
+.boxConnect{
+    width: 320px;
+}
+.boxTex{
+    width: 130px;
+    height: 80px;
+    margin-top: -78px;
+    margin-left: 170px;
+}
+.textoCon{
+    font-size: 0.6em;
+    font-family: "Arial";
+}
+.textoCon span{
+    color:#841211;
+}
+.textCash{
+    font-family: "Arial";
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.totCash{
+    font-family: "DemingEP";
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.title2 h5{
+    border-right: 2px solid #202538;
+    width: 300px;
+}
+.border{
+    border-bottom: 1px solid #841211;
+    width: 337px;
+    padding-bottom: 10px;
+    margin-left: 291px;
+}
+.brasao{
+    float: left;
+    margin-left: 300px;
+}
+
+.boxTexto1{
+    width: 440px;
+    margin-left: 240px;
+    padding-top: 535px;
+}
+
+.valorOk{
+        width: 800px;
+        float:left;
+        margin-bottom: 20px;
+        margin-left: 241px;
+        margin-top: -70px;
+}
+.valorCash{
+    position: absolute;
+    top:415px;
+    left:480px;
+}
+.txtValor{
+    font-family: "DemingEP";
+    font-size: 2.3em;
+    text-align: center;
+    color: #d8d1bb;
+}
 
 /*.layout {
     width: 0;
@@ -452,10 +564,10 @@ border-right: 640px solid #cfcbbc;
         display: table-header-group; /* h5bp.com/t */
     }
 
-    tr,
+/*    tr,
     img {
         page-break-inside: avoid;
-    }
+    }*/
 
     img {
         max-width: 100% !important;
