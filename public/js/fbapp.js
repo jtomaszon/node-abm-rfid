@@ -1,13 +1,16 @@
 (function(window, document, $, undefined) {
 
-    var fbbtn = '<fb:login-button autologoutlink="true" perms="email,user_birthday,status_update,publish_stream"></fb:login-button>';
+    var fbbtn = '<div id="fb-login-button"><fb:login-button autologoutlink="true" perms="email,user_birthday,status_update,publish_stream"></fb:login-button></div>';
 
     $('.fb-button').append(fbbtn);
 
-
-
     window.fbAsyncInit = function() {
-        FB.init({appId: '118773068319648', status: true, cookie: true, xfbml: true});
+        FB.init({
+            appId: '442411119186684', 
+            status: true, 
+            cookie: true, 
+            xfbml: true
+        });
 
         /* All the events registered */
         FB.Event.subscribe('auth.login', function(response) {
@@ -20,7 +23,7 @@
         });
 
         FB.getLoginStatus(function(response) {
-            if (response.session) {
+            if (response.session || response.status === 'connected') {
                 // logged in and connected user, someone you know
                 login();
             }
@@ -38,8 +41,14 @@
 
     function login() {
         FB.api('/me', function(response) {
-            document.getElementById('login').style.display = "block";
-            document.getElementById('login').innerHTML = response.name + " succsessfully logged in!";
+
+            if(!response.error) {
+                $('#login').show();
+                $('#login').html(response.name + " succsessfully logged in!");
+                $('#fb-login-button').hide();
+            }
+
+            console.log(response);
         });
     }
     function logout() {
@@ -124,6 +133,10 @@
           }
         );
     }
+
+    window.fbapp = {
+        login: login
+    };
 
 
 })(window, document, jQuery);
