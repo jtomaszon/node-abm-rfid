@@ -41,7 +41,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    height: 945px;
+    height: auto;
     /*max-width: 1300px;*/
     background-color: #cfcbbc;
     background-image: url("../img/bg.png");
@@ -164,7 +164,7 @@ input[type=text], input[type=password]{
 }
 
 .nroCard{
-    width: 380px !important;
+    width: 542px !important;
 }
 
 form{
@@ -265,15 +265,22 @@ margin-left: 50px;
     width: 200px;
 }
 
-.corpo{
+.corpo, .corpo1, .corpo2{
     padding: 10px;
     border: 2px solid #202538;
         font-family: "Arial";
     font-size: 0.8em;
 }
+.corpo1{
+    height: 290px;
+}
+.corpo2{
+    height: 165px;
+}
 
 .logoIta{
     padding-top: 30px;
+    padding-bottom: 30px;
     margin-left: 643px;
 }
 
@@ -384,6 +391,112 @@ margin-left: 50px;
 
 .duvida{
 padding-left: 238px;
+}
+
+/*Finalizar compra*/
+.bandeira, .valCod, .bandeira2, .nomeCard{
+    width: 100%;
+    height: 20px;
+    border-bottom: 2px solid #202538;
+    font-family: "DemingEP";
+    font-size: 0.6em;
+    float: left;
+}
+.bandeira2, .nomeCard{
+        border-top: 2px solid #202538;
+        border-bottom:none;
+        padding-top: 10px;
+        height: 10px;
+}
+.nomeCard{
+    border-top: none;
+}
+.valCod{
+    width: 50%;
+    height: 60px;
+    float: left;
+    border-top: 2px solid #202538;
+    padding-top: 10px;
+}
+.card{
+    float: left;
+    width: 24%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 2px solid #202538;
+}
+.card img, .card4 img {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.card4{
+        float: left;
+    width: 24%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+        border-right: none;
+}
+.totDeb, .totDeb1{
+    width: 60%;
+    float: left;
+    height: 30px;
+        font-family: "DemingEP";
+    font-size: 0.6em;
+    border-top: 2px solid #202538;
+    padding-top: 10px;
+}
+
+.totCarga, .totCarga1{
+    width: 39%;
+    float: left;
+    font-family: "DemingEP";
+    font-size: 0.8em;
+    text-align: right;
+        border-top: 2px solid #202538;
+        padding-top: 10px;
+}
+
+.boxTexto3 {
+    width: 600px;
+    margin-left: 240px;
+    padding-top: 535px;
+}
+.boxNro{
+    padding-bottom: 10px;
+}
+.dtVal{
+    width: 88% !important;
+}
+.message{
+    width: 100%;
+    float: left;
+}
+
+.credito{
+    float: left;
+    margin-left: 470px;
+    padding-bottom: 20px;
+    margin-top: -30px;
+}
+.btnFin{
+width: 345px;
+padding-left: 182px;
+float: right;
+}
+
+.valueCred{
+    float: left;
+    width: 192px;
+    padding-bottom: 20px;
+}
+
+.radioVal{
+    margin-left: 92px !important;
+}
+
+.totDeb1{
+    clear: both;
 }
 
 /*.layout {
