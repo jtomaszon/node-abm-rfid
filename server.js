@@ -48,6 +48,14 @@ app.get('/', function(req, res){
     });
 });
 
+app.get('/privacy', function(req, res){
+    res.end('Privacy');
+});
+
+app.get('/terms', function(req, res){
+    res.end('Terms');
+});
+
 app.get('/add', function(req, res){
     res.render('add', {
         message: "Passa sua gravata!",
