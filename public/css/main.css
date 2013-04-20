@@ -41,7 +41,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    height: auto;
+height: 945px;
     /*max-width: 1300px;*/
     background-color: #cfcbbc;
     background-image: url("../img/bg.png");
@@ -49,6 +49,9 @@ body {
     background-repeat: no-repeat;
 }
 
+.telamaior{
+    height: 995px !important;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -163,6 +166,9 @@ input[type=text], input[type=password]{
     font-family: "Arial";
 }
 
+.nroCard1{
+    width: 380px !important;
+}
 .nroCard{
     width: 542px !important;
 }
@@ -296,6 +302,12 @@ margin-left: 50px;
     background-repeat: no-repeat;
 }
 
+.bgBar{
+    background-color: #cfcbbc;
+    background-image: url("../img/bgBar.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
 .conect{
     width: 600px;
     height: 200px;
@@ -349,6 +361,15 @@ margin-left: 50px;
     text-align: center;
 }
 
+.textGravata{
+   font-family: "DemingEP";
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+}
+
 .title2 h5{
     border-right: 2px solid #202538;
     width: 300px;
@@ -359,9 +380,20 @@ margin-left: 50px;
     padding-bottom: 10px;
     margin-left: 291px;
 }
+.borderBar{
+    border-bottom: 1px solid #841211;
+    width: 337px;
+    padding-bottom: 10px;
+    margin-left: 340px;
+}
 .brasao{
     float: left;
     margin-left: 300px;
+}
+
+.bar{
+    float: left;
+    margin-left: 460px;
 }
 
 .boxTexto1, .boxTexto2 {
@@ -462,6 +494,12 @@ padding-left: 238px;
     margin-left: 240px;
     padding-top: 535px;
 }
+.boxTexto4 {
+    width: 420px;
+    margin-left: 300px;
+    padding-top: 535px;
+}
+
 .boxNro{
     padding-bottom: 10px;
 }
