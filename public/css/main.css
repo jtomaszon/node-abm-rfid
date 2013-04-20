@@ -163,6 +163,10 @@ input[type=text], input[type=password]{
     font-family: "Arial";
 }
 
+.nroCard{
+    width: 380px !important;
+}
+
 form{
     margin-bottom: -2px;
 }
@@ -353,7 +357,7 @@ margin-left: 50px;
     margin-left: 300px;
 }
 
-.boxTexto1{
+.boxTexto1, .boxTexto2 {
     width: 440px;
     margin-left: 240px;
     padding-top: 535px;
@@ -376,6 +380,10 @@ margin-left: 50px;
     font-size: 2.3em;
     text-align: center;
     color: #d8d1bb;
+}
+
+.duvida{
+padding-left: 238px;
 }
 
 /*.layout {
