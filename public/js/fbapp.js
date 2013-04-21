@@ -86,19 +86,15 @@
         FB.api('/me', function(response) {
 
             if(!response.error) {
-
                 saveUser(response);
-
-                $('#login').show();
-                $('#login').html(response.name + " succsessfully logged in!");
-                $('.fb-button').hide();
+                $('.logMenu').html("logout");
             } else {
                 console.log('caiu no else do login', response)
             }
         });
     }
     function logout() {
-        document.getElementById('login').style.display = "none";
+        $('.logMenu').html("login");
     }
 
     function makePost(msg) {
