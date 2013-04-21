@@ -48,7 +48,14 @@
 
                 FB.api('me', function(data) {
                     fbId = data.id;
+
+                    //pega o credito e full key
+                    var fk = $.get('/getCredit?fbId=' + data.id);
+                    console.log('fk', fk);
+
                 });
+
+                $('.txtValor').html('');
 
                 $('.logMenu').hide();
                 $('.logMenuOUT').show();
