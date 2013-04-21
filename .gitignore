@@ -6,12 +6,10 @@ lib-cov
 *.out
 *.pid
 *.gz
-
+*.rdb
 pids
 logs
 results
-
 .DS_Store
 npm-debug.log
 node_modules
-dump.rdb

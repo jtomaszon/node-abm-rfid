@@ -48,6 +48,11 @@ app.get('/', function(req, res){
     });
 });
 
+app.get('/cadastro', function(req, res){
+    res.render('cadastro', {});
+});
+
+
 app.get('/privacy', function(req, res){
     res.end('Privacy');
 });
