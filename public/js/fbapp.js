@@ -143,9 +143,9 @@
 
         var theFeed = {
             message: msg,
-            caption: 'Uma cerveja ma-ra-vi-lho-sa!',
-            name: 'Itaipava | Perfect Tie',
-            description: 'Participe da parada da Itaipava, com a sua gravata e tals!',
+            name: 'Itaipava | Gravata 100%',
+            caption: 'Perfect Tie',
+            description: 'Acabei de cadastrar minha Gravata 100% da Cerveja Itaipava. Agora meu happy hour tá garantido!',
             picture: 'https://itaipava.tolabs.us/img/facebook/post-share.jpg',
 	        link: 'http://www.cervejaitaipava.com.br/'
         };

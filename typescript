@@ -706,7 +706,22 @@ no changes added to commit (use "git add" and/or "git commit -a")
 # Your branch is ahead of 'origin/master' by 1 commit.
 #
 nothing to commit (working directory clean)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[my 1 commit.
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit statuscommit -am "Testing facebook post"
+[master fa54a94] Testing facebook post
+ 2 files changed, 44 insertions(+), 28 deletions(-)
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"status[K
+# On branch master
+# Your branch is ahead of 'origin/master' by 2 commits.
 #
 nothing to commit (working directory clean)
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status[K[K[K[K[K[Kpush
+Counting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects:  10% (1/10)   Compressing objects:  20% (2/10)   Compressing objects:  30% (3/10)   Compressing objects:  40% (4/10)   Compressing objects:  50% (5/10)   Compressing objects:  60% (6/10)   Compressing objects:  70% (7/10)   Compressing objects:  80% (8/10)   Compressing objects:  90% (9/10)   Compressing objects: 100% (10/10)   Compressing objects: 100% (10/10), done.
+Writing objects:  10% (1/10)   Writing objects:  20% (2/10)   Writing objects:  30% (3/10)   Writing objects:  40% (4/10)   Writing objects:  50% (5/10)   Writing objects:  60% (6/10)   Writing objects:  70% (7/10)   Writing objects:  80% (8/10)   Writing objects:  90% (9/10)   Writing objects: 100% (10/10)   Writing objects: 100% (10/10), 1.74 KiB, done.
+Total 10 (delta 8), reused 0 (delta 0)
+To git@github.com:jtomaszon/node-abm-rfid.git
+   e8f76bd..fa54a94  master -> master
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mon/node-abm-rfid.git
+   e8f76bd..fa54a94  master -> master
 [32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m
