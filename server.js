@@ -338,6 +338,10 @@ app.post('/bar', function(req, res){
                     }
                 })
             })
+        }else{
+            res.render('home-bar', {
+                section: ""
+            })
         }
     })
 

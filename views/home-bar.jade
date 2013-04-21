@@ -22,3 +22,7 @@ block master
         form(action='/bar', method='post')
           input.fb-id(type='hidden', name='fbId', id='fbId')
           input#leitor_input(id='gravata', type='text', name='gravata', autocomplete='off')
+  //end case
+
+  script
+    $('#gravata').focus();

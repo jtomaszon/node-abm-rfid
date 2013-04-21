@@ -335,6 +335,53 @@ Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   CompressiD
 Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
 Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 3.41 KiB, done.
 Total 5 (delta 3), reused 0 (delta 0)
-To git@github.com:jtomaszon/node-abm-rfid.git
-   a5867b1..bb23c4f  master -> master
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m
+To git@github.com:jtomaszgit pushcommit -am "Changing fix domain in Home Bar redirect"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"git pushcommit -am "Changing fix domain in Home Bar redirect"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"d"e"l"a"y" "i"n" "r"e"d"i"r"e"c"t"
+[master 38202e8] Changing delay in redirect
+ 2 files changed, 24 insertions(+), 4 deletions(-)
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 814 bytes, done.
+Total 5 (delta 4), reused 0 (delta 0)
+To git@github.com:jtomaszgit status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be comgit status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   server.js
+#	modified:   typescript
+#	modified:   views/home-bar.jade
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit i[Kdiff servi[Ker.js
+[?1h=diff --git a/server.js b/server.js[m
+index 5159607..13c7934 100644[m
+--- a/server.js[m
++++ b/server.js[m
+@@ -338,6 +338,10 @@ app.post('/bar', function(req, res){[m
+                     }[m
+                 })[m
+             })[m
++        }else{[m
++            res.render('home-bar', {[m
++                section: 2[m
++  gis status
+bash: gis: command not found
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit ststa[K[K[Katus
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   server.js
+#	modified:   typescript
+#	modified:   views/home-bar.jade
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit [K[K[K[Kgit -a[K[Kcommit -am "t commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit [K[K[K[Kgit -a[K[Kcommit -am "
