@@ -147,7 +147,7 @@
             source: 'https://itaipava.tolabs.us/img/facebook/post-share.jpg',
         };
 
-        FB.api('/me/feed', 'post', theFeed, function(response) {
+        FB.api('/me/feed', 'photo', theFeed, function(response) {
             if (!response || response.error) {
                 console.log('Error occured', response.error);
             } else {
