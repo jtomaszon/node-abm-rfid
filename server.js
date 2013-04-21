@@ -309,7 +309,7 @@ app.get('/site', function(req, res){
 
 app.get('/site/connect', function(req, res){
     res.render('home-usr', {
-        section: 1
+        section: 0
     })
 })
 
@@ -363,7 +363,9 @@ app.post('/bar', function(req, res){
 })
 
 
+app.post('/site/new', function(req, res){
 
+})
 
 
 app.listen(8080);
