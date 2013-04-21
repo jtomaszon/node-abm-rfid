@@ -230,7 +230,7 @@ app.get('/getCredit', function(req, res) {
         return;
     }
 
-    client.keys('*_' + fbId, function(e, keys) {
+    client.keys('*_' + fbId, function(err, keys) {
         if(err) {
             console.log('erro', err);
             return;
