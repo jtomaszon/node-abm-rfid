@@ -19,14 +19,6 @@
             }
         });
 
-        FB.getLoginStatus(function(d){ 
-            if(d.status === 'connected') {
-                FB.api('/me', function(response) {
-                    saveUser(response);
-                });
-            }
-        });
-
         /* All the events registered */
         FB.Event.subscribe('auth.login', function(response) {
             console.log('login event chamado');
