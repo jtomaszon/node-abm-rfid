@@ -620,6 +620,17 @@ Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  
 Total 6 (delta 5), reused 0 (delta 0)
 To git@github.com:jtomaszon/node-abm-rfid.git
    003b05e..9a8d486  master -> master
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mon/node-abm-rfid.git
-   003b05e..9a8d486  master -> master
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push[Kgit pushcommit -am "Testing facebook post"
+[master 2b8252c] Testing facebook post
+ 2 files changgit push[Kgit pushcommit -am "Testing facebook post"
+[master 2b8252c] Testing facebook post
+ 2 files changed, 13 insertions(+), 2 deletions(-)
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"push[K
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 597 bytes, done.
+Total 6 (delta 5), reused 0 (delta 0)
+To git@github.com:jtomaszon/node-abm-rfid.git
+   9a8d486..2b8252c  master -> master
 [32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m

@@ -141,19 +141,37 @@
             description, source, place, tags        
         */
 
-        var theFeed = {
-            message: msg,
-            name: 'Acabei de cadastrar minha Gravata 100% da Cerveja Itaipava. Agora meu happy hour tá garantido!',
-            source: 'https://itaipava.tolabs.us/img/facebook/post-share.jpg',
-        };
+        // var theFeed = {
+        //     message: msg,
+        //     caption: 'Uma cerveja ma-ra-vi-lho-sa!',
+        //     name: 'Itaipava | Perfect Tie',
+        //     description: 'Participe da parada da Itaipava, com a sua gravata e tals!',
+        //     picture: 'https://itaipava.tolabs.us/img/logo2face.png',
+	       // link: 'http://www.cervejaitaipava.com.br/'
+        // };
 
-        FB.api('/me/feed', 'photo', theFeed, function(response) {
+        // FB.api('/me/feed', 'post', theFeed, function(response) {
+        //     if (!response || response.error) {
+        //         console.log('Error occured', response.error);
+        //     } else {
+        //         //console.log('Post ID: ' + response.id);
+        //     }
+        // });
+
+        var imgURL="https://itaipava.tolabs.us/img/logo2face.png";
+        FB.api('/album_id/photos', 'post', {
+            message:'Participe da parada da Itaipava, com a sua gravata e tals!',
+            url:imgURL        
+        }, function(response){
+
             if (!response || response.error) {
-                console.log('Error occured', response.error);
+                alert('Error occured');
             } else {
-                //console.log('Post ID: ' + response.id);
+                alert('Post ID: ' + response.id);
             }
+
         });
+
     }
 
     window.fbapp = {
