@@ -3,6 +3,10 @@
     var fbId;
 
     //binds de login e logout
+    $(document).on('click', '.frmSubmit', function() {
+        $('#frmAddCredit').submit();
+    });
+    
     $(document).on('click', '.logMenu', function() {
         FB.login();
     });
@@ -12,6 +16,8 @@
             location.href = '/';
         });
     });
+
+
     
     var fbbtn = '<fb:login-button autologoutlink="true" perms="email,user_birthday,status_update,publish_stream"></fb:login-button>';
     $('.fb-button').append(fbbtn);
