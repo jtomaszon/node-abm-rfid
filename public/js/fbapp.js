@@ -55,7 +55,7 @@
                         type: 'GET',
                         success: function(result) {
                             $('.txtValor').html(result.valor);
-                            $('#fullKey').html(result.fullKey);
+                            $('#fullKey').val(result.fullKey);
                         }
                     });
 
