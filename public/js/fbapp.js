@@ -96,7 +96,10 @@
 
             if(!response.error) {
                 saveUser(response);
-                $('.logMenu').html("logout");
+
+                $('.logMenu').hide();
+                $('.logMenuOUT').show();
+
             } else {
                 //console.log('caiu no else do login', response)
             }
