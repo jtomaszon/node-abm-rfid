@@ -14,6 +14,7 @@ block main
       h5 Digite o numero do cartao
     .corpo
       form(action='/add', method='post')
+        input.fb-id(type='hidden', name='fbId', id='fbId')
         input.nroCard1(id='gravata', type='text', name='gravata', placeholder=mytag, autocomplete='off')
       p.duvida Onde encontro esse número?
   .border

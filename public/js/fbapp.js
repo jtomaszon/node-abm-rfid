@@ -5,7 +5,7 @@
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId: '118773068319648', 
+            appId: '525445074163781', 
             status: true, 
             cookie: true, 
             xfbml: true
@@ -14,6 +14,7 @@
         FB.Event.subscribe('auth.statusChange', function(response) {
             if(response.status === 'connected') {
                 FB.api('/me', function(data) {
+                    $('#fbId').val(data.id);
                     saveUser(data);
                 });
             }
@@ -21,7 +22,6 @@
 
         /* All the events registered */
         FB.Event.subscribe('auth.login', function(response) {
-            console.log('login event chamado');
             login();
         });
 
@@ -30,14 +30,12 @@
         });
 
         FB.getLoginStatus(function(response) {
-            console.log('response', response);
 
             if(response.status !== 'connected' && response.status !== 'not_authorized') {
                 console.log('nem conectado esta', response);
                 $('.fb-button').show();
             } else {
                 if(response.status === 'not_authorized') {
-                    console.log('not_authorized', response);
                     $('.fb-button').show();
                 }
             }
