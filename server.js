@@ -61,8 +61,8 @@ app.get('/add', function(req, res){
 });
 
 // Telas do bar
-app.get('/bar/home', function(req, res){
-    res.render('bar/home');
+app.get('/bar', function(req, res){
+    res.render('home-bar');
 })
 
 app.get('/privacy', function(req, res){
