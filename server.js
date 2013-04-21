@@ -197,7 +197,7 @@ app.post('/saveUser', function(req, res) {
                 //HERE GOES THE "WELCOME BACK USER" REDIRECT
                 res.send({status: 'USER_IS_BACK'});
             } else {
-                client.set(userId, userData, function(err, resp) {
+                client.set(userId, JSON.stringify(userData), function(err, resp) {
                     if(err) {
                         console.log('erro', err);
                     } else {
