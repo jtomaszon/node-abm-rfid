@@ -436,5 +436,84 @@ To git@github.com:jtomaszgit status
 #	modified:   views/home-bar.jade
 #
 no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit[K[K[Kmit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit[K[K[K
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit[K[K[Kgut[K[Koit [K[K[K[Kit status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   dump.rdb
+#	modified:   public/img/.DS_Store
+#	modified:   public/js/fbapp.js
+#	modified:   typescript
+#	modified:   views/home-bar.jade
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	public/img/facebook/
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit a[Kadd . 00[K[K--all
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit a[K-am "New posting[K[K[K o[Kfor Facebook"
+[master 17b2799] New post for Facebook
+ 6 files changed, 31 insertions(+), 10 deletions(-)
+ create mode 100644 public/img/facebook/post-share.jpg
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push
+To git@github.com:jtomaszon/node-abm-rfid.git
+ ! [rejected]        master -> master (non-fast-forward)
+error:git push
+To git@github.com:jtomaszon/node-abm-rfid.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:jtomaszon/node-abm-rfid.git'
+To prevent you from losing history, non-fast-forward updates were rejected
+Merge the remote changes (e.g. 'git pull') before pushing again.  See the
+'Note abogt[Kit status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   typescript
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   typescript
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   typescript
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   public/js/fbapp.js
+#	modified:   typescript
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mls -la public/img/facebook
+facebook/     facebook.png  
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mls -la public/img/facebook/post-share.jpg   facebook.png  
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mls -la public/img/facebook/post-share.jpg 
