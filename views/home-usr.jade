@@ -1,0 +1,38 @@
+extends layout-usr
+block master
+
+  case section
+    when 0 
+      #connect.full_screen
+        .login_btn
+          img(src='/assets/home/login.png', width='105', height='25')
+        #fb_btn.facebook_btn_normal
+          img(src='/assets/connect/FB_buttom.png', width='155', height='175')
+
+    when 1
+      #insira_numero_cartao.full_screen
+
+        form(action='/site/new', method='post')
+          input.fb-id(type='hidden', name='fbId', id='fbId')
+          input#leitor_input(id='gravata', type='text', name='gravata', autocomplete='off')
+
+        #ok_btn
+          img(src='/assets/interna/OK.png', width='80', height='40')
+
+    when 2
+      #tie_balance.full_screen
+        #infos
+          #user_name
+            p OLÁ, THIAGO
+          #user_balance
+            p 20,00
+        #balance_modal
+          #balance_modal_value
+            p R$ 20,00
+
+    default
+      #home.full_screen
+        .login_btn
+          img(src='/assets/home/login.png', width='105', height='25')
+        #cadastrar_btn(onclick='showConnectDiv();')
+          img(src='/assets/transparent.gif')

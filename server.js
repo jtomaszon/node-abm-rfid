@@ -300,12 +300,27 @@ app.post('/addCredit', function(req, res) {
 
 
 ////////////// NEW VERSION
+// Telas do usuario
+app.get('/site', function(req, res){
+    res.render('home-usr', {
+        section: ""
+    })
+})
+
+app.get('/site/connect', function(req, res){
+    res.render('home-usr', {
+        section: 1
+    })
+})
+
 // Telas do bar
 app.get('/bar', function(req, res) {
     res.render('home-bar', {
         section:  ""
     });
 })
+
+
 
 app.post('/bar', function(req, res){
     mytag = req.body.gravata;
@@ -346,7 +361,6 @@ app.post('/bar', function(req, res){
     })
 
 })
-
 
 
 

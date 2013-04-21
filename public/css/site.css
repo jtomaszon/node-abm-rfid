@@ -1,0 +1,191 @@
+#master {
+	width: 1366px;
+	height: 768px;
+}
+
+.full_screen {
+	width: 1366px;
+	height: 768px;
+}
+
+/* HOME ***************************/
+#home {
+	position: absolute;
+	background: url('../assets/home/home.jpg') no-repeat left top;
+}
+
+
+.login_btn {
+	position: absolute;
+	top: 169px;
+	left: 364px;
+	cursor: pointer;
+}
+
+#cadastrar_btn {
+	width: 112px;
+	height: 70px;
+	position: absolute;
+	top: 501px;
+	left: 1010px;
+	cursor: pointer;
+}
+
+/* CONNECT ***************************/
+#connect {
+	background: url('../assets/connect/connect_ref_position.jpg') no-repeat left top;
+}
+.facebook_btn_normal {
+	position: absolute;
+	top: 308px;
+	left: 347px;
+	cursor: pointer;
+}
+.facebook_btn_over {
+	position: absolute;
+	top: 300px;
+	left: 340px;
+	cursor: pointer;
+}
+
+#facebook_btn_over .over {
+	position: absolute;
+	top: 308px;
+	left: 347px;
+	cursor: pointer;
+}
+
+/* INSIRA NUMERO DO CARTAO ***************************/
+#insira_numero_cartao {
+	display: block;
+	background: url('../assets/interna/base_numero_cartao.jpg') no-repeat;
+}
+#insira_numero_cartao input {
+	background: none;
+	width: 316px;
+	height: 25px;
+	position: absolute;
+	top: 363px;
+	left: 527px;
+	text-align: center;
+	color: #B4915B;
+}
+#insira_numero_cartao input:focus {
+	outline: none;
+}
+#ok_btn {
+	position: absolute;
+	top: 430px;
+	left: 650px;
+	cursor: pointer;
+}
+
+/* TELA DE SALDO DO CHIP ***************************/
+#tie_balance {
+	background: url('../assets/interna/base.jpg') no-repeat left top;
+	display: block;
+}
+
+#balance_modal {
+	width: 320px;
+	height: 203px;
+	background: url('../assets/interna/modal_gravata_cadastrada.png') no-repeat left top;
+	position: absolute;
+	top: 282px;
+	left: 525px;
+	font-size: 13px;
+}
+
+#balance_modal_value {
+	position: absolute;
+	top: 120px;
+	left: 1px;
+	width: 316px;	
+}
+
+#balance_modal_value p {
+	text-align: center;
+}
+
+#infos {
+	position: absolute;
+	width: 320px;
+	height: 79px;
+	top: 195px;
+	left: 365px;
+}
+#user_name {
+	position: absolute;
+	width: 133px;
+	height: 18px;
+	color: #7A1B10;
+	top: 4px;
+	left: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#user_balance {
+	position: absolute;
+	width: 160px;
+	height: 39px;
+	color: #7A1B10;
+	top: 39px;
+	left: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
