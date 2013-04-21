@@ -51,7 +51,7 @@
             }
 
             if(response.status !== 'connected' && response.status !== 'not_authorized') {
-                console.log('nem conectado esta', response);
+                //console.log('nem conectado esta', response);
                 $('.fb-button').show();
             } else {
                 if(response.status === 'not_authorized') {
@@ -98,7 +98,7 @@
                 saveUser(response);
                 $('.logMenu').html("logout");
             } else {
-                console.log('caiu no else do login', response)
+                //console.log('caiu no else do login', response)
             }
         });
     }
@@ -125,7 +125,7 @@
             if (!response || response.error) {
                 console.log('Error occured', response.error);
             } else {
-                console.log('Post ID: ' + response.id);
+                //console.log('Post ID: ' + response.id);
             }
         });
     }
