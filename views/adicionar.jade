@@ -4,7 +4,7 @@ block main
 
     section.cash
         .valorCash
-            p.txtValor= valor
+            p.txtValor 00,00
           .valorOk
             img.valor(src='img/valor.png', alt='valor')
         .credito
@@ -14,6 +14,7 @@ block main
             h5 1. Adicionar credito
           .corpo2
             form(action='')
+              input(type='hidden', name='fullKey', id='fullKey')
               .valueCred
                 label
                     img(src='img/dez.png', alt='10')

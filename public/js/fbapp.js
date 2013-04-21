@@ -54,8 +54,8 @@
                         url: '/getCredit?fbId=' + data.id,
                         type: 'GET',
                         success: function(result) {
-                            console.log(result);
                             $('.txtValor').html(result.valor);
+                            $('#fullKey').html(result.fullKey);
                         }
                     });
 
