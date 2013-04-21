@@ -74,3 +74,12 @@
 	position: absolute;
 	text-align: center;
 }
+#erro_cadastro {
+	position: absolute;
+	background: url("../assets/modal_nao_cadastrada.png") no-repeat top left;
+	width: 320px;
+	height: 160px;
+	top: 271px;
+	left: 525px;
+	font-size: 14px;
+}

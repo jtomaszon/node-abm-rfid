@@ -2,6 +2,11 @@ extends layout-bar
 block master
 
   case section
+    when 2
+      #erro_cadastro
+      script
+        setTimeout("location.href = '/bar';",5000);
+
     when 1
       #compra_ok
         #debitados
@@ -10,6 +15,7 @@ block master
           p= 'R$ ' + credit
       script
         setTimeout("location.href = '/bar';",5000);
+
     when 0
       #erro_compra
         #erro_saldo

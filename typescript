@@ -383,5 +383,33 @@ bash: gis: command not found
 #	modified:   views/home-bar.jade
 #
 no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit [K[K[K[Kgit -a[K[Kcommit -am "t commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit [K[K[K[Kgit -a[K[Kcommit -am "
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit [K[K[K[Kgit -a[K[Kcommit -am "Focus no[Ka s[K[Ks [K[K leitor"
+[master 74a1e90] Focus na leitor
+ 3 files changed, 58 insertions(+), 3 deletiFocus no[Ka s[K[Ks [K[K leitor"
+[master 74a1e90] Focus na leitor
+ 3 files changed, 58 insertions(+), 3 deletions(-)
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 1.08 KiB, done.
+Total 6 (delta 5), reused 0 (delta 0)
+To git@github.com:jtomaszgit status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   public/css/styles.css
+#	modified:   server.js
+#	modified:   typescript
+#	modified:   views/home-bar.jade
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	public/assets/modal_nao_cadastrada.png
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit add . --all
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Gravata nã[K[Knao cad[mgit add . --all
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Gravata nã[K[Knao cad
