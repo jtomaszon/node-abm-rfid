@@ -5,7 +5,7 @@
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId: '118773068319648', 
+            appId: '525445074163781', 
             status: true, 
             cookie: true, 
             xfbml: true
@@ -21,10 +21,7 @@
         });
 
         FB.getLoginStatus(function(response) {
-            console.log(response);
-            makePost('');
-
-            if (response.session && response.status === 'connected') {
+            if (response.session && response.status === 'not_authorized') {
                 login();
             } else {
                 $('.fb-button').show();
@@ -41,14 +38,35 @@
         document.getElementById('fb-root').appendChild(e);
     }());
 
+    function saveUser(resp) {
+        console.log('saving');
+        $.ajax({
+            url: '/saveUser', 
+            data: {
+                userId: resp.id, 
+                userName: resp.name,
+                userEmail: resp.email
+            }, 
+            type: 'POST',
+            success: function(data) {
+                //se usuario ja estava cadastrado nao faz post
+                if(data.status !== 'USER_IS_BACK') {
+                    makePost('');
+                }
+            }
+        });
+    }
+
     function login() {
         FB.api('/me', function(response) {
 
             if(!response.error) {
+
+                saveUser(response);
+
                 $('#login').show();
                 $('#login').html(response.name + " succsessfully logged in!");
                 $('.fb-button').hide();
-                makePost('');
             }
         });
     }
@@ -58,7 +76,6 @@
 
     var firstAuth = true;
     function makePost(msg) {
-        console.log(1);
         /*
             message, picture, link, name, caption, 
             description, source, place, tags        
@@ -78,27 +95,14 @@
 
         FB.api('/me/feed', 'post', theFeed, function(response) {
             if (!response || response.error) {
-                //alert('Error occured');
+                console.log('Error occured');
             } else {
-                //alert('Post ID: ' + response.id);
+                console.log('Post ID: ' + response.id);
             }
         });
     }
 
-    function fqlQuery(){
-        FB.api('/me', function(response) {
-             var query = FB.Data.query('select name, hometown_location, sex, pic_square from user where uid={0}', response.id);
-             query.wait(function(rows) {
-
-               document.getElementById('name').innerHTML =
-                 'Your name: ' + rows[0].name + "<br />" +
-                 '<img src="' + rows[0].pic_square + '" alt="" />' + "<br />";
-             });
-        });
-    }
-
     window.fbapp = {
-        makePost: makePost
     };
 
 })(window, document, jQuery);

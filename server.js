@@ -181,4 +181,32 @@ app.post('/', function(req, res){
 
 });
 
+app.post('/saveUser', function(req, res) {
+    var userData = {
+        name: req.body.userName || '',
+        email: req.body.userEmail || ''
+    },
+        userId = req.body.userId;
+
+    if(userId) {
+
+        client.get(userId, function(e, data) {
+            if (data) {
+                //HERE GOES THE "WELCOME BACK USER" REDIRECT
+                res.send({status: 'USER_IS_BACK'});
+            } else {
+                client.set(userId, userData, function(err, resp) {
+                    if(err) {
+                        console.log('erro', err);
+                    } else {
+                        //HERE GOES THE "USER HAS BEEN ADDED" REDIRECT
+                        res.send({status: 'USER_ADDED'});
+                    }
+                });
+            }
+        });
+    }
+});
+
+
 app.listen(8080);
