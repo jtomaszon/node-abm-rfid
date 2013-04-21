@@ -237,18 +237,19 @@ app.get('/getCredit', function(req, res) {
             return;
         } else {
             if(keys.length) {
-                console.log('chave do usuario', keys[0]);
                 client.get(keys[0], function(err2, data) {
-                    console.log('dados do usuario', data);
+                    res.send({
+                        status: 'OK', 
+                        valor: data, 
+                        fullKey: keys[0]
+                    });
                 });
             } else {
                 res.send({error: true, status: 'no id found'});
                 return;
             }
-            
         }
     });
-
 });
 
 
