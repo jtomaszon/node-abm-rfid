@@ -79,6 +79,8 @@ app.post('/add', function(req, res){
 
     if (mytag) {
 
+        console.log("MyTAG is: " + mytag);
+
         client.get(mytag, function(e, credit) {
             if (!credit) {
                 console.log('Credito: ' + credit);
