@@ -1,5 +1,19 @@
-extends layout
+extends layout-usr
 
 block main
 
-	include includes/formAdd
+  section.cash
+    .valorCash
+      p.txtValor 20,00
+    .valorOk
+      img.valor(src='img/valor.png', alt='valor')
+  .bras
+    img.brasao(src='img/brasaoBot.png', alt='brasao')
+  section.boxTexto2
+    .title.title2
+      h5 Digite o numero do cartao
+    .corpo
+      form(action='/add', method='post')
+        input.nroCard1(id='gravata', type='text', name='gravata', placeholder=mytag, autocomplete='off')
+      p.duvida Onde encontro esse número?
+  .border

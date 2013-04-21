@@ -2,5 +2,22 @@ extends layout
 
 block main
 
-	include includes/formHome
+  section.textos
+    .box1
+      | Cadastre a sua gravata.
+    .box2
+      | Antes de ir pro bar, carregue a gravata com créditos.
+    .box3
+      | Vá pro happy hour e pague seu chopp Itaipava com a gravata.
+  section.boxTexto
+    .title
+      h5 A Gravata 100%
+    .corpo
+      | Depois de trabalhar a semana toda e resistir bravamente à pressão do chefe, é hora
+      | de mandar o estresse pro espaço e curtir o happy hour com os amigos no bar.
+      | Para isso, transformamos o maior símbolo dos escritórios no seu maior parceiro fora
+      | dele. Agora você é dono de uma Gravata 100%. Cadastre a sua e aproveite!
+  a(href='/add')
+    img.btnCad(src='img/btnCad.png', alt='cadastrar')
+
 

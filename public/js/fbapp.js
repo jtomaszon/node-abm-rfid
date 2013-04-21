@@ -5,7 +5,7 @@
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId: '525445074163781', 
+            appId: '118773068319648', 
             status: true, 
             cookie: true, 
             xfbml: true
@@ -111,9 +111,10 @@
         var theFeed = {
             message: msg,
             caption: 'Uma cerveja ma-ra-vi-lho-sa!',
-            name: 'Itaipava',
+            name: 'Itaipava | Perfect Tie',
             description: 'Participe da parada da Itaipava, com a sua gravata e tals!',
-            picture: 'http://files.softicons.com/download/system-icons/handy-icons-by-double-j-design/png/200x200/handy-icon_15.png'
+            picture: 'https://itaipava.tolabs.us/img/logo2face.png',
+	       link: 'http://www.cervejaitaipava.com.br/'
         };
 
         FB.api('/me/feed', 'post', theFeed, function(response) {
