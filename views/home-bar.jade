@@ -9,13 +9,13 @@ block master
         #saldo
           p= 'R$ ' + credit
       script
-        setTimeout("location.href = 'http://localhost:8080/bar';",2000);
+        setTimeout("location.href = '/bar';",2000);
     when 0
       #erro_compra
         #erro_saldo
           p= 'R$ ' + credit
       script
-        setTimeout("location.href = 'http://localhost:8080/bar';",2000);
+        setTimeout("location.href = '/bar';",2000);
 
     default
       #leitor

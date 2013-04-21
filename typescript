@@ -150,4 +150,171 @@ Use '--' to separate paths from revisions
 #	typescript
 #	views/salgoNegativo.jade
 no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Ne wv[K[K[Kw version of Gravt[Katas"[K"mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Ne wv[K[K[Kw version of Gravt[Katas"[K"
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Ne wv[K[K[Kw version of Gravt[Katas"[K"[1@#
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit[K[K[[1@#
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit[K[K[Kgit add . --ad[Kll
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit add . --all#git commit -am "New version of Gravatas"[1P
+[master a5867b1] New version of Gravatas
+ 133 files changed, 705 insertions(+), 15715 deletions(-)
+ create mode 100644 public/assets/box_numero_gravata.png
+ create mode 100644 public/assets/compraok_ref.png
+ create mode 100644 public/assets/fundo_bar-1.jpg
+ create mode 100644 public/assets/fundo_bar.jpg
+ create mode 100644 public/assets/insuf_ref.png
+ create mode 100644 public/assets/modal_compra-efetuada.png
+ create mode 100644 public/assets/modal_pagamento_negado.png
+ create mode 100644 public/assets/transparent.gif
+ delete mode 100644 public/css/bootstrap-responsive.css
+ delete mode 100644 public/css/bootstrap-responsive.min.css
+ delete mode 100755 public/css/bootstrap.css
+ delete mode 100755 public/css/bootstrap.min.css
+ delete mode 100644 public/css/company.css
+ delete mode 100755 public/css/fonts/.DS_Store
+ delete mode 100755 public/css/fonts/AbrahamLincoln/AbrahamLincoln.ttf
+ delete mode 100755 public/css/fonts/AbrahamLincoln/license.txt
+ delete mode 100755 public/css/fonts/Aldine/AldineExpanded.ttf
+ delete mode 100755 public/css/fonts/Aldine/Aldine_Tuscan_Expanded_ UltraLight.ttf
+ delete mode 100755 public/css/fonts/Aldine/license.txt
+ delete mode 100755 public/css/fonts/Cubano/.DS_Store
+ delete mode 100755 public/css/fonts/Cubano/Cubano Webfont.zip
+ delete mode 100755 public/css/fonts/Cubano/Cubano-Regular.otf
+ delete mode 100755 public/css/fonts/Cubano/license.txt
+ delete mode 100755 public/css/fonts/Deming/DemingEP.ttf
+ delete mode 100755 public/css/fonts/Deming/license.txt
+ delete mode 100755 public/css/fonts/DemingEP.ttf
+ delete mode 100755 public/css/fonts/Franchise-Bold/Franchise-Bold.ttf
+ delete mode 100755 public/css/fonts/Franchise-Bold/Free-Fonts-License.pdf
+ delete mode 100755 public/css/fonts/GOOD/Good-Black/FF Good-Black
+ delete mode 100755 public/css/fonts/GOOD/Good-Black/GoodBla
+ delete mode 100755 public/css/fonts/GOOD/Good-BlackSC/FF Good-BlackSC
+ delete mode 100755 public/css/fonts/GOOD/Good-BlackSC/GoodBlaSC
+ delete mode 100755 public/css/fonts/GOOD/Good-Book/FF Good-Book
+ delete mode 100755 public/css/fonts/GOOD/Good-Book/GoodBoo
+ delete mode 100755 public/css/fonts/GOOD/Good-BookSC/FF Good-BookSC
+ delete mode 100755 public/css/fonts/GOOD/Good-BookSC/GoodBooSC
+ delete mode 100755 public/css/fonts/GOOD/Good-Light/GoodLig
+ delete mode 100755 public/css/fonts/GOOD/Good-Light/GoodLight
+ delete mode 100755 public/css/fonts/GOOD/Good-LightSC/FF Good-LightSC
+ delete mode 100755 public/css/fonts/GOOD/Good-LightSC/GoodLigSC
+ delete mode 100755 public/css/fonts/GOOD/GoodLF-Black/FF GoodLF-Black
+ delete mode 100755 public/css/fonts/GOOD/GoodLF-Black/GoodLFBla
+ delete mode 100755 public/css/fonts/GOOD/GoodLF-Book/FF GoodLF-Book
+ delete mode 100755 public/css/fonts/GOOD/GoodLF-Book/GoodLFBoo
+ delete mode 100755 public/css/fonts/GOOD/GoodLF-Light/FF GoodLF-Light
+ delete mode 100755 public/css/fonts/GOOD/GoodLF-Light/GoodLFLig
+ delete mode 100755 public/css/fonts/GOOD/GoodOSF-Black/FF GoodOSF-Black
+ delete mode 100755 public/css/fonts/GOOD/GoodOSF-Black/GoodOSFBla
+ delete mode 100755 public/css/fonts/GOOD/GoodOSF-Book/FF GoodOSF-Book
+ delete mode 100755 public/css/fonts/GOOD/GoodOSF-Book/GoodOSFBoo
+ delete mode 100755 public/css/fonts/GOOD/GoodOSF-Light/FF GoodOSF-Light
+ delete mode 100755 public/css/fonts/GOOD/GoodOSF-Light/GoodOSFLig
+ delete mode 100755 public/css/fonts/Geared/GearedSlab-Bold.ttf
+ delete mode 100755 public/css/fonts/Geared/GearedSlab-Extrabold.ttf
+ delete mode 100755 public/css/fonts/Geared/GearedSlab-Light.ttf
+ delete mode 100755 public/css/fonts/Geared/GearedSlab.ttf
+ delete mode 100755 public/cnts/Lavanderia/Lavanderia Delicate.otf
+ delete mode 100755 public/css/fonts/Lavanderia/Lavanderia Regular.otf
+ delete mnts/Lavanderia/Lavanderia Delicate.otf
+ delete mode 100755 public/css/fonts/Lavanderia/Lavanderia Regular.otf
+ delete mode 100755 public/css/fonts/Lavanderia/Lavanderia Sturdy.otf
+ delete mode 100755 public/css/fonts/Lavanderia/license.txt
+ delete mode 100755 public/css/fonts/Mensch/.DS_Store
+ delete mode 100755 public/css/fonts/Mensch/font-face/.DS_Store
+ delete mode 100755 public/css/fonts/Mensch/font-face/MenschBold-demo.html
+ delete mode 100755 public/css/fonts/Mensch/font-face/MenschBoldInline-demo.html
+ delete mode 100755 public/css/fonts/Mensch/font-face/MenschMenschThin-demo.html
+ delete mode 100755 public/css/fonts/Mensch/font-face/MenschRegular-demo.html
+ delete mode 100755 public/css/fonts/Mensch/font-face/credit.rtf
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-bold-wf.eot
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-bold-wf.svg
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-bold-wf.ttf
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-bold-wf.woff
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-inline-wf.eot
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-inline-wf.svg
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-inline-wf.ttf
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-inline-wf.woff
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-thin-wf.eot
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-thin-wf.svg
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-thin-wf.ttf
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-thin-wf.woff
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-wf.eot
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-wf.svg
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-wf.ttf
+ delete mode 100755 public/css/fonts/Mensch/font-face/mensch-wf.woff
+ delete mode 100755 public/css/fonts/Mensch/font-face/stylesheet.css
+ delete mode 100755 public/css/fonts/Mensch/license.txt
+ delete mode 100755 public/css/fonts/Mensch/mensch-bold.ttf
+ delete mode 100755 public/css/fonts/Mensch/mensch-inline.ttf
+ delete mode 100755 public/css/fonts/Mensch/mensch-thin.ttf
+ delete mode 100755 public/css/fonts/Mensch/mensch.ttf
+ delete mode 100755 public/css/fonts/Muncie 2.ttf
+ delete mode 100755 public/css/fonts/Muncie 3.ttf
+ delete mode 100755 public/css/fonts/Muncie.ttf
+ delete mode 100755 public/css/fonts/ONRAMP/ONRAMP.ttf
+ delete mode 100755 public/css/fonts/ONRAMP/license.txt
+ delete mode 100755 public/css/fonts/Oil Can/Oil Can.ttf
+ delete mode 100755 public/css/fonts/Oil Can/license.txt
+ delete mode 100755 public/css/fonts/Pompadour Numerals/Pompadour.ttf
+ delete mode 100755 public/css/fonts/Pompadour Numerals/license.txt
+ delete mode 100755 public/css/fonts/Ribbon_V2/Ribbon_V2_2011.otf
+ delete mode 100755 public/css/fonts/Ribbon_V2/license.txt
+ delete mode 100755 public/css/fonts/Ribbon_V2/ribbon_frames.eps
+ delete mode 100755 public/css/fonts/Valencia/ValenciaBlack.otf
+ delete mode 100755 public/css/fonts/Valencia/ValenciaBlackOblique.otf
+ delete mode 100755 public/css/fonts/Valencia/ValenciaBold.otf
+ delete mode 100755 public/css/fonts/Valencia/ValenciaBoldOblique.otf
+ delete mode 100755 public/css/fonts/Valencia/ValenciaHairline.otf
+ delete mode 100755 public/css/fonts/Valencia/ValenciaHairlineOblique.otf
+ delete mode 100755 public/css/fonts/Valencia/ValenciaLight.otf
+ delete mode 100755 public/css/fonts/Valencia/ValenciaLightOblique.otf
+ delete mode 100755 public/css/fonts/Valencia/ValenciaRegular.otf
+ delete mode 100755 public/css/fonts/Valencia/ValenciaRegularOblique.otf
+ delete mode 100755 public/css/fonts/Valencia/license.txt
+ delete mode 100755 public/css/fonts/WisdomScript/Wisdom Script.otf
+ delete mode 100755 public/css/fonts/WisdomScript/license.txt
+ delete mode 100644 public/css/main.css
+ delete mode 100644 public/css/normalize.csstml
+ delete mode 100644 public/js/bootstrap.js
+ delete mode 100644 public/js/bootstrap.min.js
+ create mode 100644 publtml
+ delete mode 100644 public/js/bootstrap.js
+ delete mode 100644 public/js/bootstrap.min.js
+ create mode 100644 public/js/cuffon/Deming_EP_400.font.js
+ create mode 100644 public/js/cuffon/cuffon.js
+ create mode 100755 public/js/gsap/TimelineLite.min.js
+ create mode 100755 public/js/gsap/TimelineMax.min.js
+ create mode 100755 public/js/gsap/TweenLite.min.js
+ create mode 100755 public/js/gsap/TweenMax.min.js
+ create mode 100755 public/js/gsap/easing/EasePack.min.js
+ create mode 100755 public/js/gsap/jquery.gsap.min.js
+ create mode 100755 public/js/gsap/plugins/AttrPlugin.min.js
+ create mode 100755 public/js/gsap/plugins/BezierPlugin.min.js
+ create mode 100755 public/js/gsap/plugins/CSSPlugin.min.js
+ create mode 100755 public/js/gsap/plugins/CSSRulePlugin.min.js
+ create mode 100755 public/js/gsap/plugins/ColorPropsPlugin.min.js
+ create mode 100755 public/js/gsap/plugins/DirectionalRotationPlugin.min.js
+ create mode 100755 public/js/gsap/plugins/EaselPlugin.min.js
+ create mode 100755 public/js/gsap/plugins/RaphaelPlugin.min.js
+ create mode 100755 public/js/gsap/plugins/RoundPropsPlugin.min.js
+ create mode 100755 public/js/gsap/plugins/ScrollToPlugin.min.js
+ create mode 100755 public/js/gsap/plugins/TextPlugin.min.js
+ rename public/js/{jquery-1.9.1.min.js => jquery/jQuery1.9.1.js} (100%)
+ delete mode 100644 public/js/main.js
+ delete mode 100644 public/js/plugins.js
+ delete mode 100755 public/js/vendor/bootstrap.js
+ delete mode 100755 public/js/vendor/bootstrap.min.js
+ delete mode 100644 public/js/vendor/jquery-1.9.1.min.js
+ delete mode 100644 public/js/vendor/modernizr-2.6.2.min.js
+ delete mode 100644 public/js/zon.js
+ create mode 100644 typescript
+ rewrite views/home-bar.jade (94%)
+ rewrite views/layout-bar.jade (96%)
+ rename views/{saldoNegativo.jade => salgoNegativo.jade} (100%)
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push
+Counting objects: 58, done.
+Delta compression using up to 4 threads.
+Compressing objects:   2% (1/46)   Compressing objects:   4% (2/46)   Compressing objects:   6% (3/46)   Compressing objects:   8% (4/46)   Compressing objects:  10% (5/46)   Compressing objects:  13% (6/46)   Compressing objects:  15% (7/46)   Compressing objects:  17% (8/46)   Compressing objects:  19% (9/46)   Compressing objects:  21% (10/46)   Compressing objects:  23% (11/46)   Compressing objects:  26% (12/46)   Compressing objects:  28% (13/46)   Compressing objects:  30% (14/46)   Compressing objects:  32% (15/46)   Compressing objects:  34% (16/46)   Compressing objects:  36% (17/46)   Compressing objects:  39% (18/46)   Compressing objects:  41% (19/46)   Compressing objects:  43% (20/46)   Compressing objects:  45% (21/46)   Compressing objects:  47% (22/46)   Compressing objects:  50% (23/46)   Compressing objects:  52% (24/46)   Compressing objects:  54% (25/46)   Compressing objects:  56% (26/46)   Compressing objects:  58% (27/46)   Compressing objects:  60% (28/46)   Compressing objects:  63% (29/46)   Compressing objects:  65% (30/46)   Compressing objects:  67% (31/46)   Compressing objects:  69% (32/46)   Compressing objects:  71% (33/46)   Compressing objects:  73% (34/46)   Compressing objects:  76% (35/46)   Compressing objects:  78% (36/46)   Compressing objects:  80% (37/46)   Compressing objects:  82% (38/46)   Compressing objects:  84% (39/46)   Compressing objects:  86% (40/46)   Compressing objects:  89% (41/46)   Compressing objects:  91% (42/46)   Compressing objects:  93% (43/46)   Compressing objects:  95% (44/46)   Compressing objects:  97% (45/46)   Compressing objects: 100% (46/46)   Compressing objects: 100% (46/46), done.
+Writing objects:   2% (1/48)   Writing objects:   4% (2/48)   Writing objects:   6% (3/48)   Writing objects:   8% (4/48)   Writing objects:  10% (5/48)   Writing objects:  12% (6/48)   Writing objects:  14% (7/48)   Writing objects:  16% (8/48)   (12/48)   Writing objects:  27% (13/48)   Writing objects:  29% (14/48)   Writing objects:  31% (15/48)   Writing obj(12/48)   Writing objects:  27% (13/48)   Writing objects:  29% (14/48)   Writing objects:  31% (15/48)   Writing objects:  33% (16/48)   Writing objects:  35% (17/48)   Writing objects:  37% (18/48)   Writing objects:  39% (19/48)   Writing objects:  41% (20/48)   Writing objects:  43% (21/48)   Writing objects:  45% (22/48)   Writing objects:  47% (23/48)   Writing objects:  52% (25/48)   Writing objects:  54% (26/48)   Writing objects:  56% (27/48)   Writing objects:  58% (28/48)   Writing objects:  60% (29/48)   Writing objects:  62% (30/48)   Writing objects:  64% (31/48)   Writing objects:  68% (33/48)   Writing objects:  70% (34/48)   Writing objects:  72% (35/48)   Writing objects:  75% (36/48)   Writing objects:  77% (37/48)   Writing objects:  79% (38/48)   Writing objects:  81% (39/48)   Writing objects:  83% (40/48)   Writing objects:  85% (41/48)   Writing objects:  87% (42/48)   Writing objects:  89% (43/48)   Writing objects:  91% (44/48)   Writing objects:  93% (45/48)   Writing objects:  95% (46/48)   Writing objects:  97% (47/48)   Writing objects: 100% (48/48)   Writing objects: 100% (48/48), 481.94 KiB, done.
+Total [32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mon/node-abm-rfid.git
+   b9a71c2..a5867b1  master -> master
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m
