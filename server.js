@@ -49,14 +49,21 @@ app.get('/', function(req, res){
 });
 
 app.get('/cadastro', function(req, res){
-    res.render('cadastro', {});
+    res.render('cadastro');
 });
 
 app.get('/adicionar', function(req, res){
-    res.render('adicionar', {});
+    res.render('adicionar');
 });
 
+app.get('/add', function(req, res){
+    res.render('add');
+});
 
+// Telas do bar
+app.get('/bar/home', function(req, res){
+    res.render('bar/home');
+})
 
 app.get('/privacy', function(req, res){
     res.end('Privacy');
@@ -66,13 +73,6 @@ app.get('/terms', function(req, res){
     res.end('Terms');
 });
 
-app.get('/add', function(req, res){
-    res.render('add', {
-        message: "Passa sua gravata!",
-        mytag: '0000000000',
-        alertType: 'info'
-    });
-});
 
 app.get('/update', function(req, res){
     res.render('update', {
@@ -86,16 +86,20 @@ app.get('/update', function(req, res){
 app.post('/add', function(req, res){
     console.log(req.body);
     mytag = req.body.gravata;
+    fbId = req.body.fbId;
 
     if (mytag) {
 
-        console.log("MyTAG is: " + mytag);
+        var key = mytag + "_" + fbId;
 
-        client.get(mytag, function(e, credit) {
+        console.log("MyTAG is: " + mytag);
+        console.log("KEY is: " + key);
+
+        client.get(key, function(e, credit) {
             if (!credit) {
                 console.log('Credito: ' + credit);
 
-                client.incrbyfloat(mytag, 20, function(e, rst) {
+                client.incrbyfloat(key, 20, function(e, rst) {
                     console.log('Reais: ' + rst);
                     res.render('curtir', {});
                 })
