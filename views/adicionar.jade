@@ -13,7 +13,7 @@ block main
           .title.title2
             h5 1. Adicionar credito
           .corpo2
-            form(action='/addCredit')
+            form#frmAddCredit(action='/addCredit', method='POST')
               input(type='hidden', name='fullKey', id='fullKey')
               .valueCred
                 label
@@ -30,5 +30,5 @@ block main
               .totDeb1 Total a ser creditado
               .totCarga1 R$ 70,00
           .btnFin
-            a(href='#')
+            a.frmSubmit(href='#')
               img(src='img/btnFin.png', alt='')
