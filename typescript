@@ -1,771 +1,0 @@
-Script started on Sun Apr 21 16:28:01 2013
-[?1034h[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit revert public/js/fbapp.js
-fatal: ambiguous argument 'public/js/fbapp.js': unknown revision or path not in the working tree.
-Use '--' to separate paths from revisions
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit checkout public/js/fbapp.js
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mcd public/j[K[K[K[K[K[K[K[K[K[K[Kgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be git status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   dump.rdb
-#	deleted:    public/css/bootstrap-responsive.css
-#	deleted:    public/css/bootstrap-responsive.min.css
-#	deleted:    public/css/bootstrap.css
-#	deleted:    public/css/bootstrap.min.css
-#	deleted:    public/css/company.css
-#	deleted:    public/css/fonts/.DS_Store
-#	deleted:    public/css/fonts/AbrahamLincoln/AbrahamLincoln.ttf
-#	deleted:    public/css/fonts/AbrahamLincoln/license.txt
-#	deleted:    public/css/fonts/Aldine/AldineExpanded.ttf
-#	deleted:    public/css/fonts/Aldine/Aldine_Tuscan_Expanded_ UltraLight.ttf
-#	deleted:    public/css/fonts/Aldine/license.txt
-#	deleted:    public/css/fonts/Cubano/.DS_Store
-#	deleted:    public/css/fonts/Cubano/Cubano Webfont.zip
-#	deleted:    public/css/fonts/Cubano/Cubano-Regular.otf
-#	deleted:    public/css/fonts/Cubano/license.txt
-#	deleted:    public/css/fonts/Deming/DemingEP.ttf
-#	deleted:    public/css/fonts/Deming/license.txt
-#	deleted:    public/css/fonts/DemingEP.ttf
-#	deleted:    public/css/fonts/Franchise-Bold/Franchise-Bold.ttf
-#	deleted:    public/css/fonts/Franchise-Bold/Free-Fonts-License.pdf
-#	deleted:    public/css/fonts/GOOD/Good-Black/FF Good-Black
-#	deleted:    public/css/fonts/GOOD/Good-Black/GoodBla
-#	deleted:    public/css/fonts/GOOD/Good-BlackSC/FF Good-BlackSC
-#	deleted:    public/css/fonts/GOOD/Good-BlackSC/GoodBlaSC
-#	deleted:    public/css/fonts/GOOD/Good-Book/FF Good-Book
-#	deleted:    public/css/fonts/GOOD/Good-Book/GoodBoo
-#	deleted:    public/css/fonts/GOOD/Good-BookSC/FF Good-BookSC
-#	deleted:    public/css/fonts/GOOD/Good-BookSC/GoodBooSC
-#	deleted:    public/css/fonts/GOOD/Good-Light/GoodLig
-#	deleted:    public/css/fonts/GOOD/Good-Light/GoodLight
-#	deleted:    public/css/fonts/GOOD/Good-LightSC/FF Good-LightSC
-#	deleted:    public/css/fonts/GOOD/Good-LightSC/GoodLigSC
-#	deleted:    public/css/fonts/GOOD/GoodLF-Black/FF GoodLF-Black
-#	deleted:    public/css/fonts/GOOD/GoodLF-Black/GoodLFBla
-#	deleted:    public/css/fonts/GOOD/GoodLF-Book/FF GoodLF-Book
-#	deleted:    public/css/fonts/GOOD/GoodLF-Book/GoodLFBoo
-#	deleted:    public/css/fonts/GOOD/GoodLF-Light/FF GoodLF-Light
-#	deleted:    public/css/fonts/GOOD/GoodLF-Light/GoodLFLig
-#	deleted:    public/css/fonts/GOOD/GoodOSF-Black/FF GoodOSF-Black
-#	deleted:    public/css/fonts/GOOD/GoodOSF-Black/GoodOSFBla
-#	deleted:    public/css/fonts/GOOD/GoodOSF-Book/FF GoodOSF-Book
-#	deleted:    public/css/fonts/GOOD/GoodOSF-Book/GoodOSFBoo
-#	deleted:    public/css/fonts/GOOD/GoodOSF-Light/FF GoodOSF-Light
-#	deleted:    public/css/fonts/GOOD/GoodOSF-Light/GoodOSFLig
-#	deleted:    public/css/fonts/Geared/GearedSlab-Bold.ttf
-#	deleted:    public/css/fonts/Geared/GearedSlab-Extrabold.ttf
-#	deleted:    public/css/fonts/Geared/GearedSlab-Light.ttf
-#	deleted:    public/css/fonts/Geared/GearedSlab.ttf
-#	deleted:    public/css/fonts/Geared/license.txt
-#	deleted:    public/css/fonts/Lavanderia/.DS_Store
-#	deleted:    public/css/fonts/Lavanderia/Lavanderia Delicate.otf
-#	deleted:    public/css/fonts/Lavanderia/Lavanderia Regular.otf
-#	deleted:    public/css/fonts/Lavanderia/Lavanderia Sturdy.otf
-#	deleted:    public/css/fonts/Lavanderia/license.txt
-#	deleted:    public/css/fonts/Mensch/.DS_Store
-#	deleted:    public/css/fonts/Mensch/font-face/.DS_Store
-#	deleted:    public/css/fonts/Mensch/font-face/MenschBold-demo.html
-#	deleted:    public/css/fonts/Mensch/font-face/MenschBoldInline-demo.html
-#	deleted:    public/css/fonts/Mensch/font-face/MenschMenschThin-demo.html
-#	deleted:    public/css/fonts/Mensch/font-face/MenschRegular-demo.html
-#	deleted:    public/css/fonts/Mensch/font-face/credit.rtf
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-bold-wf.eot
-#	deleted:    public/css/fonts/Mensch/font-fa/Mensch/font-face/mensch-bold-wf.woff
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-inline-wf.eot
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-inline-wf.svg
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-inline-wf.ttf
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-inline-wf.woff
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-thin-wf.eot
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-thin-wf.svg
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-thin-wf.ttf
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-thin-wf.woff
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-wf.eot
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-wf.svg
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-wf.ttf
-#	deleted:    public/css/fonts/Mensch/font-face/mensch-wf.woff
-#	deleted:    public/css/fonts/Mensch/font-face/stylesheet.css
-#	deleted:    public/css/fonts/Mensch/license.txt
-#	deleted:    public/css/fonts/Mensch/mensch-bold.ttf
-#	deleted:    public/css/fonts/Mensch/mensch-inline.ttf
-#	deleted:    public/css/fonts/Mensch/mensch-thin.ttf
-#	deleted:    public/css/fonts/Mensch/mensch.ttf
-#	deleted:    public/css/fonts/Muncie 2.ttf
-#	deleted:    public/css/fonts/Muncie 3.ttf
-#	deleted:    public/css/fonts/Muncie.ttf
-#	deleted:    public/css/fonts/ONRAMP/ONRAMP.ttf
-#	deleted:    public/css/fonts/ONRAMP/license.txt
-#	deleted:    public/css/fonts/Oil Can/Oil Can.ttf
-#	deleted:    public/css/fonts/Oil Can/license.txt
-#	deleted:    public/css/fonts/Pompadour Numerals/Pompadour.ttf
-#	deleted:    public/css/fonts/Pompadour Numerals/license.txt
-#	deleted:    public/css/fonts/Ribbon_V2/Ribbon_V2_2011.otf
-#	deleted:    public/css/fonts/Ribbon_V2/license.txt
-#	deleted:    public/css/fonts/Ribbon_V2/ribbon_frames.eps
-#	deleted:    public/css/fonts/Valencia/ValenciaBlack.otf
-#	deleted:    public/css/fonts/Valencia/ValenciaBlackOblique.otf
-#	deleted:    public/css/fonts/Valencia/ValenciaBold.otf
-#	deleted:    public/css/fonts/Valencia/ValenciaBoldOblique.otf
-#	deleted:    public/css/fonts/Valencia/ValenciaHairline.otf
-#	deleted:    public/css/fonts/Valencia/ValenciaHairlineOblique.otf
-#	deleted:    public/css/fonts/Valencia/ValenciaLight.otf
-#	deleted:    public/css/fonts/Valencia/ValenciaLightOblique.otf
-#	deleted:    public/css/fonts/Valencia/ValenciaRegular.otf
-#	deleted:    public/css/fonts/Valencia/ValenciaRegularOblique.otf
-#	deleted:    public/css/fonts/Valencia/license.txt
-#	deleted:    public/css/fonts/WisdomScript/Wisdom Script.otf
-#	deleted:    public/css/fonts/WisdomScript/license.txt
-#	deleted:    public/css/main.css
-#	deleted:    public/css/normalize.css
-#	modified:   public/js/.DS_Store
-#	deleted:    public/js/bootstrap.js
-#	deleted:    public/js/bootstrap.min.js
-#	deleted:    public/js/jquery-1.9.1.min.js
-#	deleted:    public/js/main.js
-#	deleted:    public/js/plugins.js
-#	deleted:    public/js/vendor/bootstrap.js
-#	deleted:    public/js/vendor/bootstrap.min.js
-#	deleted:    public/js/vendor/jquery-1.9.1.min.js
-#	deleted:    public/js/vendor/modernizr-2.6.2.min.js
-#	deleted:    public/js/zon.js
-#	modified:   server.js
-#	modified:   views/home-bar.jade
-#	modified:   views/layout-bar.jade
-#	deleted:    views/saldoNegativo.jade
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	public/assets/
-#	public/css/reset.css
-#	public/css/styles.css
-#	public/index.html
-#	public/js/cuffon/
-#	public/js/gsap/
-#	public/js/jquery/
-#	typescript
-#	views/salgoNegativo.jade
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Ne wv[K[K[Kw version of Gravt[Katas"[K"[1@#
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit[K[K[[1@#
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit[K[K[Kgit add . --ad[Kll
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit add . --all#git commit -am "New version of Gravatas"[1P
-[master a5867b1] New version of Gravatas
- 133 files changed, 705 insertions(+), 15715 deletions(-)
- create mode 100644 public/assets/box_numero_gravata.png
- create mode 100644 public/assets/compraok_ref.png
- create mode 100644 public/assets/fundo_bar-1.jpg
- create mode 100644 public/assets/fundo_bar.jpg
- create mode 100644 public/assets/insuf_ref.png
- create mode 100644 public/assets/modal_compra-efetuada.png
- create mode 100644 public/assets/modal_pagamento_negado.png
- create mode 100644 public/assets/transparent.gif
- delete mode 100644 public/css/bootstrap-responsive.css
- delete mode 100644 public/css/bootstrap-responsive.min.css
- delete mode 100755 public/css/bootstrap.css
- delete mode 100755 public/css/bootstrap.min.css
- delete mode 100644 public/css/company.css
- delete mode 100755 public/css/fonts/.DS_Store
- delete mode 100755 public/css/fonts/AbrahamLincoln/AbrahamLincoln.ttf
- delete mode 100755 public/css/fonts/AbrahamLincoln/license.txt
- delete mode 100755 public/css/fonts/Aldine/AldineExpanded.ttf
- delete mode 100755 public/css/fonts/Aldine/Aldine_Tuscan_Expanded_ UltraLight.ttf
- delete mode 100755 public/css/fonts/Aldine/license.txt
- delete mode 100755 public/css/fonts/Cubano/.DS_Store
- delete mode 100755 public/css/fonts/Cubano/Cubano Webfont.zip
- delete mode 100755 public/css/fonts/Cubano/Cubano-Regular.otf
- delete mode 100755 public/css/fonts/Cubano/license.txt
- delete mode 100755 public/css/fonts/Deming/DemingEP.ttf
- delete mode 100755 public/css/fonts/Deming/license.txt
- delete mode 100755 public/css/fonts/DemingEP.ttf
- delete mode 100755 public/css/fonts/Franchise-Bold/Franchise-Bold.ttf
- delete mode 100755 public/css/fonts/Franchise-Bold/Free-Fonts-License.pdf
- delete mode 100755 public/css/fonts/GOOD/Good-Black/FF Good-Black
- delete mode 100755 public/css/fonts/GOOD/Good-Black/GoodBla
- delete mode 100755 public/css/fonts/GOOD/Good-BlackSC/FF Good-BlackSC
- delete mode 100755 public/css/fonts/GOOD/Good-BlackSC/GoodBlaSC
- delete mode 100755 public/css/fonts/GOOD/Good-Book/FF Good-Book
- delete mode 100755 public/css/fonts/GOOD/Good-Book/GoodBoo
- delete mode 100755 public/css/fonts/GOOD/Good-BookSC/FF Good-BookSC
- delete mode 100755 public/css/fonts/GOOD/Good-BookSC/GoodBooSC
- delete mode 100755 public/css/fonts/GOOD/Good-Light/GoodLig
- delete mode 100755 public/css/fonts/GOOD/Good-Light/GoodLight
- delete mode 100755 public/css/fonts/GOOD/Good-LightSC/FF Good-LightSC
- delete mode 100755 public/css/fonts/GOOD/Good-LightSC/GoodLigSC
- delete mode 100755 public/css/fonts/GOOD/GoodLF-Black/FF GoodLF-Black
- delete mode 100755 public/css/fonts/GOOD/GoodLF-Black/GoodLFBla
- delete mode 100755 public/css/fonts/GOOD/GoodLF-Book/FF GoodLF-Book
- delete mode 100755 public/css/fonts/GOOD/GoodLF-Book/GoodLFBoo
- delete mode 100755 public/css/fonts/GOOD/GoodLF-Light/FF GoodLF-Light
- delete mode 100755 public/css/fonts/GOOD/GoodLF-Light/GoodLFLig
- delete mode 100755 public/css/fonts/GOOD/GoodOSF-Black/FF GoodOSF-Black
- delete mode 100755 public/css/fonts/GOOD/GoodOSF-Black/GoodOSFBla
- delete mode 100755 public/css/fonts/GOOD/GoodOSF-Book/FF GoodOSF-Book
- delete mode 100755 public/css/fonts/GOOD/GoodOSF-Book/GoodOSFBoo
- delete mode 100755 public/css/fonts/GOOD/GoodOSF-Light/FF GoodOSF-Light
- delete mode 100755 public/css/fonts/GOOD/GoodOSF-Light/GoodOSFLig
- delete mode 100755 public/css/fonts/Geared/GearedSlab-Bold.ttf
- delete mode 100755 public/css/fonts/Geared/GearedSlab-Extrabold.ttf
- delete mode 100755 public/css/fonts/Geared/GearedSlab-Light.ttf
- delete mode 100755 public/css/fonts/Geared/GearedSlab.ttf
- delete mode 100755 public/cnts/Lavanderia/Lavanderia Delicate.otf
- delete mode 100755 public/css/fonts/Lavanderia/Lavanderia Regular.otf
- delete mnts/Lavanderia/Lavanderia Delicate.otf
- delete mode 100755 public/css/fonts/Lavanderia/Lavanderia Regular.otf
- delete mode 100755 public/css/fonts/Lavanderia/Lavanderia Sturdy.otf
- delete mode 100755 public/css/fonts/Lavanderia/license.txt
- delete mode 100755 public/css/fonts/Mensch/.DS_Store
- delete mode 100755 public/css/fonts/Mensch/font-face/.DS_Store
- delete mode 100755 public/css/fonts/Mensch/font-face/MenschBold-demo.html
- delete mode 100755 public/css/fonts/Mensch/font-face/MenschBoldInline-demo.html
- delete mode 100755 public/css/fonts/Mensch/font-face/MenschMenschThin-demo.html
- delete mode 100755 public/css/fonts/Mensch/font-face/MenschRegular-demo.html
- delete mode 100755 public/css/fonts/Mensch/font-face/credit.rtf
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-bold-wf.eot
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-bold-wf.svg
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-bold-wf.ttf
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-bold-wf.woff
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-inline-wf.eot
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-inline-wf.svg
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-inline-wf.ttf
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-inline-wf.woff
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-thin-wf.eot
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-thin-wf.svg
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-thin-wf.ttf
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-thin-wf.woff
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-wf.eot
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-wf.svg
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-wf.ttf
- delete mode 100755 public/css/fonts/Mensch/font-face/mensch-wf.woff
- delete mode 100755 public/css/fonts/Mensch/font-face/stylesheet.css
- delete mode 100755 public/css/fonts/Mensch/license.txt
- delete mode 100755 public/css/fonts/Mensch/mensch-bold.ttf
- delete mode 100755 public/css/fonts/Mensch/mensch-inline.ttf
- delete mode 100755 public/css/fonts/Mensch/mensch-thin.ttf
- delete mode 100755 public/css/fonts/Mensch/mensch.ttf
- delete mode 100755 public/css/fonts/Muncie 2.ttf
- delete mode 100755 public/css/fonts/Muncie 3.ttf
- delete mode 100755 public/css/fonts/Muncie.ttf
- delete mode 100755 public/css/fonts/ONRAMP/ONRAMP.ttf
- delete mode 100755 public/css/fonts/ONRAMP/license.txt
- delete mode 100755 public/css/fonts/Oil Can/Oil Can.ttf
- delete mode 100755 public/css/fonts/Oil Can/license.txt
- delete mode 100755 public/css/fonts/Pompadour Numerals/Pompadour.ttf
- delete mode 100755 public/css/fonts/Pompadour Numerals/license.txt
- delete mode 100755 public/css/fonts/Ribbon_V2/Ribbon_V2_2011.otf
- delete mode 100755 public/css/fonts/Ribbon_V2/license.txt
- delete mode 100755 public/css/fonts/Ribbon_V2/ribbon_frames.eps
- delete mode 100755 public/css/fonts/Valencia/ValenciaBlack.otf
- delete mode 100755 public/css/fonts/Valencia/ValenciaBlackOblique.otf
- delete mode 100755 public/css/fonts/Valencia/ValenciaBold.otf
- delete mode 100755 public/css/fonts/Valencia/ValenciaBoldOblique.otf
- delete mode 100755 public/css/fonts/Valencia/ValenciaHairline.otf
- delete mode 100755 public/css/fonts/Valencia/ValenciaHairlineOblique.otf
- delete mode 100755 public/css/fonts/Valencia/ValenciaLight.otf
- delete mode 100755 public/css/fonts/Valencia/ValenciaLightOblique.otf
- delete mode 100755 public/css/fonts/Valencia/ValenciaRegular.otf
- delete mode 100755 public/css/fonts/Valencia/ValenciaRegularOblique.otf
- delete mode 100755 public/css/fonts/Valencia/license.txt
- delete mode 100755 public/css/fonts/WisdomScript/Wisdom Script.otf
- delete mode 100755 public/css/fonts/WisdomScript/license.txt
- delete mode 100644 public/css/main.css
- delete mode 100644 public/css/normalize.csstml
- delete mode 100644 public/js/bootstrap.js
- delete mode 100644 public/js/bootstrap.min.js
- create mode 100644 publtml
- delete mode 100644 public/js/bootstrap.js
- delete mode 100644 public/js/bootstrap.min.js
- create mode 100644 public/js/cuffon/Deming_EP_400.font.js
- create mode 100644 public/js/cuffon/cuffon.js
- create mode 100755 public/js/gsap/TimelineLite.min.js
- create mode 100755 public/js/gsap/TimelineMax.min.js
- create mode 100755 public/js/gsap/TweenLite.min.js
- create mode 100755 public/js/gsap/TweenMax.min.js
- create mode 100755 public/js/gsap/easing/EasePack.min.js
- create mode 100755 public/js/gsap/jquery.gsap.min.js
- create mode 100755 public/js/gsap/plugins/AttrPlugin.min.js
- create mode 100755 public/js/gsap/plugins/BezierPlugin.min.js
- create mode 100755 public/js/gsap/plugins/CSSPlugin.min.js
- create mode 100755 public/js/gsap/plugins/CSSRulePlugin.min.js
- create mode 100755 public/js/gsap/plugins/ColorPropsPlugin.min.js
- create mode 100755 public/js/gsap/plugins/DirectionalRotationPlugin.min.js
- create mode 100755 public/js/gsap/plugins/EaselPlugin.min.js
- create mode 100755 public/js/gsap/plugins/RaphaelPlugin.min.js
- create mode 100755 public/js/gsap/plugins/RoundPropsPlugin.min.js
- create mode 100755 public/js/gsap/plugins/ScrollToPlugin.min.js
- create mode 100755 public/js/gsap/plugins/TextPlugin.min.js
- rename public/js/{jquery-1.9.1.min.js => jquery/jQuery1.9.1.js} (100%)
- delete mode 100644 public/js/main.js
- delete mode 100644 public/js/plugins.js
- delete mode 100755 public/js/vendor/bootstrap.js
- delete mode 100755 public/js/vendor/bootstrap.min.js
- delete mode 100644 public/js/vendor/jquery-1.9.1.min.js
- delete mode 100644 public/js/vendor/modernizr-2.6.2.min.js
- delete mode 100644 public/js/zon.js
- create mode 100644 typescript
- rewrite views/home-bar.jade (94%)
- rewrite views/layout-bar.jade (96%)
- rename views/{saldoNegativo.jade => salgoNegativo.jade} (100%)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push
-Counting objects: 58, done.
-Delta compression using up to 4 threads.
-Compressing objects:   2% (1/46)   Compressing objects:   4% (2/46)   Compressing objects:   6% (3/46)   Compressing objects:   8% (4/46)   Compressing objects:  10% (5/46)   Compressing objects:  13% (6/46)   Compressing objects:  15% (7/46)   Compressing objects:  17% (8/46)   Compressing objects:  19% (9/46)   Compressing objects:  21% (10/46)   Compressing objects:  23% (11/46)   Compressing objects:  26% (12/46)   Compressing objects:  28% (13/46)   Compressing objects:  30% (14/46)   Compressing objects:  32% (15/46)   Compressing objects:  34% (16/46)   Compressing objects:  36% (17/46)   Compressing objects:  39% (18/46)   Compressing objects:  41% (19/46)   Compressing objects:  43% (20/46)   Compressing objects:  45% (21/46)   Compressing objects:  47% (22/46)   Compressing objects:  50% (23/46)   Compressing objects:  52% (24/46)   Compressing objects:  54% (25/46)   Compressing objects:  56% (26/46)   Compressing objects:  58% (27/46)   Compressing objects:  60% (28/46)   Compressing objects:  63% (29/46)   Compressing objects:  65% (30/46)   Compressing objects:  67% (31/46)   Compressing objects:  69% (32/46)   Compressing objects:  71% (33/46)   Compressing objects:  73% (34/46)   Compressing objects:  76% (35/46)   Compressing objects:  78% (36/46)   Compressing objects:  80% (37/46)   Compressing objects:  82% (38/46)   Compressing objects:  84% (39/46)   Compressing objects:  86% (40/46)   Compressing objects:  89% (41/46)   Compressing objects:  91% (42/46)   Compressing objects:  93% (43/46)   Compressing objects:  95% (44/46)   Compressing objects:  97% (45/46)   Compressing objects: 100% (46/46)   Compressing objects: 100% (46/46), done.
-Writing objects:   2% (1/48)   Writing objects:   4% (2/48)   Writing objects:   6% (3/48)   Writing objects:   8% (4/48)   Writing objects:  10% (5/48)   Writing objects:  12% (6/48)   Writing objects:  14% (7/48)   Writing objects:  16% (8/48)   (12/48)   Writing objects:  27% (13/48)   Writing objects:  29% (14/48)   Writing objects:  31% (15/48)   Writing obj(12/48)   Writing objects:  27% (13/48)   Writing objects:  29% (14/48)   Writing objects:  31% (15/48)   Writing objects:  33% (16/48)   Writing objects:  35% (17/48)   Writing objects:  37% (18/48)   Writing objects:  39% (19/48)   Writing objects:  41% (20/48)   Writing objects:  43% (21/48)   Writing objects:  45% (22/48)   Writing objects:  47% (23/48)   Writing objects:  52% (25/48)   Writing objects:  54% (26/48)   Writing objects:  56% (27/48)   Writing objects:  58% (28/48)   Writing objects:  60% (29/48)   Writing objects:  62% (30/48)   Writing objects:  64% (31/48)   Writing objects:  68% (33/48)   Writing objects:  70% (34/48)   Writing objects:  72% (35/48)   Writing objects:  75% (36/48)   Writing objects:  77% (37/48)   Writing objects:  79% (38/48)   Writing objects:  81% (39/48)   Writing objects:  83% (40/48)   Writing objects:  85% (41/48)   Writing objects:  87% (42/48)   Writing objects:  89% (43/48)   Writing objects:  91% (44/48)   Writing objects:  93% (45/48)   Writing objects:  95% (46/48)   Writing objects:  97% (47/48)   Writing objects: 100% (48/48)   Writing objects: 100% (48/48), 481.94 KiB, done.
-Total [32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be comgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   typescript
-#	modified:   views/home-bar.jade
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Change[King fix domain"[K in redi[K[K[K[KB[KHome Bar redirect"
-[master bb23c4f] Changing fix domain in Home Bar redirect
- 2 files changed, 170 insertioDelta compression using up to 4 threads.
-Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   CompressiDelta compression using up to 4 threads.
-Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
-Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 3.41 KiB, done.
-Total 5 (delta 3), reused 0 (delta 0)
-To git@github.com:jtomaszgit pushcommit -am "Changing fix domain in Home Bar redirect"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"git pushcommit -am "Changing fix domain in Home Bar redirect"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"d"e"l"a"y" "i"n" "r"e"d"i"r"e"c"t"
-[master 38202e8] Changing delay in redirect
- 2 files changed, 24 insertions(+), 4 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push
-Counting objects: 9, done.
-Delta compression using up to 4 threads.
-Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
-Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 814 bytes, done.
-Total 5 (delta 4), reused 0 (delta 0)
-To git@github.com:jtomaszgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be comgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   server.js
-#	modified:   typescript
-#	modified:   views/home-bar.jade
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit i[Kdiff servi[Ker.js
-[?1h=diff --git a/server.js b/server.js[m
-index 5159607..13c7934 100644[m
---- a/server.js[m
-+++ b/server.js[m
-@@ -338,6 +338,10 @@ app.post('/bar', function(req, res){[m
-                     }[m
-                 })[m
-             })[m
-+        }else{[m
-+            res.render('home-bar', {[m
-+                section: 2[m
-+  gis status
-bash: gis: command not found
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit ststa[K[K[Katus
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   server.js
-#	modified:   typescript
-#	modified:   views/home-bar.jade
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit [K[K[K[Kgit -a[K[Kcommit -am "Focus no[Ka s[K[Ks [K[K leitor"
-[master 74a1e90] Focus na leitor
- 3 files changed, 58 insertions(+), 3 deletiFocus no[Ka s[K[Ks [K[K leitor"
-[master 74a1e90] Focus na leitor
- 3 files changed, 58 insertions(+), 3 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push
-Counting objects: 11, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 1.08 KiB, done.
-Total 6 (delta 5), reused 0 (delta 0)
-To git@github.com:jtomaszgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   public/css/styles.css
-#	modified:   server.js
-#	modified:   typescript
-#	modified:   views/home-bar.jade
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	public/assets/modal_nao_cadastrada.png
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit add . --all
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Gravata nã[K[Knao cadastraa[Kda"
-[master c59a305] Gravata nao cadastrada
- 5 files changed, 47 insertions(+), 4 deletions(-)
- create mode astraa[Kda"
-[master c59a305] Gravata nao cadastrada
- 5 files changed, 47 insertions(+), 4 deletions(-)
- create mode 100644 public/assets/modal_nao_cadastrada.png
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push
-Counting objects: 20, done.
-Delta compression using up to 4 threads.
-Compressing objects:   9% (1/11)   Compressing objects:  18% (2/11)   Compressing objects:  27% (3/11)   Compressing objects:  36% (4/11)   Compressing objects:  45% (5/11)   Compressing objects:  54% (6/11)   Compressing objects:  63% (7/11)   Compressing objects:  72% (8/11)   Compressing objects:  81% (9/11)   Compressing objects:  90% (10/11)   Compressing objects: 100% (11/11)   Compressing objects: 100% (11/11), done.
-Writing objects:   9% (1/11)   Writing objects:  18% (2/11)   Writing objects:  27% (3/11)   Writing objects:  36% (4/11)   Writing objects:  45% (5/11)   Writing objects:  54% (6/11)   Writing objects:  63% (7/11)   Writing objects:  72% (8/11)   Writing objects:  81% (9/11)   Writing objects:  90% (10/11)   Writing objects: 100% (11/11)   Writing objects: 100% (11/11), 5.77 KiB, done.
-Total 11 (delta 8), reused 0 (delta 0)
-To git@github.com:jtomaszgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   dump.rdb
-#	modified:   public/js/fbapp.js
-#	modified:   typescript
-#	modified:   views/home-bar.jade
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit[K[K[Kgut[K[Koit [K[K[K[Kit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   dump.rdb
-#	modified:   public/img/.DS_Store
-#	modified:   public/js/fbapp.js
-#	modified:   typescript
-#	modified:   views/home-bar.jade
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	public/img/facebook/
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit a[Kadd . 00[K[K--all
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit a[K-am "New posting[K[K[K o[Kfor Facebook"
-[master 17b2799] New post for Facebook
- 6 files changed, 31 insertions(+), 10 deletions(-)
- create mode 100644 public/img/facebook/post-share.jpg
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push
-To git@github.com:jtomaszon/node-abm-rfid.git
- ! [rejected]        master -> master (non-fast-forward)
-error:git push
-To git@github.com:jtomaszon/node-abm-rfid.git
- ! [rejected]        master -> master (non-fast-forward)
-error: failed to push some refs to 'git@github.com:jtomaszon/node-abm-rfid.git'
-To prevent you from losing history, non-fast-forward updates were rejected
-Merge the remote changes (e.g. 'git pull') before pushing again.  See the
-'Note abogt[Kit status
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   typescript
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   typescript
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   typescript
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   public/js/fbapp.js
-#	modified:   typescript
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mls -la public/img/facebook
-facebook/     facebook.png  
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mls -la public/img/facebook/post-share.jpg g[K
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
-# On branch master
-# Your branch is aheadg[K
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   public/js/fbapp.js
-#	modified:   typescript
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am '[K"New post"
-[master 5e736cd] New post
- 2 files changed, 82 insertions(+), 3 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipavnon-fast-forward)
-error: failed to push some refs to 'git@github.com:jtomaszon/node-abm-rfid.git'
-To prevent you from lnon-fast-forward)
-error: failed to push some refs to 'git@github.com:jtomaszon/node-abm-rfid.git'
-To prevent you from losing history, non-fast-forward updates were rejected
-Merge the remote changes (e.g. 'git pull') before pushing again.  See the
-'Note about fast-forwards' section of 'git push --help' for details.
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit pull
-remote: Counting objects: 9, done.[K
-remote: Compressing objects: 100% (1/1)   [Kremote: Compressing objects: 100% (1/1), done.[K
-remote: Total 5 (delta 4), reused 5 (delta 4)[K
-Unpacking objects:  20% (1/5)   Unpacking objects:  40% (2/5)   Unpacking objects:  60% (3/5)   Unpacking objects:  80% (4/5)   Unpacking objects: 100% (5/5)   Unpacking objects: 100% (5/5), done.
-From github.com:jtomaszon/node-abm-rfid
-   c59a305..79d098f  master     -> origin/master
-Auto-merging public/js/fbapp.js
-Merge made by the 'recursive' strategy.
- public/js/fbapp.js |   15 ++++++++++++++-
- 1 file changed, 14 insertions(+), 1 deletion(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgitu[K pull[K[Ksh
-Counting objects: 38, done.
-Delta compression using up to 4 threads.
-Compressing objects:   4% (1/23)   Compressing objects:   8% (2/23)   Compressing objects:  13% (3/23)   Compressing objects:  17% (4/23)   Compressing objects:  21% (5/23)   Compressing objects:  26% (6/23)   Compressing objects:  30% (7/23)   Compressing objects:  34% (8/23)   Compressing objects:  39% (9/23)   Compressing objects:  43% (10/23)   Compressing objects:  47% (11/23)   Compressing objects:  52% (12/23)   Compressing objects:  56% (13/23)   Compressing objects:  60% (14/23)   Compressing objects:  65% (15/23)   Compressing objects:  69% (16/23)   Compressing objects:  73% (17/23)   Compressing objects:  78% (18/23)   Compressing objects:  82% (19/23)   Compressing objects:  86% (20/23)   Compressing objects:  91% (21/23)   Compressing objects:  95% (22/23)   Compressing objects: 100% (23/23)   Compressing objects: 100% (23/23), done.
-Writing objects:   4% (1/24)   Writing objects:   8% (2/24)   Writing objects:  12% (3/24)   Writing objects:  16% (4/24)   Writing objects:  20% (5/24)   Writing objects:  25% (6/24)   Writing objects:  29% (7/24)   Writing objects:  33% (8/24)   Writing objects:  37% (9/24)   Writing objects:  41% (10/24)   Writing objects:  45% (11/24)   Writing objects:  50% (12/24)   Writing objects:  54% (13/24)   Writing objects:  58% (14/24)   Writing objects:  62% (15/24)   Writing objects:  66% (16/24)   Writing objects:  70% (17/24)   Writing objects:  75% (18/24)   Writing objects:  79% (19/24)   Writing objects:  83% (20/24)   Writing objects:  87% (21/24)   Writing objects:  91% (22/24)   Writing objects:  95% (23/24)   Writing objects: 100% (24/24)   Writing objects: 100% (24/24), 238.49 KiB, done.
-Total 24 (delta 18), reused 0 (delta 0)
-To git@github.com:jtomaszgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be comgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   public/js/fbapp.js
-#	modified:   typescript
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"
-[master 14c1341] Testing facebook post
- 2 files changed, 52 insertions(+), 17 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit psuh
-git: 'psuh' is not a git command. See 'git --help'.
-
-Did you mean this?
-	push
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit psu[K[Kp[Kush
-Counting objects: 11, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 1.39 KiB, done.
-Total 6 (delta 5), reused 0 (delta 0)
-To git@github.com:jtomaszgit pushsuhcommit -am "Testing facebook post"
-[master eb5ff98] Testing facebook post
- 2 files changed, 30 insertgit pushsuhcommit -am "Testing facebook post"
-[master eb5ff98] Testing facebook post
- 2 files changed, 30 insertions(+), 4 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"push[K
-Counting objects: 11, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 769 bytes, done.
-Total 6 (delta 5), reused 0 (delta 0)
-To git@github.com:jtomaszgit push
-Everything up-to-date
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit pushcommit -am "Testing facebook post"
-[master 003b05e] Testing facebook post
- 2 files changed, 14 insertions(+), 2 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"push[K
-Counting objects: 11, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 629 bytes, done.
-Total 6 (delta 5), reused 0 (delta 0)
-To git@github.com:jtomaszon/node-abm-rfid.git
-   eb5ff98..003b05e  master -> master
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit pushcommit -am "Testing facebook post"
-[master 9a8d486] Testing facebook post
- 2 files changed, 16 insertions(+), 6 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"push[K
-Counting objects: 11, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 617 bytes, done.
-Total 6 (delta 5), reused 0 (delta 0)
-To git@github.com:jtomaszon/node-abm-rfid.git
-   003b05e..9a8d486  master -> master
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push[Kgit pushcommit -am "Testing facebook post"
-[master 2b8252c] Testing facebook post
- 2 files changgit push[Kgit pushcommit -am "Testing facebook post"
-[master 2b8252c] Testing facebook post
- 2 files changed, 13 insertions(+), 2 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"push[K
-Counting objects: 11, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 597 bytes, done.
-Total 6 (delta 5), reused 0 (delta 0)
-To git@github.com:jtomaszgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   public/js/fbapp.js
-#	modified:   typescript
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status[2Ppushcommit -am "Testing facebook post"
-[master 542bb60] Testing facebook post
- 2 files changed, 39 insertions(+), 10 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"status[K[2Ppush
-Counting objects: 11, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 978 bytes, done.
-Total 6 (delta 5), reused 0 (delta 0)
-To git@github.com:jtomaszon/node-abm-rfid.git
-   2b8252c..542bb60  master -> master
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit pushcommit -am "Testing facebook post"
-[master 739bfcb] Testing facebook post
- 2 files changed, 24 insertions(+git pushcommit -am "Testing facebook post"
-[master 739bfcb] Testing facebook post
- 2 files changed, 24 insertions(+), 3 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   CompressiDelta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 610 bytes, done.
-Total 6 (delta 5), reused 0 (delta 0)
-To git@github.com:jtomaszgit pushcommit -am "Testing facebook post"
-[master e8f76bd] Testing facebook post
- 1 file changed, 12 insertions(+)git pushcommit -am "Testing facebook post"
-[master e8f76bd] Testing facebook post
- 1 file changed, 12 insertions(+), 2 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us Delta compression using up to 4 threads.
-Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   CompressiDelta compression using up to 4 threads.
-Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
-Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 393 bytes, done.
-Total 3 (delta 2), reused 0 (delta 0)
-To git@github.com:jtomaszvim .gitignore 
-[?1049h[?1h=[1;39r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[39;1H".gitignore" 15L, 111C[>c[1;1Hvim .gitignore 
-[?1049h[?1h=[1;39r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[39;1H".gitignore" 15L, 111C[>c[1;1Hlib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-*.rdb
-pids
-logs
-results
-.DS_Store
-npm-debug.log
-node_modules
-[94m~                                                                                                                                              [17;1H~                                                                                                                                              [18;1H~                                                                                                                                              [19;1H~                                                                                                                                              [20;1H~                                                                                                                                              [21;1H~                                                                                                                                              [22;1H~                                                                                                                                              [23;1H~                                                                                                                                              [24;1H~                                                                                                                                              [25;1H~                                                                                                                                              [26;1H~                                                                                                                                              [27;1H~                                                                                                                                              [28;1H~                                                                                                                                              [29;1H~                                                                                                                                              [30;1H~                                                                                                                                              [31;1H~                                                                                                                                              [32;1H~                                                                                                                                              [33;1H~                                                                                                                                              [34;1H~                                                                                                                                              [35;1H~                                                                                                                                              [36;1H~                                                                                                                                              [37;1H~                                                                                                                                              [38;1H~                                                                                                                                              [1;1H[?12l[?25h[15;1H[?25l[m[39;1H[1m-- INSERT --[m[39;14H[K[16;1H[K[16;1H[?12l[?25h[?25ltypescript[?12l[?25h[39;1H[K[16;10H[?25l[?12l[?25h[?25l[39;1H:[?12l[?25hwq![?25l".gitignore" 16L, 122C written
-[?1l>[?12l[?25h[?1049l[32mjavier.zon@zonadd <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   .gitignore
-#	modified:   typescript
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit 
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m[17P(reverse-i-search)`': c': git commit -am "Testing facebook post"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@o[C[C[C[C[C[C[C[1@m[C[C[C[C[C[C[C[1@m[C[C[C[C[C[C[C[13@[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m[C[C[C[C
-[master a4e5525] Testing facebook post
- 2 files changed, 33 insertions(+), 3 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit sts[Katus
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
-nothing to commit (working directory clean)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit statuscommit -am "Testing facebook post"
-[master fa54a94] Testing facebook post
- 2 files changed, 44 insertions(+), 28 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"status[K
-# On branch master
-# Your branch is ahead of 'origin/master' by 2 commits.
-#
-nothing to commit (working directory clean)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status[K[K[K[K[K[Kpush
-Counting objects: 16, done.
-Delta compression using up to 4 threads.
-Compressing objects:  10% (1/10)   Compressing objects:  20% (2/10)   Compressing objects:  30% (3/10)   Compressing objects:  40% (4/10)   Compressing objects:  50% (5/10)   Compressing objects:  60% (6/10)   Compressing objects:  70% (7/10)   Compressing objects:  80% (8/10)   Compressing objects:  90% (9/10)   Compressing objects: 100% (10/10)   Compressing objects: 100% (10/10), done.
-Writing objects:  10% (1/10)   Writing objects:  20% (2/10)   Writing objects:  30% (3/10)   Writing objects:  40% (4/10)   Writing objects:  50% (5/10)   Writing objects:  60% (6/10)   Writing objects:  70% (7/10)   Writing objects:  80% (8/10)   Writing objects:  90% (9/10)   Writing objects: 100% (10/10)   Writing objects: 100% (10/10), 1.74 KiB, done.
-Total 10 (delta 8), reused 0 (delta 0)
-To git@github.com:jtomaszon/node-abm-rfid.git
-   e8f76bd..fa54a94  master -> master
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit pushstatuscommit -am "Testing facebook post"
-[master 6af72ee] Testing facebook post
- 2 files changed, 19 insertions(+), 4 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"push[K
-Counting objects: 11, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 903 bytes, done.
-Total 6 (delta 5), reused 0 (delta 0)
-To git@github.com:jtomaszon/node-abm-rfid.git
-   fa54a94..6af72ee  master -> master
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit pushcommit -am "Testing facebook post"
-[master 33422cd] Testing facebook post
- 2 files changed, 13 insertions(+git pushcommit -am "Testing facebook post"
-[master 33422cd] Testing facebook post
- 2 files changed, 13 insertions(+), 2 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   CompressiDelta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 579 bytes, done.
-Total 6 (delta 5), reused 0 (delta 0)
-To git@github.com:jtomaszgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be comgit status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   public/js/fbapp.js
-#	modified:   typescript
-#	modified:   views/cadastro.jade
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status[2Ppushcommit -am "Testing facebook post"
-[master 283727e] Testing facebook post
- 3 files changed, 38 insertions(+), 28 deletions(-)
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m[17P(reverse-i-search)`': p': git commit -am "Testing facebook post"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pi': ping 4.2.2.2
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m[17P(reverse-i-search)`': p': git commit -am "Testing facebook post"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu': git push[K[1@s[C[C[C[C[C[C[C[1@h[C[C[CDelta compression using up to 4 threads.
-Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   CompressiDelta compression using up to 4 threads.
-Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   Compressing objects:  37% (3/8)   Compressing objects:  50% (4/8)   Compressing objects:  62% (5/8)   Compressing objects:  75% (6/8)   Compressing objects:  87% (7/8)   Compressing objects: 100% (8/8)   Compressing objects: 100% (8/8), done.
-Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 850 bytes, done.
-Total 8 (delta 7), reused 0 (delta 0)
-To git@github.com:jtomaszon/node-abm-rfid.git
-   33422cd..283727e  master -> master
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m
