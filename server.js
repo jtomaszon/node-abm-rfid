@@ -54,7 +54,7 @@ app.get('/cadastro', function(req, res){
 
 app.get('/adicionar', function(req, res) {
     res.render('adicionar', {
-        valor: 11,11
+        valor: '11,11'
     });
 });
 
