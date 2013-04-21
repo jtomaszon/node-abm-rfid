@@ -85,7 +85,7 @@ app.post('/add', function(req, res){
             if (!credit) {
                 console.log('Credito: ' + credit);
 
-                client.incrbyfloat(mytag, 10, function(e, rst) {
+                client.incrbyfloat(mytag, 20, function(e, rst) {
                     console.log('Reais: ' + rst);
                     res.render('add', {
                         message: "Cadastro realizado!",
