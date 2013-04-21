@@ -92,13 +92,7 @@ app.post('/add', function(req, res){
 
                 client.incrbyfloat(mytag, 20, function(e, rst) {
                     console.log('Reais: ' + rst);
-                    res.render('add', {
-                        message: "Cadastro realizado!",
-                        mytag: mytag,
-                        credit: rst,
-                        price: price,
-                        alertType: 'success'
-                    });
+                    res.render('curtir', {});
                 })
             } else {
                 res.render('add', {
