@@ -141,36 +141,36 @@
             description, source, place, tags        
         */
 
-        var theFeed = {
-            message: msg,
-            name: 'Itaipava | Gravata 100%',
-            caption: 'Perfect Tie',
-            description: 'Acabei de cadastrar minha Gravata 100% da Cerveja Itaipava. Agora meu happy hour tá garantido!',
-            picture: 'https://itaipava.tolabs.us/img/facebook/post-share.jpg',
-	        link: 'http://www.cervejaitaipava.com.br/'
-        };
+        // var theFeed = {
+        //     message: msg,
+        //     name: 'Itaipava | Gravata 100%',
+        //     caption: 'Perfect Tie',
+        //     description: 'Acabei de cadastrar minha Gravata 100% da Cerveja Itaipava. Agora meu happy hour tá garantido!',
+        //     picture: 'https://itaipava.tolabs.us/img/facebook/post-share.jpg',
+	       //  link: 'http://www.cervejaitaipava.com.br/'
+        // };
 
-        FB.api('/me/photos', 'post', theFeed, function(response) {
-            if (!response || response.error) {
-                console.log('Error occured', response.error);
-            } else {
-                //console.log('Post ID: ' + response.id);
-            }
-        });
-
-        // var imgURL="https://itaipava.tolabs.us/img/logo2face.png";
-        // FB.api('/album_id/photos', 'post', {
-        //     message:'Participe da parada da Itaipava, com a sua gravata e tals!',
-        //     url:imgURL        
-        // }, function(response){
-
+        // FB.api('/me/photos', 'post', theFeed, function(response) {
         //     if (!response || response.error) {
         //         console.log('Error occured', response.error);
         //     } else {
-        //         console.log('Post ID: ' + response.id);
+        //         //console.log('Post ID: ' + response.id);
         //     }
-
         // });
+
+        var imgURL="https://itaipava.tolabs.us/img/facebook/post-share.jpg";
+        FB.api('/me/photos', 'post', {
+            message:'Participe da parada da Itaipava, com a sua gravata e tals!',
+            url:imgURL        
+        }, function(response){
+
+            if (!response || response.error) {
+                console.log('Error occured', response.error);
+            } else {
+                console.log('Post ID: ' + response.id);
+            }
+
+        });
 
     }
 
