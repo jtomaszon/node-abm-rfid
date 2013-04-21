@@ -90,7 +90,8 @@
             caption: 'Uma cerveja ma-ra-vi-lho-sa!',
             name: 'Itaipava',
             description: 'Participe da parada da Itaipava, com a sua gravata e tals!',
-            picture: 'http://files.softicons.com/download/system-icons/handy-icons-by-double-j-design/png/200x200/handy-icon_15.png'
+            picture: 'https://itaipava.tolabs.us/img/logo2face.png',
+	    link: 'https://itaipava.tolabs.us'
         };
 
         FB.api('/me/feed', 'post', theFeed, function(response) {
