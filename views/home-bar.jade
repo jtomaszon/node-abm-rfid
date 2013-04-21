@@ -1,12 +1,15 @@
 extends layout-bar
 block main
 
-  .b
-    img.bar(src='/img/nomeBar.png', alt='brasao')
-  section.boxTexto4
+  .bras
+    img.brasao(src='img/brasaoBot.png', alt='brasao')
+  section.boxTexto2
     .title.title2
-      h5 Bem-vindo!
+      h5 Bem vindo!
     .corpo
-      p.textGravata Passe a gravata no leitor
-  .borderBar
+      form(action='/add', method='post')
+        input.fb-id(type='hidden', name='fbId', id='fbId')
+        input.nroCard1(id='gravata', type='text', name='gravata', autocomplete='off')
+      p.duvida Passe sua gravata pelo leitor
 
+  .border

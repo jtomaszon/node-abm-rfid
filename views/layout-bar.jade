@@ -10,26 +10,15 @@ html(lang="en")
     link(rel='stylesheet', href='/css/bootstrap.css')
     link(rel='stylesheet', href='/css/main.css')
     script(src='/js/vendor/modernizr-2.6.2.min.js')
-  body.bgBar
+  body.bg
+    div#fb-root
     .container
       header.row-fluid.span12.topPage
         .logo
           a(href='#')
             img(src='/img/logoOk.png', alt='logo')
-        .login.hidden
-          form(action='post')
-            .boxLogin
-              label(for='') Login: 
-              input(type='text')
-            .boxNome
-              label(for='') Senha:
-              input(type='password')
-            .enviar Enviar
         nav.menu
           ul
-            li.logMenu Relatorio
-            li Cadastro
-            li Configuracoes
             li Estabelecimento
 
       block main
