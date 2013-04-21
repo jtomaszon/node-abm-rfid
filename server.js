@@ -255,16 +255,8 @@ app.get('/getCredit', function(req, res) {
 app.post('/thanks', function(req, res){
     mytag = req.body.gravata;
 
-    if(!mytag) {
-        res.send({error: true, status: 'no facebook id'});
-        return;
-    }
-
     client.keys(mytag + '_*', function(e, key){
-        if (e) {
-            console.log('error: ', e);
-            return;
-        }else{
+        if (key) {
             console.log('KEY: ' + key);
             client.get(key, function(e, data){
                 console.log(data)
