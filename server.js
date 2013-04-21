@@ -258,7 +258,8 @@ app.post('/thanks', function(req, res){
     client.keys(mytag + '_*', function(e, key){
         if (key) {
             console.log('KEY: ' + key);
-            client.get(key, function(e, data){
+            key = key.split("_")
+            client.get(key[1], function(e, data){
                 console.log(data)
                 res.render('thanks-bar', {
                     fbName: data
