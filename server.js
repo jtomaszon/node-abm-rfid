@@ -52,8 +52,10 @@ app.get('/cadastro', function(req, res){
     res.render('cadastro');
 });
 
-app.get('/adicionar', function(req, res){
-    res.render('adicionar');
+app.get('/adicionar', function(req, res) {
+    res.render('adicionar', {
+        valor: 11,11
+    });
 });
 
 app.get('/add', function(req, res){
