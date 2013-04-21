@@ -58,22 +58,23 @@ app.get('/adicionar', function(req, res) {
     });
 });
 
-app.get('/add', function(req, res){
+app.get('/add', function(req, res) {
     res.render('add');
 });
 
 // Telas do bar
-app.get('/bar', function(req, res){
+app.get('/bar', function(req, res) {
     res.render('home-bar');
 })
 
-app.get('/privacy', function(req, res){
+app.get('/privacy', function(req, res) {
     res.end('Privacy');
 });
 
 app.get('/terms', function(req, res){
     res.end('Terms');
 });
+
 
 
 app.get('/update', function(req, res){
@@ -218,6 +219,13 @@ app.post('/saveUser', function(req, res) {
             }
         });
     }
+});
+
+
+app.get('/getCredit', function(req, res) {
+    var fbId = req.query.fbId;
+
+    console.log(fbId);
 });
 
 
