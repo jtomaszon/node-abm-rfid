@@ -67,7 +67,8 @@ app.get('/bar', function(req, res) {
     res.render('home-bar');
 })
 
-app.get('/privacy', function(req, res) {
+// Legacy
+app.get('/privacy', function(req, res){
     res.end('Privacy');
 });
 
@@ -116,8 +117,6 @@ app.post('/add', function(req, res){
         })
     }
 });
-
-
 
 app.post('/update', function(req, res){
     console.log(req.body);
@@ -240,6 +239,34 @@ app.get('/getCredit', function(req, res) {
     });
 
 });
+
+
+app.post('/thanks', function(req, res){
+    mytag = req.body.gravata;
+
+    if(!mytag) {
+        res.send({error: true, status: 'no facebook id'});
+        return;
+    }
+
+    client.keys(mytag + '_*', function(e, key){
+        if (e) {
+            console.log('error: ', e);
+            return;
+        }else{
+            console.log('KEY: ' + key);
+            client.get(key, function(e, data){
+                console.log(data)
+                res.render('thanks-bar', {
+                    fbName: data
+                });
+
+            })
+        }
+    })
+
+})
+
 
 
 app.listen(8080);
