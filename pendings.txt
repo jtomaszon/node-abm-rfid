@@ -1,0 +1,11 @@
+* Nome no cadastro
+* Valor dinamico no /adicionar
+* Tela do cartão de credito e redirect
+* Tela do cadastro OK e carrega OK
+
+* Nome na tela do bar
+* Apos pagamento, redirect to /bar apos 5 segundos
+
+
+
+
