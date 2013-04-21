@@ -251,7 +251,6 @@ app.get('/getCredit', function(req, res) {
     });
 });
 
-
 app.post('/thanks', function(req, res){
     mytag = req.body.gravata;
 
@@ -272,5 +271,23 @@ app.post('/thanks', function(req, res){
 })
 
 
+app.post('/addCredit', function(req, res) {
+    var key = req.body.fullKey,
+        valor = req.body.price;
+    console.log('dados', key, valor);
+
+    client.incrbyfloat(key, valor, function(err, rst) {
+
+        if(err) {
+            console.log(err);
+            res.send({error:true, status: err});
+            return;
+        }
+
+        res.send({status: 'OK!'});
+
+    })
+
+});
 
 app.listen(8080);
