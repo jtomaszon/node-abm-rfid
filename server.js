@@ -254,17 +254,32 @@ app.get('/getCredit', function(req, res) {
 app.post('/thanks', function(req, res){
     mytag = req.body.gravata;
 
-    client.keys(mytag + '_*', function(e, key){
-        if (key) {
-            console.log('KEY: ' + key);
-            key = key.split("_")
-            client.get(key[1], function(e, data){
+    client.keys(mytag + '_*', function(e, fullKey){
+        if (fullKey.length) {
+            console.log('KEY: ' + fullKey);
+            fbId = fullKey.toString().split("_")
+            client.get(fbId[1], function(e, data){
                 console.log(data)
-                res.render('thanks-bar', {
-                    fbName: data
-                });
+                client.get(fullKey, function(err, credit){
 
+
+                    if (credit >= price) {
+                        client.incrbyfloat(fullKey, (price * -1), function(e, rst) {
+                            console.log('Reais: ' + rst);
+                            res.render('thanks-bar', {
+                                fbName: data,
+                                credit: rst
+                            });             
+                        })
+                    } else {
+                        res.render('saldoNegativo', {
+                            credit: credit
+                        });
+                    }
+                })
             })
+        }else{
+            res.end("Foo")
         }
     })
 
