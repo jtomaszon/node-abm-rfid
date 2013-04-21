@@ -38,6 +38,10 @@ textarea {
     color: #222;
 }
 
+a {
+    color: #dfdac7;
+}
+
 body {
     font-size: 1em;
     line-height: 1.4;
@@ -471,7 +475,9 @@ padding-left: 238px;
         border-right: none;
 }
 .totDeb, .totDeb1{
-    width: 60%;
+    position: absolute;
+    top: 720px;
+    width: 40%;
     float: left;
     height: 30px;
         font-family: "DemingEP";
@@ -481,7 +487,9 @@ padding-left: 238px;
 }
 
 .totCarga, .totCarga1{
-    width: 39%;
+    position: absolute;
+    top: 720px;
+    width: 42%;
     float: left;
     font-family: "DemingEP";
     font-size: 0.8em;

@@ -52,6 +52,11 @@ app.get('/cadastro', function(req, res){
     res.render('cadastro', {});
 });
 
+app.get('/adicionar', function(req, res){
+    res.render('adicionar', {});
+});
+
+
 
 app.get('/privacy', function(req, res){
     res.end('Privacy');
