@@ -143,11 +143,8 @@
 
         var theFeed = {
             message: msg,
-            caption: 'Itaipava',
-            name: 'Itaipava | Gravata 100%',
-            description: 'Acabei de cadastrar minha Gravata 100% da Cerveja Itaipava. Agora meu happy hour tá garantido!',
-            picture: 'https://itaipava.tolabs.us/img/facebook/post-share.jpg',
-            link: 'http://www.cervejaitaipava.com.br/'
+            name: 'Acabei de cadastrar minha Gravata 100% da Cerveja Itaipava. Agora meu happy hour tá garantido!',
+            source: 'https://itaipava.tolabs.us/img/facebook/post-share.jpg',
         };
 
         FB.api('/me/feed', 'post', theFeed, function(response) {
