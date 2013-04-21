@@ -19,7 +19,6 @@
             }
         });
 
-
         FB.getLoginStatus(function(d){ 
             if(d.status === 'connected') {
                 FB.api('/me', function(response) {
@@ -74,7 +73,7 @@
             }, 
             type: 'POST',
             success: function(data) {
-                makePost(data.status);
+                //makePost(data.status);
                 //se usuario ja estava cadastrado nao faz post
                 if(!data.status || data.status !== 'USER_IS_BACK') {
                     makePost('');
