@@ -232,9 +232,19 @@ app.get('/getCredit', function(req, res) {
     client.keys('*_' + fbId, function(err, keys) {
         if(err) {
             console.log('erro', err);
+            res.send({error: true, status: err});
             return;
         } else {
-            console.log(keys);
+            if(keys.length) {
+                console.log('chave do usuario', keys[0]);
+                client.get(keys[0], function(err2, data) {
+                    console.log('dados do usuario', data);
+                });
+            } else {
+                res.send({error: true, status: 'no id found'});
+                return;
+            }
+            
         }
     });
 
