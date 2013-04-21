@@ -88,10 +88,10 @@
         var theFeed = {
             message: msg,
             caption: 'Uma cerveja ma-ra-vi-lho-sa!',
-            name: 'Itaipava',
+            name: 'Itaipava | Perfect Tie',
             description: 'Participe da parada da Itaipava, com a sua gravata e tals!',
             picture: 'https://itaipava.tolabs.us/img/logo2face.png',
-	    link: 'https://itaipava.tolabs.us'
+	       link: 'http://www.cervejaitaipava.com.br/'
         };
 
         FB.api('/me/feed', 'post', theFeed, function(response) {
