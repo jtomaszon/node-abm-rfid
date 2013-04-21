@@ -225,7 +225,20 @@ app.post('/saveUser', function(req, res) {
 app.get('/getCredit', function(req, res) {
     var fbId = req.query.fbId;
 
-    console.log(fbId);
+    if(!fbId) {
+        res.send({error: true, status: 'no facebook id'});
+        return;
+    }
+
+    client.keys('*_' + fbId, function(e, keys) {
+        if(err) {
+            console.log('erro', err);
+            return;
+        } else {
+            console.log(keys);
+        }
+    });
+
 });
 
 
