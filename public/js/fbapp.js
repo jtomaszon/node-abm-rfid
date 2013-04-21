@@ -8,6 +8,7 @@
     
     $(document).on('click', '.logMenuOUT', function() {
         FB.logout();
+        location.href = '/';
     });
     
     var fbbtn = '<fb:login-button autologoutlink="true" perms="email,user_birthday,status_update,publish_stream"></fb:login-button>';
@@ -15,7 +16,7 @@
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId: '525445074163781', 
+            appId: '118773068319648', 
             status: true, 
             cookie: true, 
             xfbml: true
