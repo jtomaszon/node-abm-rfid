@@ -31,6 +31,14 @@
 
         FB.getLoginStatus(function(response) {
 
+            if(response.status == 'connected') {
+                $('.logMenu').hide();
+                $('.logMenuOUT').show();
+            } else {
+                $('.logMenu').show();
+                $('.logMenuOUT').hide();
+            }
+
             if(response.status !== 'connected' && response.status !== 'not_authorized') {
                 console.log('nem conectado esta', response);
                 $('.fb-button').show();
