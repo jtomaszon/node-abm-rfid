@@ -2,6 +2,16 @@
 
     var fbId;
 
+    function formatReal(val) {
+        val *= 100;
+        var tmp = val+'';  
+        tmp = tmp.replace(/([0-9]{2})$/g, ",$1");  
+        if( tmp.length > 6 )  
+                tmp = tmp.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");  
+  
+        return tmp;  
+    }      
+
     //binds de login e logout
     $(document).on('click', '.frmSubmit', function() {
         $('#frmAddCredit').submit();
@@ -60,7 +70,10 @@
                         url: '/getCredit?fbId=' + data.id,
                         type: 'GET',
                         success: function(result) {
-                            $('.txtValor').html(result.valor);
+                            var valor = +result.valor;
+                            valor = formatReal(valor);
+
+                            $('.txtValor').html(valor);
                             $('#fullKey').val(result.fullKey);
                         }
                     });
