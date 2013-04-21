@@ -1,0 +1,153 @@
+Script started on Sun Apr 21 16:28:01 2013
+[?1034h[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit revert public/js/fbapp.js
+fatal: ambiguous argument 'public/js/fbapp.js': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit checkout public/js/fbapp.js
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mcd public/j[K[K[K[K[K[K[K[K[K[K[Kgit status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   dump.rdb
+#	deleted:    public/css/bootstrap-responsive.css
+#	deleted:    public/css/bootstrap-responsive.min.css
+#	deleted:    public/css/bootstrap.css
+#	deleted:    public/css/bootstrap.min.css
+#	deleted:    public/css/company.css
+#	deleted:    public/css/fonts/.DS_Store
+#	deleted:    public/css/fonts/AbrahamLincoln/AbrahamLincoln.ttf
+#	deleted:    public/css/fonts/AbrahamLincoln/license.txt
+#	deleted:    public/css/fonts/Aldine/AldineExpanded.ttf
+#	deleted:    public/css/fonts/Aldine/Aldine_Tuscan_Expanded_ UltraLight.ttf
+#	deleted:    public/css/fonts/Aldine/license.txt
+#	deleted:    public/css/fonts/Cubano/.DS_Store
+#	deleted:    public/css/fonts/Cubano/Cubano Webfont.zip
+#	deleted:    public/css/fonts/Cubano/Cubano-Regular.otf
+#	deleted:    public/css/fonts/Cubano/license.txt
+#	deleted:    public/css/fonts/Deming/DemingEP.ttf
+#	deleted:    public/css/fonts/Deming/license.txt
+#	deleted:    public/css/fonts/DemingEP.ttf
+#	deleted:    public/css/fonts/Franchise-Bold/Franchise-Bold.ttf
+#	deleted:    public/css/fonts/Franchise-Bold/Free-Fonts-License.pdf
+#	deleted:    public/css/fonts/GOOD/Good-Black/FF Good-Black
+#	deleted:    public/css/fonts/GOOD/Good-Black/GoodBla
+#	deleted:    public/css/fonts/GOOD/Good-BlackSC/FF Good-BlackSC
+#	deleted:    public/css/fonts/GOOD/Good-BlackSC/GoodBlaSC
+#	deleted:    public/css/fonts/GOOD/Good-Book/FF Good-Book
+#	deleted:    public/css/fonts/GOOD/Good-Book/GoodBoo
+#	deleted:    public/css/fonts/GOOD/Good-BookSC/FF Good-BookSC
+#	deleted:    public/css/fonts/GOOD/Good-BookSC/GoodBooSC
+#	deleted:    public/css/fonts/GOOD/Good-Light/GoodLig
+#	deleted:    public/css/fonts/GOOD/Good-Light/GoodLight
+#	deleted:    public/css/fonts/GOOD/Good-LightSC/FF Good-LightSC
+#	deleted:    public/css/fonts/GOOD/Good-LightSC/GoodLigSC
+#	deleted:    public/css/fonts/GOOD/GoodLF-Black/FF GoodLF-Black
+#	deleted:    public/css/fonts/GOOD/GoodLF-Black/GoodLFBla
+#	deleted:    public/css/fonts/GOOD/GoodLF-Book/FF GoodLF-Book
+#	deleted:    public/css/fonts/GOOD/GoodLF-Book/GoodLFBoo
+#	deleted:    public/css/fonts/GOOD/GoodLF-Light/FF GoodLF-Light
+#	deleted:    public/css/fonts/GOOD/GoodLF-Light/GoodLFLig
+#	deleted:    public/css/fonts/GOOD/GoodOSF-Black/FF GoodOSF-Black
+#	deleted:    public/css/fonts/GOOD/GoodOSF-Black/GoodOSFBla
+#	deleted:    public/css/fonts/GOOD/GoodOSF-Book/FF GoodOSF-Book
+#	deleted:    public/css/fonts/GOOD/GoodOSF-Book/GoodOSFBoo
+#	deleted:    public/css/fonts/GOOD/GoodOSF-Light/FF GoodOSF-Light
+#	deleted:    public/css/fonts/GOOD/GoodOSF-Light/GoodOSFLig
+#	deleted:    public/css/fonts/Geared/GearedSlab-Bold.ttf
+#	deleted:    public/css/fonts/Geared/GearedSlab-Extrabold.ttf
+#	deleted:    public/css/fonts/Geared/GearedSlab-Light.ttf
+#	deleted:    public/css/fonts/Geared/GearedSlab.ttf
+#	deleted:    public/css/fonts/Geared/license.txt
+#	deleted:    public/css/fonts/Lavanderia/.DS_Store
+#	deleted:    public/css/fonts/Lavanderia/Lavanderia Delicate.otf
+#	deleted:    public/css/fonts/Lavanderia/Lavanderia Regular.otf
+#	deleted:    public/css/fonts/Lavanderia/Lavanderia Sturdy.otf
+#	deleted:    public/css/fonts/Lavanderia/license.txt
+#	deleted:    public/css/fonts/Mensch/.DS_Store
+#	deleted:    public/css/fonts/Mensch/font-face/.DS_Store
+#	deleted:    public/css/fonts/Mensch/font-face/MenschBold-demo.html
+#	deleted:    public/css/fonts/Mensch/font-face/MenschBoldInline-demo.html
+#	deleted:    public/css/fonts/Mensch/font-face/MenschMenschThin-demo.html
+#	deleted:    public/css/fonts/Mensch/font-face/MenschRegular-demo.html
+#	deleted:    public/css/fonts/Mensch/font-face/credit.rtf
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-bold-wf.eot
+#	deleted:    public/css/fonts/Mensch/font-fa/Mensch/font-face/mensch-bold-wf.woff
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-inline-wf.eot
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-inline-wf.svg
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-inline-wf.ttf
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-inline-wf.woff
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-thin-wf.eot
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-thin-wf.svg
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-thin-wf.ttf
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-thin-wf.woff
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-wf.eot
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-wf.svg
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-wf.ttf
+#	deleted:    public/css/fonts/Mensch/font-face/mensch-wf.woff
+#	deleted:    public/css/fonts/Mensch/font-face/stylesheet.css
+#	deleted:    public/css/fonts/Mensch/license.txt
+#	deleted:    public/css/fonts/Mensch/mensch-bold.ttf
+#	deleted:    public/css/fonts/Mensch/mensch-inline.ttf
+#	deleted:    public/css/fonts/Mensch/mensch-thin.ttf
+#	deleted:    public/css/fonts/Mensch/mensch.ttf
+#	deleted:    public/css/fonts/Muncie 2.ttf
+#	deleted:    public/css/fonts/Muncie 3.ttf
+#	deleted:    public/css/fonts/Muncie.ttf
+#	deleted:    public/css/fonts/ONRAMP/ONRAMP.ttf
+#	deleted:    public/css/fonts/ONRAMP/license.txt
+#	deleted:    public/css/fonts/Oil Can/Oil Can.ttf
+#	deleted:    public/css/fonts/Oil Can/license.txt
+#	deleted:    public/css/fonts/Pompadour Numerals/Pompadour.ttf
+#	deleted:    public/css/fonts/Pompadour Numerals/license.txt
+#	deleted:    public/css/fonts/Ribbon_V2/Ribbon_V2_2011.otf
+#	deleted:    public/css/fonts/Ribbon_V2/license.txt
+#	deleted:    public/css/fonts/Ribbon_V2/ribbon_frames.eps
+#	deleted:    public/css/fonts/Valencia/ValenciaBlack.otf
+#	deleted:    public/css/fonts/Valencia/ValenciaBlackOblique.otf
+#	deleted:    public/css/fonts/Valencia/ValenciaBold.otf
+#	deleted:    public/css/fonts/Valencia/ValenciaBoldOblique.otf
+#	deleted:    public/css/fonts/Valencia/ValenciaHairline.otf
+#	deleted:    public/css/fonts/Valencia/ValenciaHairlineOblique.otf
+#	deleted:    public/css/fonts/Valencia/ValenciaLight.otf
+#	deleted:    public/css/fonts/Valencia/ValenciaLightOblique.otf
+#	deleted:    public/css/fonts/Valencia/ValenciaRegular.otf
+#	deleted:    public/css/fonts/Valencia/ValenciaRegularOblique.otf
+#	deleted:    public/css/fonts/Valencia/license.txt
+#	deleted:    public/css/fonts/WisdomScript/Wisdom Script.otf
+#	deleted:    public/css/fonts/WisdomScript/license.txt
+#	deleted:    public/css/main.css
+#	deleted:    public/css/normalize.css
+#	modified:   public/js/.DS_Store
+#	deleted:    public/js/bootstrap.js
+#	deleted:    public/js/bootstrap.min.js
+#	deleted:    public/js/jquery-1.9.1.min.js
+#	deleted:    public/js/main.js
+#	deleted:    public/js/plugins.js
+#	deleted:    public/js/vendor/bootstrap.js
+#	deleted:    public/js/vendor/bootstrap.min.js
+#	deleted:    public/js/vendor/jquery-1.9.1.min.js
+#	deleted:    public/js/vendor/modernizr-2.6.2.min.js
+#	deleted:    public/js/zon.js
+#	modified:   server.js
+#	modified:   views/home-bar.jade
+#	modified:   views/layout-bar.jade
+#	deleted:    views/saldoNegativo.jade
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	public/assets/
+#	public/css/reset.css
+#	public/css/styles.css
+#	public/index.html
+#	public/js/cuffon/
+#	public/js/gsap/
+#	public/js/jquery/
+#	typescript
+#	views/salgoNegativo.jade
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Ne wv[K[K[Kw version of Gravt[Katas"[K"mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Ne wv[K[K[Kw version of Gravt[Katas"[K"

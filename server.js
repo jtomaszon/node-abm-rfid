@@ -32,13 +32,6 @@ app.configure('production', function(){
 var price = 3,
     mytag = '00000000';
 
-settings = {};
-settings = {
-    price: '3',
-    mytag: '0000000000',
-    msg: ''
-};
-
 //Routes
 app.get('/', function(req, res){
     res.render('home', {
@@ -62,10 +55,7 @@ app.get('/add', function(req, res) {
     res.render('add');
 });
 
-// Telas do bar
-app.get('/bar', function(req, res) {
-    res.render('home-bar');
-})
+
 
 // Legacy
 app.get('/privacy', function(req, res){
@@ -306,5 +296,56 @@ app.post('/addCredit', function(req, res) {
     })
 
 });
+
+
+
+////////////// NEW VERSION
+// Telas do bar
+app.get('/bar', function(req, res) {
+    res.render('home-bar', {
+        section:  ""
+    });
+})
+
+app.post('/bar', function(req, res){
+    mytag = req.body.gravata;
+
+    client.keys(mytag + '_*', function(e, fullKey){
+        if (fullKey.length) {
+            console.log('KEY: ' + fullKey);
+            fbId = fullKey.toString().split("_")
+            client.get(fbId[1], function(e, data){
+                console.log(data);
+
+                fbData = JSON.parse(data);
+
+                client.get(fullKey, function(err, credit){
+
+                    if (credit >= price) {
+                        client.incrbyfloat(fullKey, (price * -1), function(e, rst) {
+                            console.log('Reais: ' + rst);
+                            res.render('home-bar', {
+                                price: price,
+                                credit: rst,
+                                section: 1
+                            });             
+                        })
+                    } else {
+                        res.render('home-bar', {
+                            credit: credit,
+                            section: 0
+                        });
+                    }
+                })
+            })
+        }
+    })
+
+})
+
+
+
+
+
 
 app.listen(8080);

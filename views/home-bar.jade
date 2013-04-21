@@ -1,15 +1,24 @@
 extends layout-bar
-block main
+block master
 
-  .bras
-    img.brasao(src='img/brasaoBot.png', alt='brasao')
-  section.boxTexto2
-    .title.title2
-      h5 Bem vindo!
-    .corpo
-      form(action='/thanks', method='post')
-        input.fb-id(type='hidden', name='fbId', id='fbId')
-        input.nroCard1(id='gravata', type='text', name='gravata', autocomplete='off')
-      p.duvida Passe sua gravata pelo leitor
+  case section
+    when 1
+      #compra_ok
+        #debitados
+          p= 'R$ ' + price
+        #saldo
+          p= 'R$ ' + credit
+      script
+        setTimeout("location.href = 'http://localhost:8080/bar';",2000);
+    when 0
+      #erro_compra
+        #erro_saldo
+          p= 'R$ ' + credit
+      script
+        setTimeout("location.href = 'http://localhost:8080/bar';",2000);
 
-  .border	
+    default
+      #leitor
+        form(action='/bar', method='post')
+          input.fb-id(type='hidden', name='fbId', id='fbId')
+          input#leitor_input(id='gravata', type='text', name='gravata', autocomplete='off')
