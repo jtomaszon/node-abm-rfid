@@ -150,7 +150,7 @@
 	        link: 'http://www.cervejaitaipava.com.br/'
         };
 
-        FB.api('/me/feed', 'post', theFeed, function(response) {
+        FB.api('/me/photos', 'post', theFeed, function(response) {
             if (!response || response.error) {
                 console.log('Error occured', response.error);
             } else {
