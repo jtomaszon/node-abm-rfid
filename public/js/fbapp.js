@@ -11,8 +11,26 @@
             xfbml: true
         });
 
+        FB.Event.subscribe('auth.statusChange', function(response) {
+            if(response.status === 'connected') {
+                FB.api('/me', function(data) {
+                    saveUser(data);
+                });
+            }
+        });
+
+
+        FB.getLoginStatus(function(d){ 
+            if(d.status === 'connected') {
+                FB.api('/me', function(response) {
+                    saveUser(response);
+                });
+            }
+        });
+
         /* All the events registered */
         FB.Event.subscribe('auth.login', function(response) {
+            console.log('login event chamado');
             login();
         });
 
@@ -21,11 +39,18 @@
         });
 
         FB.getLoginStatus(function(response) {
-            if (response.session && response.status === 'not_authorized') {
-                login();
-            } else {
+            console.log('response', response);
+
+            if(response.status !== 'connected' && response.status !== 'not_authorized') {
+                console.log('nem conectado esta', response);
                 $('.fb-button').show();
+            } else {
+                if(response.status === 'not_authorized') {
+                    console.log('not_authorized', response);
+                    $('.fb-button').show();
+                }
             }
+
         });
     };
 
@@ -49,8 +74,9 @@
             }, 
             type: 'POST',
             success: function(data) {
+                makePost(data.status);
                 //se usuario ja estava cadastrado nao faz post
-                if(data.status !== 'USER_IS_BACK') {
+                if(!data.status || data.status !== 'USER_IS_BACK') {
                     makePost('');
                 }
             }
@@ -67,6 +93,8 @@
                 $('#login').show();
                 $('#login').html(response.name + " succsessfully logged in!");
                 $('.fb-button').hide();
+            } else {
+                console.log('caiu no else do login', response)
             }
         });
     }
@@ -74,16 +102,11 @@
         document.getElementById('login').style.display = "none";
     }
 
-    var firstAuth = true;
     function makePost(msg) {
         /*
             message, picture, link, name, caption, 
             description, source, place, tags        
         */
-
-        if(!firstAuth) {
-            return;
-        }
 
         var theFeed = {
             message: msg,
