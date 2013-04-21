@@ -743,6 +743,29 @@ Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   CompressiD
 Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
 Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 579 bytes, done.
 Total 6 (delta 5), reused 0 (delta 0)
+To git@github.com:jtomaszgit status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be comgit status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   public/js/fbapp.js
+#	modified:   typescript
+#	modified:   views/cadastro.jade
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status[2Ppushcommit -am "Testing facebook post"
+[master 283727e] Testing facebook post
+ 3 files changed, 38 insertions(+), 28 deletions(-)
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m[17P(reverse-i-search)`': p': git commit -am "Testing facebook post"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pi': ping 4.2.2.2
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m[17P(reverse-i-search)`': p': git commit -am "Testing facebook post"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu': git push[K[1@s[C[C[C[C[C[C[C[1@h[C[C[CDelta compression using up to 4 threads.
+Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   CompressiDelta compression using up to 4 threads.
+Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   Compressing objects:  37% (3/8)   Compressing objects:  50% (4/8)   Compressing objects:  62% (5/8)   Compressing objects:  75% (6/8)   Compressing objects:  87% (7/8)   Compressing objects: 100% (8/8)   Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 850 bytes, done.
+Total 8 (delta 7), reused 0 (delta 0)
 To git@github.com:jtomaszon/node-abm-rfid.git
-   6af72ee..33422cd  master -> master
+   33422cd..283727e  master -> master
 [32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m
