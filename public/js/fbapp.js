@@ -142,10 +142,9 @@
         */
 
         var theFeed = {
-            message: 'Acabei de cadastrar minha Gravata 100% da Cerveja Itaipava. Agora meu happy hour tá garantido!',
-            caption: '',
+            caption: 'Itaipava',
             name: 'Itaipava | Gravata 100%',
-            description: '',
+            description: 'Acabei de cadastrar minha Gravata 100% da Cerveja Itaipava. Agora meu happy hour tá garantido!',
             picture: 'https://itaipava.tolabs.us/img/facebook/post-share.jpg',
 	        link: 'http://www.cervejaitaipava.com.br/'
         };
