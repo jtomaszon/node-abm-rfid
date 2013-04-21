@@ -515,5 +515,49 @@ no changes added to commit (use "git add" and/or "git commit -a")
 [32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "
 [32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mls -la public/img/facebook
 facebook/     facebook.png  
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mls -la public/img/facebook/post-share.jpg   facebook.png  
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mls -la public/img/facebook/post-share.jpg 
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mls -la public/img/facebook/post-share.jpg g[K
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
+# On branch master
+# Your branch is aheadg[K
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   public/js/fbapp.js
+#	modified:   typescript
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am '[K"New post"
+[master 5e736cd] New post
+ 2 files changed, 82 insertions(+), 3 deletions(-)
+[32mjavier.zon@zonfx: [34mitaipavnon-fast-forward)
+error: failed to push some refs to 'git@github.com:jtomaszon/node-abm-rfid.git'
+To prevent you from lnon-fast-forward)
+error: failed to push some refs to 'git@github.com:jtomaszon/node-abm-rfid.git'
+To prevent you from losing history, non-fast-forward updates were rejected
+Merge the remote changes (e.g. 'git pull') before pushing again.  See the
+'Note about fast-forwards' section of 'git push --help' for details.
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit pull
+remote: Counting objects: 9, done.[K
+remote: Compressing objects: 100% (1/1)   [Kremote: Compressing objects: 100% (1/1), done.[K
+remote: Total 5 (delta 4), reused 5 (delta 4)[K
+Unpacking objects:  20% (1/5)   Unpacking objects:  40% (2/5)   Unpacking objects:  60% (3/5)   Unpacking objects:  80% (4/5)   Unpacking objects: 100% (5/5)   Unpacking objects: 100% (5/5), done.
+From github.com:jtomaszon/node-abm-rfid
+   c59a305..79d098f  master     -> origin/master
+Auto-merging public/js/fbapp.js
+Merge made by the 'recursive' strategy.
+ public/js/fbapp.js |   15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgitu[K pull[K[Ksh
+Counting objects: 38, done.
+Delta compression using up to 4 threads.
+Compressing objects:   4% (1/23)   Compressing objects:   8% (2/23)   Compressing objects:  13% (3/23)   Compressing objects:  17% (4/23)   Compressing objects:  21% (5/23)   Compressing objects:  26% (6/23)   Compressing objects:  30% (7/23)   Compressing objects:  34% (8/23)   Compressing objects:  39% (9/23)   Compressing objects:  43% (10/23)   Compressing objects:  47% (11/23)   Compressing objects:  52% (12/23)   Compressing objects:  56% (13/23)   Compressing objects:  60% (14/23)   Compressing objects:  65% (15/23)   Compressing objects:  69% (16/23)   Compressing objects:  73% (17/23)   Compressing objects:  78% (18/23)   Compressing objects:  82% (19/23)   Compressing objects:  86% (20/23)   Compressing objects:  91% (21/23)   Compressing objects:  95% (22/23)   Compressing objects: 100% (23/23)   Compressing objects: 100% (23/23), done.
+Writing objects:   4% (1/24)   Writing objects:   8% (2/24)   Writing objects:  12% (3/24)   Writing objects:  16% (4/24)   Writing objects:  20% (5/24)   Writing objects:  25% (6/24)   Writing objects:  29% (7/24)   Writing objects:  33% (8/24)   Writing objects:  37% (9/24)   Writing objects:  41% (10/24)   Writing objects:  45% (11/24)   Writing objects:  50% (12/24)   Writing objects:  54% (13/24)   Writing objects:  58% (14/24)   Writing objects:  62% (15/24)   Writing objects:  66% (16/24)   Writing objects:  70% (17/24)   Writing objects:  75% (18/24)   Writing objects:  79% (19/24)   Writing objects:  83% (20/24)   Writing objects:  87% (21/24)   Writing objects:  91% (22/24)   Writing objects:  95% (23/24)   Writing objects: 100% (24/24)   Writing objects: 100% (24/24), 238.49 KiB, done.
+Total 24 (delta 18), reused 0 (delta 0)
+To git@github.com:jtomaszon/node-abm-rfid.git
+   79d098f..ca26143  master -> master
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m

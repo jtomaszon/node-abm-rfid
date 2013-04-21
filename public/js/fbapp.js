@@ -2,16 +2,6 @@
 
     var fbId;
 
-    function formatReal(val) {
-        val *= 100;
-        var tmp = val+'';  
-        tmp = tmp.replace(/([0-9]{2})$/g, ",$1");  
-        if( tmp.length > 6 )  
-                tmp = tmp.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");  
-  
-        return tmp;  
-    }      
-
     //binds de login e logout
     $(document).on('click', '.frmSubmit', function() {
         $('#frmAddCredit').submit();
@@ -70,10 +60,7 @@
                         url: '/getCredit?fbId=' + data.id,
                         type: 'GET',
                         success: function(result) {
-                            var valor = +result.valor;
-                            valor = formatReal(valor);
-
-                            $('.txtValor').html(valor);
+                            $('.txtValor').html(result.valor);
                             $('#fullKey').val(result.fullKey);
                         }
                     });
@@ -156,7 +143,11 @@
 
         var theFeed = {
             message: 'Acabei de cadastrar minha Gravata 100% da Cerveja Itaipava. Agora meu happy hour tá garantido!',
-            picture: 'https://itaipava.tolabs.us/img/facebook/post-share.jpg'
+            caption: '',
+            name: 'Itaipava | Gravata 100%',
+            description: '',
+            picture: 'https://itaipava.tolabs.us/img/facebook/post-share.jpg',
+	        link: 'http://www.cervejaitaipava.com.br/'
         };
 
         FB.api('/me/feed', 'post', theFeed, function(response) {
