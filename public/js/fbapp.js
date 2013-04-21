@@ -114,7 +114,7 @@
 
         FB.api('/me/feed', 'post', theFeed, function(response) {
             if (!response || response.error) {
-                console.log('Error occured');
+                console.log('Error occured', response.error);
             } else {
                 console.log('Post ID: ' + response.id);
             }
