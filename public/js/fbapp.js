@@ -1,11 +1,24 @@
 (function(window, document, $, undefined) {
 
+
+    //binds de login e logout
+    $(document).on('click', '.logMenu', function() {
+        FB.login();
+    });
+    
+    $(document).on('click', '.logMenuOUT', function() {
+        FB.logout(function() {
+            location.href = '/';
+        });
+        
+    });
+    
     var fbbtn = '<fb:login-button autologoutlink="true" perms="email,user_birthday,status_update,publish_stream"></fb:login-button>';
     $('.fb-button').append(fbbtn);
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId: '525445074163781', 
+            appId: '118773068319648', 
             status: true, 
             cookie: true, 
             xfbml: true
@@ -31,8 +44,16 @@
 
         FB.getLoginStatus(function(response) {
 
+            if(response.status == 'connected') {
+                $('.logMenu').hide();
+                $('.logMenuOUT').show();
+            } else {
+                $('.logMenu').show();
+                $('.logMenuOUT').hide();
+            }
+
             if(response.status !== 'connected' && response.status !== 'not_authorized') {
-                console.log('nem conectado esta', response);
+                //console.log('nem conectado esta', response);
                 $('.fb-button').show();
             } else {
                 if(response.status === 'not_authorized') {
@@ -77,9 +98,12 @@
 
             if(!response.error) {
                 saveUser(response);
-                $('.logMenu').html("logout");
+
+                $('.logMenu').hide();
+                $('.logMenuOUT').show();
+
             } else {
-                console.log('caiu no else do login', response)
+                //console.log('caiu no else do login', response)
             }
         });
     }
@@ -106,7 +130,7 @@
             if (!response || response.error) {
                 console.log('Error occured', response.error);
             } else {
-                console.log('Post ID: ' + response.id);
+                //console.log('Post ID: ' + response.id);
             }
         });
     }

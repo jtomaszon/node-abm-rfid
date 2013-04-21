@@ -11,24 +11,16 @@ html(lang="en")
     link(rel='stylesheet', href='css/main.css')
     script(src='js/vendor/modernizr-2.6.2.min.js')
   body
-
+    div#fb-root
     .container
       header.row-fluid.span12.topPage
         .logo
           a(href='/')
             img(src='img/logoOk.png', alt='logo')
-        .login.hidden
-          form(action='post')
-            .boxLogin
-              label(for='') Login: 
-              input(type='text')
-            .boxNome
-              label(for='') Senha:
-              input(type='password')
-            .enviar Enviar
         nav.menu
           ul
             li.logMenu Login
+            li.logMenuOUT Logout
             li 
               a(href='/adicionar') Credito
             li Bares 
@@ -42,6 +34,7 @@ html(lang="en")
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
     script
       window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\\/script>')
+    script(type='text/javascript', src='/js/fbapp.js')
     script
       $(".logMenu").on("click", function(){
       $(".login")
