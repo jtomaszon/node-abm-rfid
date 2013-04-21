@@ -50,10 +50,12 @@
                     fbId = data.id;
 
                     //pega o credito e full key
-                    $.get('/getCredit?fbId=' + data.id, {
-                        success: function(data) {
-                            console.log(data);
-                            $('.txtValor').html(data.valor);
+                    $.ajax({
+                        url: '/getCredit?fbId=' + data.id,
+                        type: 'GET',
+                        success: function(result) {
+                            console.log(result);
+                            $('.txtValor').html(result.valor);
                         }
                     });
 
