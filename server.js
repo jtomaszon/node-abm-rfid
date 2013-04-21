@@ -259,15 +259,17 @@ app.post('/thanks', function(req, res){
             console.log('KEY: ' + fullKey);
             fbId = fullKey.toString().split("_")
             client.get(fbId[1], function(e, data){
-                console.log(data)
-                client.get(fullKey, function(err, credit){
+                console.log(data);
 
+                fbData = JSON.parse(data);
+
+                client.get(fullKey, function(err, credit){
 
                     if (credit >= price) {
                         client.incrbyfloat(fullKey, (price * -1), function(e, rst) {
                             console.log('Reais: ' + rst);
                             res.render('thanks-bar', {
-                                fbName: data,
+                                fbName: fbData.name,
                                 credit: rst
                             });             
                         })
