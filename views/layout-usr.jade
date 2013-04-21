@@ -43,5 +43,9 @@ html(lang="en")
       window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\\/script>')
     script(type='text/javascript', src='/js/fbapp.js')
     script
-      $(".logMenu").on("click", FB.logout());
+      $(".logMenu").on("click", function(){
+      $(".login")
+      .fadeToggle()
+      .removeClass('hidden');
+      });
       $('#gravata').focus();
