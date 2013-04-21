@@ -1,5 +1,15 @@
 (function(window, document, $, undefined) {
 
+
+    //binds de login e logout
+    $(document).on('click', '.logMenu', function() {
+        FB.login();
+    });
+    
+    $(document).on('click', '.logMenuOUT', function() {
+        FB.logout();
+    });
+    
     var fbbtn = '<fb:login-button autologoutlink="true" perms="email,user_birthday,status_update,publish_stream"></fb:login-button>';
     $('.fb-button').append(fbbtn);
 
