@@ -411,5 +411,30 @@ To git@github.com:jtomaszgit status
 #	public/assets/modal_nao_cadastrada.png
 no changes added to commit (use "git add" and/or "git commit -a")
 [32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit add . --all
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Gravata nã[K[Knao cad[mgit add . --all
-[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Gravata nã[K[Knao cad
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Gravata nã[K[Knao cadastraa[Kda"
+[master c59a305] Gravata nao cadastrada
+ 5 files changed, 47 insertions(+), 4 deletions(-)
+ create mode astraa[Kda"
+[master c59a305] Gravata nao cadastrada
+ 5 files changed, 47 insertions(+), 4 deletions(-)
+ create mode 100644 public/assets/modal_nao_cadastrada.png
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit push
+Counting objects: 20, done.
+Delta compression using up to 4 threads.
+Compressing objects:   9% (1/11)   Compressing objects:  18% (2/11)   Compressing objects:  27% (3/11)   Compressing objects:  36% (4/11)   Compressing objects:  45% (5/11)   Compressing objects:  54% (6/11)   Compressing objects:  63% (7/11)   Compressing objects:  72% (8/11)   Compressing objects:  81% (9/11)   Compressing objects:  90% (10/11)   Compressing objects: 100% (11/11)   Compressing objects: 100% (11/11), done.
+Writing objects:   9% (1/11)   Writing objects:  18% (2/11)   Writing objects:  27% (3/11)   Writing objects:  36% (4/11)   Writing objects:  45% (5/11)   Writing objects:  54% (6/11)   Writing objects:  63% (7/11)   Writing objects:  72% (8/11)   Writing objects:  81% (9/11)   Writing objects:  90% (10/11)   Writing objects: 100% (11/11)   Writing objects: 100% (11/11), 5.77 KiB, done.
+Total 11 (delta 8), reused 0 (delta 0)
+To git@github.com:jtomaszgit status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   dump.rdb
+#	modified:   public/js/fbapp.js
+#	modified:   typescript
+#	modified:   views/home-bar.jade
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit[K[K[Kmit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit[K[K[K
