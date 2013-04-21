@@ -165,9 +165,9 @@
         }, function(response){
 
             if (!response || response.error) {
-                alert('Error occured');
+                console.log('Error occured', response.error);
             } else {
-                alert('Post ID: ' + response.id);
+                console.log('Post ID: ' + response.id);
             }
 
         });

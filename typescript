@@ -631,6 +631,27 @@ Delta compression using up to 4 threads.
 Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
 Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 597 bytes, done.
 Total 6 (delta 5), reused 0 (delta 0)
+To git@github.com:jtomaszgit status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   public/js/fbapp.js
+#	modified:   typescript
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit status[2Ppushcommit -am "Testing facebook post"
+[master 542bb60] Testing facebook post
+ 2 files changed, 39 insertions(+), 10 deletions(-)
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mgit commit -am "Testing facebook post"status[K[2Ppush
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 978 bytes, done.
+Total 6 (delta 5), reused 0 (delta 0)
 To git@github.com:jtomaszon/node-abm-rfid.git
-   9a8d486..2b8252c  master -> master
+   2b8252c..542bb60  master -> master
+[32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[mon/node-abm-rfid.git
+   2b8252c..542bb60  master -> master
 [32mjavier.zon@zonfx: [34mitaipava.tolabs.us [32m$ (B[m
