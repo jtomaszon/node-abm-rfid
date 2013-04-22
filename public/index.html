@@ -185,6 +185,7 @@
 			if (evt) evt.preventDefault();
 			
 			if ($('#next_btn').attr('data-type') == 'sendCredit') {
+				$('#next_btn').attr('data-type', 'showCreditCard');
 				var data = {
 					fullKey : fullKey,
 					price: buyValue
