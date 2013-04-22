@@ -102,6 +102,8 @@
 	                if(!data.status || data.status !== 'USER_IS_BACK') {
 	                	mainUser = resp;
 	                    showInsertCard();
+	                } else {
+	                	showUserBalanceScreen(data);
 	                }
 	            }
 	        });
@@ -126,8 +128,10 @@
 	    	$('#user_name').html('<p>'+ mainUser.name+'</p>');
 	    	$('#user_balance').html('<p>'+data.credit+' . ,00</p>');
 	    	$('#balance_modal_value').html('<p>'+data.credit+' . ,00</p>');
-	    	
 	    	updateFonts();
+	    	
+	    	$('#insira_numero_cartao').hide();
+	    	#('#tie_balance').show();	    	
 	    }
 	    
 		function showInsertCard() {
