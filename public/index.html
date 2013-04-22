@@ -159,7 +159,8 @@
 				url: '/getCredit', 
 				data: {
 				    fbid: mainUser.id,
-				}, 
+				},
+				cache: true, 
 				type: 'GET',
 				success: function(data) {
 					$('#user_name_escolher_valor').html('<p>Olá, '+ mainUser.name +'</p>');
