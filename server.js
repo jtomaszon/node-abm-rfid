@@ -131,16 +131,32 @@ app.post('/saveUser', function(req, res) {
         name: req.body.userName || '',
         email: req.body.userEmail || ''
     },
-        userId = req.body.userId;
+        fbId = req.body.userId;
 
-    if(userId) {
+    if(fbId) {
 
-        client.get(userId, function(e, data) {
+        client.get(fbId, function(e, data) {
             if (data) {
                 //HERE GOES THE "WELCOME BACK USER" REDIRECT
-                res.send({
-                    status: 'USER_IS_BACK',
-                    credit: '19.70'
+                client.keys('*_' + fbId, function(err, keys) {
+                    if(err) {
+                        console.log('erro', err);
+                        res.send({error: true, status: err});
+                        return;
+                    } else {
+                        if(keys.length) {
+                            client.get(keys[0], function(err2, data) {
+                                res.send({
+                                    status: 'USER_IS_BACK', 
+                                    credit: data, 
+                                    fullKey: keys[0]
+                                });
+                            });
+                        } else {
+                            res.send({error: true, status: 'no id found'});
+                            return;
+                        }
+                    }
                 });
             } else {
                 client.set(userId, JSON.stringify(userData), function(err, resp) {
