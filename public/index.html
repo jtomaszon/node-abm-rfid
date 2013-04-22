@@ -184,9 +184,6 @@
 		function showCreditCard(evt) {
 			if (evt) evt.preventDefault();
 			
-			$('#select_PaymentCard').hide();
-			$('#next_btn').hide();
-			
 			if ($('#next_btn').attr('data-type') == 'sendCredit') {
 				var data = {
 					fullKey : fullKey,
