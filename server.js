@@ -34,11 +34,7 @@ var price = 3,
 
 //Routes
 app.get('/', function(req, res){
-    res.render('home', {
-        message: "Passa sua gravata!",
-        mytag: '0000000000',
-        alertType: 'info'
-    });
+    res.render('home', {});
 });
 
 app.get('/cadastro', function(req, res){
@@ -79,11 +75,10 @@ app.get('/update', function(req, res){
 
 app.post('/add', function(req, res){
     console.log(req.body);
-    mytag = req.body.gravata;
+    mytag = req.body.mytag;
     fbId = req.body.fbId;
 
     if (mytag) {
-
         var key = mytag + "_" + fbId;
 
         console.log("MyTAG is: " + mytag);
@@ -91,18 +86,15 @@ app.post('/add', function(req, res){
 
         client.get(key, function(e, credit) {
             if (!credit) {
-                console.log('Credito: ' + credit);
-
                 client.incrbyfloat(key, 20, function(e, rst) {
                     console.log('Reais: ' + rst);
-                    res.render('curtir', {});
+                    res.send({
+                        status: 'TIE_SAVED',
+                        credit: rst
+                    });
                 })
             } else {
-                res.render('add', {
-                    message: "Gravata já cadastrada!",
-                    mytag: mytag,
-                    alertType: 'error'
-                });
+                res.send({status: 'TIE_DUPLICATED'});
             }
         })
     }
@@ -132,55 +124,6 @@ app.post('/update', function(req, res){
             }
         })
     }
-});
-
-app.post('/', function(req, res){
-    console.log(req.body);
-    mytag = req.body.gravata;
-
-    if (mytag) {
-
-        client.get(mytag, function(e, credit) {
-            if (credit) {
-                console.log('Credito: ' + credit);
-
-                if (credit >= price) {
-                    client.incrbyfloat(mytag, (price * -1), function(e, rst) {
-                        console.log('Reais: ' + rst);
-                        res.render('compra', {
-                            message: "Boa compra!",
-                            mytag: mytag,
-                            credit: rst,
-                            price: price,
-                            alertType: 'success'
-                        });
-                    })
-                } else {
-                    res.render('home', {
-                        message: "Gravata sem crédito!",
-                        mytag: mytag,
-                        alertType: 'warning'
-                    });
-                }
-
-            } else {
-                res.render('home', {
-                    message: "Gravata não cadastrada!",
-                    mytag: mytag,
-                    alertType: 'error'
-                });
-            }
-        })
-    } else {
-        res.render('home', {
-            message: "Passa sua Gravata!",
-            mytag: '0000000000',
-            alertType: 'info'
-
-        });
-
-    }
-
 });
 
 app.post('/saveUser', function(req, res) {
