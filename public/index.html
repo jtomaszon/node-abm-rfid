@@ -20,6 +20,7 @@
   		var targ = "login";
   		var buyValue = 10;
   		var fullKey	= '';
+  		var sum = 0;
   		
 	  	// Faz as substituições das fontes ao carregar a página. Cada vez que houver mudança dos textos (valores, etc)
 	  	// o script deverá ser rodado 
@@ -132,6 +133,7 @@
 	    }
 	    
 	    function showUserBalanceScreen(data) {
+	    	sum = data.credit;
 	    	$('#user_name').html('<p>'+ mainUser.name+'</p>');
 	    	$('#user_balance').html('<p>'+data.credit+',00</p>');
 	    	$('#balance_modal_value').html('<p>R$ '+data.credit+',00</p>');
@@ -166,6 +168,7 @@
 				cache: true, 
 				type: 'GET',
 				success: function(data) {
+					sum = data.valor;
 					$('#user_name_escolher_valor').html('<p>Olá, '+ mainUser.name +'</p>');
 					$('#user_balance_escolher_valor').html('<p>'+ data.valor +',00</p>');
 					
@@ -180,7 +183,7 @@
 		function showCreditCard(evt) {
 			if (evt) evt.preventDefault();	
 			
-			if ($('#next_btn').attr('data-thype') == 'sendCredit') {
+			if ($('#next_btn').attr('data-type') == 'sendCredit') {
 				var data = {
 					fullKey : fullKey,
 					price: buyValue
@@ -191,7 +194,12 @@
 				    data: data, 
 				    type: 'POST',
 				    success: function(data) {
-				    	console.log(data);
+				    	if (data.status == "OK!") {
+				    		sum += buyValue;
+				    		$('#user_balance_escolher_valor').html('<p>'+ sum +',00</p>');
+				    		
+				    		
+				    	}
 				    }
 				});
 				
