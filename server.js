@@ -313,6 +313,12 @@ app.get('/site/connect', function(req, res){
     })
 })
 
+app.get('/site/cadastro', function(req, res){
+    res.render('home-usr', {
+        section: 1
+    })
+})
+
 // Telas do bar
 app.get('/bar', function(req, res) {
     res.render('home-bar', {

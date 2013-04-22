@@ -17,11 +17,6 @@
         });
     });
 
-
-    
-    var fbbtn = '<fb:login-button autologoutlink="true" perms="email,user_birthday,status_update,publish_stream"></fb:login-button>';
-    $('.fb-button').append(fbbtn);
-
     window.fbAsyncInit = function() {
         FB.init({
             appId: '118773068319648', 
