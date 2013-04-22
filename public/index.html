@@ -40,10 +40,6 @@
 			  if (response.authResponse) {
 			    console.log('Welcome!  Fetching your information.... ');
 			    FB.api('/me', function(response) {
-			      	// trocar o botão para "logout" depois de fazer o login no Facebook:
-			      	$(".login_btn img").attr("src", "assets/home/logout.png");
-			      	$(".login_btn").click(doFacebookLogout);
-			      	
 			      	saveUser(response);
 			    });
 			  } else {
