@@ -5,7 +5,7 @@ block master
     when 2
       #erro_cadastro
       script
-        setTimeout("location.href = '/bar';",5000);
+        setTimeout("location.href = '/bar';",10000);
 
     when 1
       #compra_ok
@@ -14,14 +14,14 @@ block master
         #saldo
           p= 'R$ ' + credit
       script
-        setTimeout("location.href = '/bar';",5000);
+        setTimeout("location.href = '/bar';",10000);
 
     when 0
       #erro_compra
         #erro_saldo
           p= 'R$ ' + credit
       script
-        setTimeout("location.href = '/bar';",5000);
+        setTimeout("location.href = '/bar';",10000);
 
     default
       #leitor

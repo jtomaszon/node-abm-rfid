@@ -29,29 +29,13 @@ app.configure('production', function(){
 });
 
 
-var price = 3,
+var price = 7,
     mytag = '00000000';
 
 //Routes
 app.get('/', function(req, res){
-    res.render('home', {});
+    res.render('home');
 });
-
-app.get('/cadastro', function(req, res){
-    res.render('cadastro');
-});
-
-app.get('/adicionar', function(req, res) {
-    res.render('adicionar', {
-        valor: '11,11'
-    });
-});
-
-app.get('/add', function(req, res) {
-    res.render('add');
-});
-
-
 
 // Legacy
 app.get('/privacy', function(req, res){
