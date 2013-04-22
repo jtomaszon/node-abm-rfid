@@ -87,6 +87,7 @@
 		function saveUser(resp) {
 	        console.log('saving');
 	        mainUser = resp;
+	        mainUser.name = mainUser.name.substr(0, mainUser.name.indexOf(" ", 0));
 	        
 	        $.ajax({
 	            url: '/saveUser', 
@@ -128,7 +129,6 @@
 	    }
 	    
 	    function showUserBalanceScreen(data) {
-	    	mainUser.name = mainUser.name.substr(0, mainUser.name.indexOf(" ", 0));
 	    	$('#user_name').html('<p>'+ mainUser.name+'</p>');
 	    	$('#user_balance').html('<p>'+data.credit+',00</p>');
 	    	$('#balance_modal_value').html('<p>R$ '+data.credit+',00</p>');
@@ -164,7 +164,7 @@
 				type: 'GET',
 				success: function(data) {
 					$('#user_name_escolher_valor').html('<p>Olá, '+ mainUser.name +'</p>');
-					$('#user_name_escolher_valor').html('<p>'+ data.valor +',00</p>');
+					$('#user_balance_escolher_valor').html('<p>'+ data.valor +',00</p>');
 					
 					$(".full_screen").hide();
 					$('#escolher_valor').show();    
