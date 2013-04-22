@@ -363,12 +363,12 @@
 
 #buyOk {
 	background: url('../assets/compra/gravata_carregada.png') no-repeat left top;
-	display: none;
+	display: block;
 	width: 300px;
 	height: 180px;
-	left: 607px;
-	top: 301px;
-	position: absolute;	
+	left: 492px;
+	top: 293px;
+	position: absolute;
 }
 
 #buyValueSuccess {

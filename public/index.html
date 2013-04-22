@@ -182,7 +182,10 @@
 		}
 
 		function showCreditCard(evt) {
-			if (evt) evt.preventDefault();	
+			if (evt) evt.preventDefault();
+			
+			$('#select_PaymentCard').hide();
+			$('#next_btn').hide();
 			
 			if ($('#next_btn').attr('data-type') == 'sendCredit') {
 				var data = {
@@ -217,6 +220,7 @@
 				$('#buyValueSuccess').html('<p>R$ '+sum+',00</p>');
 				
 				$('#select_PaymentCard').hide();
+				$('#next_btn').hide();
 				$('#buyOk').show();
 				
 				sum = 0;
