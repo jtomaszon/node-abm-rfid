@@ -18,6 +18,8 @@
   	<script type="text/javascript">
   		var mainUser = {};
   		var targ = "login";
+  		var buyValue = 10;
+  		var fullKey	= '';
   		
 	  	// Faz as substituições das fontes ao carregar a página. Cada vez que houver mudança dos textos (valores, etc)
 	  	// o script deverá ser rodado 
@@ -69,7 +71,6 @@
 			$("#connect").show();
 		}
 		
-		var buyValue = 10;
 		function changeValue(val) {
 			buyValue = val;
 						
@@ -98,6 +99,8 @@
 	            }, 
 	            type: 'POST',
 	            success: function(data) {
+	            	fullKey = data.fullKey;
+	            	
 	                //makePost(data.status);
 	                //se usuario ja estava cadastrado nao faz post
 	                if (targ == 'creditScreen') {
@@ -167,18 +170,40 @@
 					$('#user_balance_escolher_valor').html('<p>'+ data.valor +',00</p>');
 					
 					$(".full_screen").hide();
-					$('#escolher_valor').show();    
+					$('#escolher_valor').show();
+					
+					updateFonts(); 
 				}
 			});
 		}
 
 		function showCreditCard(evt) {
 			if (evt) evt.preventDefault();	
+			
+			if ($('#next_btn').attr('data-thype') == 'sendCredit') {
+				var data = {
+					fullKey = fullKey,
+					price = buyValue
+				};
+				
+				.ajax({
+				    url: '/add', 
+				    data: data, 
+				    type: 'POST',
+				    success: function(data) {
+				    	console.log(data);
+				    }
+				});
+				
+				return;	
+			}
+						
 			// O valor da compra escolhido está na variável buyValue
 			$('#valores_list').css('display','none');
 			$('#select_PaymentCard').delay(100).css('display','block');
 			/* Edu */ $('.totalDebitadoCartao').html('<p>R$ ' + buyValue + ',00</p>');
 			updateFonts();
+			$('#next_btn').attr('data-thype', 'sendCredit');
 		}
 		
 		//$("#login_btn").click(showConnectDiv);
@@ -315,7 +340,7 @@
 	<!-- END - Escolhe o cartão para pagamento - Edu -->
 	
 	
-	<div id="next_btn" onclick="showCreditCard"></div>
+	<div id="next_btn" onclick="showCreditCard();" data-type="showCreditCard"></div>
 	
 	<div id="infos_escolher_valor">
 		<div id="user_name_escolher_valor"><p>OLÁ, THIAGO</p></div>
