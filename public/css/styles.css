@@ -46,17 +46,17 @@
 	background: url('../assets/connect/connect_ref_position.jpg') no-repeat left top;
 	display: none;
 }
-.facebook_btn_normal {
+.facebook_btn {
 	position: absolute;
-	top: 308px;
-	left: 347px;
+	top: 303px;
+	left: 342px;
 	cursor: pointer;
+	width: 165px;
+	height: 186px;
+	background: url(../assets/connect/FB_buttom.png) no-repeat center center;
 }
-.facebook_btn_over {
-	position: absolute;
-	top: 300px;
-	left: 340px;
-	cursor: pointer;
+.facebook_btn:hover {
+	background: url(../assets/connect/FB_buttom_over.png) no-repeat center center;
 }
 
 #facebook_btn_over .over {
@@ -149,6 +149,14 @@
 }
 
 /* COMPRA DE CRÉDITOS ************************/
+.credito_btn {
+	position: absolute;
+	top: 169px;
+	left: 471px;
+	width: 88px;
+	height: 25px;
+	cursor: pointer;
+}
 #escolher_valor {
 	background: url('../assets/interna/base.jpg') no-repeat left top;
 	display: none;
@@ -215,6 +223,13 @@
 	top: 520px;
 	left: 674px;
 	cursor: pointer;
+	width: 99px;
+	height: 49px;
+	background: url(../assets/compra/proximo.png) no-repeat center center;
+}
+
+#next_btn:hover{
+	background: url(../assets/compra/proximo_over.png) no-repeat center center;
 }
 
 #infos_escolher_valor {
@@ -248,9 +263,103 @@
 	font-size: 30px;
 }
 
+#select_PaymentCard{
+	overflow: hidden;
+	width: 754px;
+	height: 285px;
+	position: absolute;
+	top: 224px;
+	left: 356px;
+	background-image: url(../assets/compra/cartao.png);
+	display: none;
+}
 
+.numeroCartao{
+	position: absolute;
+	top: 160px;
+	left: 5px;
+	width: 746px;
+	background-color: #952123;
+	border-style: none;
+	color: #d9ccba;
+	text-transform: uppercase;
+	font: 80% Arial;
+}
 
+.validadeCartao{
+	position: absolute;
+	top: 200px;
+	left: 5px;
+	width: 375px;
+	background-color: #952123;
+	border-style: none;
+	color: #d9ccba;
+	text-transform: uppercase;
+	font: 80% Arial;
+}
 
+.codSegurancaCartao{
+	position: absolute;
+	top: 200px;
+	left: 387px;
+	width: 375px;
+	background-color: #952123;
+	border-style: none;
+	color: #d9ccba;
+	text-transform: uppercase;
+	font: 80% Arial;
+}
+
+.nomeEscritoCartao{
+	position: absolute;
+	top: 237px;
+	left: 5px;
+	width: 754px;
+	background-color: #952123;
+	border-style: none;
+	color: #d9ccba;
+	text-transform: uppercase;
+	font: 80% Arial;
+}
+
+.totalDebitadoCartao{
+	position: absolute;
+	top: 270px;
+	left: 662px;
+	font-size: 80%;
+	line-height: 8px;
+}
+
+.btnsSelectCard{
+	width: 1004px;
+	height: 25px;
+	top: 115px;
+	position: absolute;
+	left: 54px;
+}
+
+.btnsSelectCard div{
+	width: 11px;
+	height: 11px;
+	background: url(../assets/compra/bulletOn.png) no-repeat;
+	cursor: pointer;
+	position: relative;
+	float: left;
+	margin-right: 174px;
+	margin-top: 6px;
+}
+
+.btnsSelectCard div:hover{
+	background: url(../assets/compra/bulletOver.png) no-repeat;
+}
+
+.btnsSelectCard div:nth-child(2){
+	margin-right: 190px;
+}
+
+.btnsSelectCard div:nth-child(3){
+	margin-right: 184px;
+}
 
 
 

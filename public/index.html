@@ -27,7 +27,7 @@
 	  		Cufon.replace($('#valor_escolhido'), { fontFamily: 'Deming EP'});
 	  		Cufon.replace($('#user_name_escolher_valor'), { fontFamily: 'Cubano'});	  		
 	  		Cufon.replace($('#user_balance_escolher_valor'), { fontFamily: 'Deming EP'});
-	  		
+	  		Cufon.replace($('.totalDebitadoCartao'), { fontFamily: 'Deming EP'});
 	  	}
   	
 		function doFacebookLogin(evt) {
@@ -51,7 +51,8 @@
 		function logout() {
 			FB.logout(function(){});
 			$(".full_screen").hide();
-			$('#home').show()
+			$('#home').show();
+			mainUser = null;
 		}
 		
 		function doFacebookLogout(evt) {
@@ -133,18 +134,51 @@
 			$('#insira_numero_cartao').show();
 			
 		}
+		
+		function showCreditScreen(evt) {
+			if (evt) evt.preventDefault();
+			
+			// Se não está logado no Facebook, mandar logar e abraço
+			if (!mainUser.name) {
+				login();
+				return;
+			}
+			
+			// Chamar o método getCredit
+			$.ajax({
+				url: '/getCredit', 
+				data: {
+				    userId: mainUser.id,
+				}, 
+				type: 'GET',
+				success: function(data) {
+					$('#user_name_escolher_valor').html('<p>Olá, '+ mainUser.name +'</p>');
+					$('#user_name_escolher_valor').html('<p>'+ data.valor +',00</p>');
+					
+					$(".full_screen").hide();
+					$('#escolher_valor').show();    
+				}
+			});
+		}
 
 		function showCreditCard(evt) {
 			if (evt) evt.preventDefault();	
 			// O valor da compra escolhido está na variável buyValue
+			$('#valores_list').css('display','none');
+			$('#select_PaymentCard').delay(100).css('display','block');
+			/* Edu */ $('.totalDebitadoCartao').html('<p>R$ ' + buyValue + ',00</p>');
+			updateFonts();
 		}
 		
-		$(document).ready(function() {
-			//$("#login_btn").click(showConnectDiv);
-			
+		//$("#login_btn").click(showConnectDiv);
+		$(document).ready(function() {	
 			$('#ok_btn').click(addUser);
 			$('#next_btn').click(showCreditCard);
+			$('.btnsSelectCard div').click(function(){
 			$('#fb_btn').click(login);
+				$('.btnsSelectCard div').css('background','url(assets/compra/bulletOn.png)');
+				$(this).css('background','url(assets/compra/bulletOver.png)');
+			})
 			
 			updateFonts();
 		});
@@ -184,7 +218,10 @@
 	<div class="login_btn" onclick="login();">
 		<img src="assets/home/login.png" width="105" height="25"/>
 	</div>
-	
+	<div class="credito_btn" onclick="showCreditScreen();">
+		<img src="assets/transparent.gif" width="105" height="25"/>
+	</div>
+		
 	<div id="cadastrar_btn" onclick="showConnectDiv();">
 		<img src="assets/transparent.gif" />
 	</div>
@@ -246,15 +283,41 @@
 		</div>
 	</div>
 	
-	<div id="next_btn" onclick="showCreditCard">
-		<img src="assets/compra/proximo.png" width="99" height="49" />
+	<!-- START - Escolhe o cartão para pagamento - Edu -->
+	
+	<div id="select_PaymentCard">
+		<div class="btnsSelectCard">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<form name="paymentCard" action="#" method="post">
+			<input type="text" name="numeroCartao" class="numeroCartao" value="">
+			<input type="text" name="validadeCartao" class="validadeCartao" value="">
+			<input type="text" name="codSegurancaCartao" class="codSegurancaCartao" value="">
+			<input type="text" name="nomeEscritoCartao" class="nomeEscritoCartao" value="">
+		</form>
+		<div class="totalDebitadoCartao"><p>R$<span>10</span>,00</p></div>
+		
 	</div>
+	
+	<!-- END - Escolhe o cartão para pagamento - Edu -->
+	
+	
+	<div id="next_btn" onclick="showCreditCard"></div>
 	
 	<div id="infos_escolher_valor">
 		<div id="user_name_escolher_valor"><p>OLÁ, THIAGO</p></div>
 		<div id="user_balance_escolher_valor"><p>20,00</p></div>
 	</div>
 </div>
+
+
+<!-- Página de "pagamento" com cartão de crédito -->
+
+
+
 
 <!-- /master -->	
 </div>
