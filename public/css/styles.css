@@ -16,12 +16,20 @@
 	display: block;
 }
 
-
 .login_btn {
 	position: absolute;
 	top: 169px;
 	left: 364px;
 	cursor: pointer;
+}
+
+.logout_btn {
+	position: absolute;
+	top: 169px;
+	left: 364px;
+	cursor: pointer;
+	width: 161px;
+	height: 25px;
 }
 
 #cadastrar_btn {

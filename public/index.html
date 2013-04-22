@@ -126,8 +126,8 @@
 	    function showUserBalanceScreen(data) {
 	    	mainUser.name = mainUser.name.substr(0, mainUser.name.indexOf(" ", 0));
 	    	$('#user_name').html('<p>'+ mainUser.name+'</p>');
-	    	$('#user_balance').html('<p>'+data.credit+' . ,00</p>');
-	    	$('#balance_modal_value').html('<p>'+data.credit+' . ,00</p>');
+	    	$('#user_balance').html('<p>'+data.credit+',00</p>');
+	    	$('#balance_modal_value').html('<p>'+data.credit+',00</p>');
 	    	updateFonts();
 	    	
 	    	$('#connect').hide();
@@ -149,21 +149,7 @@
 		}
 		
 		$(document).ready(function() {
-			$("#login_btn").click(showConnectDiv);
-			
-			// Over na imagem do botao do Facebook
-			/*$("#fb_btn").mouseover(function() {
-				$("#fb_btn").html('<img src="assets/connect/FB_buttom_over.png" width="165" height="186"/>');
-				$('#fb_btn').removeClass('facebook_btn_normal');
-				$('#fb_btn').addClass('facebook_btn_over');
-			});
-			
-			$('#fb_btn').mouseout(function() {
-				$("#fb_btn").html('<img src="assets/connect/FB_buttom.png" width="155" height="176"/>');
-				$('#fb_btn').removeClass('facebook_btn_over');
-				$('#fb_btn').addClass('facebook_btn_normal');
-			});
-			*/
+			//$("#login_btn").click(showConnectDiv);
 			
 			$('#ok_btn').click(addUser);
 			$('#next_btn').click(showCreditCard);
@@ -204,7 +190,7 @@
 
 <div id="home" class="full_screen">
 	
-	<div class="login_btn">
+	<div class="login_btn" onclick="login();">
 		<img src="assets/home/login.png" width="105" height="25"/>
 	</div>
 	
@@ -214,7 +200,7 @@
 </div>
 
 <div id="connect" class="full_screen">
-	<div class="login_btn">
+	<div class="login_btn" onclick="login();">
 		<img src="assets/home/login.png" width="105" height="25"/>
 	</div>
 	
@@ -224,6 +210,9 @@
 </div>
 
 <div id="insira_numero_cartao" class="full_screen">
+	<div class="logout_btn" onclick="logout();">
+		<img src="assets/transparent.gif" width="165" height="25"/>
+	</div>
 	<input type="text" />
 	<div id="ok_btn">
 		<img src="assets/interna/OK.png" width="80" height="40" />
@@ -231,6 +220,9 @@
 </div>
 
 <div id="tie_balance" class="full_screen">
+	<div class="logout_btn" onclick="logout();">
+		<img src="assets/transparent.gif" width="165" height="25"/>
+	</div>
 	<div id="infos">
 		<div id="user_name"><p>OLÁ, THIAGO</p></div>
 		<div id="user_balance"><p>20,00</p></div>
@@ -243,6 +235,10 @@
 
 <!-- Página de escolher o valor para compra de novos créditos -->
 <div id="escolher_valor" class="full_screen">
+	<div class="login_btn" onclick="logout();">
+		<img src="assets/home/logout.png" width="105" height="25"/>
+	</div>
+	
 	<div id="valores_list">
 		<div id="val_10" class="inv_btn box_value" onclick="changeValue(10);">
 			<img src="assets/transparent.gif" width="254" height="140"/>
@@ -268,12 +264,6 @@
 		<div id="user_balance_escolher_valor"><p>20,00</p></div>
 	</div>
 </div>
-
-
-<!-- Página de "pagamento" com cartão de crédito -->
-<div id
-
-
 
 <!-- /master -->	
 </div>
