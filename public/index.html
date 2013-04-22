@@ -35,21 +35,17 @@
 			login();
 		}
 		
-		function login() {
-			FB.login(function(response) {
-			  if (response.authResponse) {
-			    console.log('Welcome!  Fetching your information.... ');
-			    FB.api('/me', function(response) {
-			      	saveUser(response);
-			    });
-			  } else {
-			    console.log('User cancelled login or did not fully authorize.');
-			  }
-			}, {scope:"email"});
+		function login(evt) {
+			if (evt) evt.preventDefault();
+			FB.login(onFacebookLogin, {scope:"email"});
 		}
-				
-		function getLoginStatus() {
-			
+		
+		function onFacebookLogin(response) {
+			if (response.authResponse) {
+			  FB.api('/me', saveUser);
+			} else {
+			  console.log('User cancelled login or did not fully authorize.');
+			}
 		}
 		
 		function logout() {
@@ -148,7 +144,7 @@
 			
 			$('#ok_btn').click(addUser);
 			$('#next_btn').click(showCreditCard);
-			$('#fb_btn').click(doFacebookLogin);
+			$('#fb_btn').click(login);
 			
 			updateFonts();
 		});
