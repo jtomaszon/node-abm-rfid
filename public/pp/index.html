@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	
-	<script src="//connect.facebook.net/en_US/all.js"></script>
+	<script src="//connect.facebook.net/en_US/all.js" type="text/javascript"></script>
 	<script src="js/jquery/jQuery1.9.1.js"></script>
 	<script src="js/gsap/plugins/CSSPlugin.min.js"></script>
 	<script src="js/gsap/TweenLite.min.js"></script>
@@ -130,6 +130,7 @@
 			*/
 			
 			$('#next_btn').click(showCreditCard);
+			$('#fb_btn').click(doFacebookLogin);
 			
 			updateFonts();
 		});
