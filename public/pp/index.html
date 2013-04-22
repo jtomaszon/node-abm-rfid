@@ -122,8 +122,8 @@
 	    }
 	    
 	    function showUserBalanceScreen(data) {
-	    	USER.name = USER.name.substr(0, USER.name.indexOf(" ", 0));
-	    	$('#user_name').html('<p>'+USER.name+'</p>');
+	    	mainUser.name = mainUser.name.substr(0, mainUser.name.indexOf(" ", 0));
+	    	$('#user_name').html('<p>'+ mainUser.name+'</p>');
 	    	$('#user_balance').html('<p>'+data.credit+' . ,00</p>');
 	    	$('#balance_modal_value').html('<p>'+data.credit+' . ,00</p>');
 	    	
