@@ -38,7 +38,6 @@
 	top: 271px;
 	left: 525px;
 	font-size: 14px;
-		display: none;
 }
 
 #debitados {
@@ -67,7 +66,6 @@
 	top: 271px;
 	left: 525px;
 	font-size: 13px;
-	display: none;
 }
 #erro_saldo {
 	top: 96px;
