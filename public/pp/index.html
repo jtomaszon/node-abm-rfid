@@ -111,7 +111,7 @@
 	    	if (evt) evt.preventDefault();
 	    	var data = {};
 	    	data.mytag = $('#insira_numero_cartao input').val();
-	    	data.fbId = USER.id;
+	    	data.fbId = mainUser.id;
 	    	// ajax
 	    	$.ajax({
 	    	    url: '/add', 
