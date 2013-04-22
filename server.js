@@ -159,7 +159,7 @@ app.post('/saveUser', function(req, res) {
                     }
                 });
             } else {
-                client.set(userId, JSON.stringify(userData), function(err, resp) {
+                client.set(fbId, JSON.stringify(userData), function(err, resp) {
                     if(err) {
                         console.log('erro', err);
                     } else {
