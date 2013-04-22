@@ -32,6 +32,7 @@
 	  		Cufon.replace($('#user_name_escolher_valor'), { fontFamily: 'Cubano'});	  		
 	  		Cufon.replace($('#user_balance_escolher_valor'), { fontFamily: 'Deming EP'});
 	  		Cufon.replace($('.totalDebitadoCartao'), { fontFamily: 'Deming EP'});
+	  		Cufon.replace($('#buyOk'), { fontFamily: 'Deming EP'});
 	  	}
   	
 		function doFacebookLogin(evt) {
@@ -193,16 +194,7 @@
 				    url: '/addCredit', 
 				    data: data, 
 				    type: 'POST',
-				    success: function(data) {
-				    	if (data.status == "OK!") {
-				    		sum = parseInt(sum);
-				    		sum += parseInt(buyValue);
-				    		sum = sum.toString();
-				    		$('#user_balance_escolher_valor').html('<p>'+ sum +',00</p>');
-				    		
-				    		updateFonts();
-				    	}
-				    }
+				    success: onBuyingDone
 				});
 				
 				return;	
@@ -214,6 +206,20 @@
 			/* Edu */ $('.totalDebitadoCartao').html('<p>R$ ' + buyValue + ',00</p>');
 			updateFonts();
 			$('#next_btn').attr('data-type', 'sendCredit');
+		}
+		
+		function onBuyingDone(data) {
+			if (data.status == "OK!") {
+				sum = parseInt(sum);
+				sum += parseInt(buyValue);
+				sum = sum.toString();
+				$('#user_balance_escolher_valor').html('<p>'+ sum +',00</p>');
+				$('#select_PaymentCard').hide();
+				$('#buyValueSuccess').html('<p>'+sum+'</p>');
+				
+				sum = 0;
+				updateFonts();
+			}
 		}
 		
 		//$("#login_btn").click(showConnectDiv);
@@ -259,7 +265,7 @@
 <div id="page">
 <div id="master">
 
-<div id="home" class="full_screen">
+<div id="home" class="full_screen" style="display: none;">
 	
 	<div class="login_btn" onclick="doFacebookLogin();">
 		<img src="assets/home/login.png" width="105" height="25"/>
@@ -307,7 +313,7 @@
 </div>
 
 <!-- Página de escolher o valor para compra de novos créditos -->
-<div id="escolher_valor" class="full_screen">
+<div id="escolher_valor" class="full_screen" style="display: block;">
 	<div class="login_btn" onclick="logout();">
 		<img src="assets/transparent.gif" width="105" height="25"/>
 	</div>
@@ -355,6 +361,10 @@
 	<div id="infos_escolher_valor">
 		<div id="user_name_escolher_valor"><p>OLÁ, THIAGO</p></div>
 		<div id="user_balance_escolher_valor"><p>20,00</p></div>
+	</div>
+	
+	<div id="buyOk">
+		<div id="buyValueSuccess"></div>
 	</div>
 </div>
 
