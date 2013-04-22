@@ -1,0 +1,78 @@
+#master {
+	width: 1366px;
+	height: 768px;
+	background: url("../assets/fundo_bar-1.jpg") no-repeat top left;
+}
+
+/************ Leitor da Gravata ********/
+#leitor {
+	position: absolute;
+	background: url("../assets/box_numero_gravata.png") no-repeat top left;
+	width: 320px;
+	height: 160px;
+	top: 271px;
+	left: 525px;
+}
+
+#leitor input {
+	position: absolute;
+	background: none;
+	left: 28px;
+	top: 83px;
+	width: 263px;
+	height: 22px;
+	font-family: Arial;
+	color: #B4915B;
+	text-align: center;
+}
+#leitor input:focus {
+	outline: none;
+}
+
+/************ Resultado da Compra ********/
+#compra_ok {
+	position: absolute;
+	background: url("../assets/modal_compra-efetuada.png") no-repeat top left;
+	width: 320px;
+	height: 160px;
+	top: 271px;
+	left: 525px;
+	font-size: 14px;
+		display: none;
+}
+
+#debitados {
+	top: 42px;
+	width: 316px;
+	height: 16px;
+	left: 1px;
+	position: absolute;
+	text-align: center;
+}
+
+#saldo {
+	top: 73px;
+	width: 316px;
+	height: 16px;
+	left: 1px;
+	position: absolute;
+	text-align: center;
+}
+
+#erro_compra {
+	position: absolute;
+	background: url("../assets/modal_pagamento_negado.png") no-repeat top left;
+	width: 320px;
+	height: 160px;
+	top: 271px;
+	left: 525px;
+	font-size: 13px;
+	display: none;
+}
+#erro_saldo {
+	top: 96px;
+	width: 316px;
+	height: 16px;
+	position: absolute;
+	text-align: center;
+}
