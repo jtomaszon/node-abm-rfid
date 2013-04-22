@@ -10,16 +10,16 @@ block master
     when 1
       #compra_ok
         #debitados
-          p= 'R$ ' + price
+          p= 'R$ ' + price + ',00'
         #saldo
-          p= 'R$ ' + credit
+          p= 'R$ ' + credit + ',00'
       script
         setTimeout("location.href = '/bar';",10000);
 
     when 0
       #erro_compra
         #erro_saldo
-          p= 'R$ ' + credit
+          p= 'R$ ' + credit + ',00'
       script
         setTimeout("location.href = '/bar';",10000);
 
