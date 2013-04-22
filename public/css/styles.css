@@ -1,85 +1,290 @@
 #master {
 	width: 1366px;
 	height: 768px;
-	background: url("../assets/fundo_bar-1.jpg") no-repeat top left;
 }
 
-/************ Leitor da Gravata ********/
-#leitor {
-	position: absolute;
-	background: url("../assets/box_numero_gravata.png") no-repeat top left;
-	width: 320px;
-	height: 160px;
-	top: 271px;
-	left: 525px;
+
+.full_screen {
+	width: 1366px;
+	height: 768px;
 }
 
-#leitor input {
+/* HOME ***************************/
+#home {
 	position: absolute;
+	background: url('../assets/home/home.jpg') no-repeat left top;
+	display: block;
+}
+
+
+.login_btn {
+	position: absolute;
+	top: 169px;
+	left: 364px;
+	cursor: pointer;
+}
+
+#cadastrar_btn {
+	width: 112px;
+	height: 70px;
+	position: absolute;
+	top: 501px;
+	left: 1010px;
+	cursor: pointer;
+}
+
+/* CONNECT ***************************/
+#connect {
+	background: url('../assets/connect/connect_ref_position.jpg') no-repeat left top;
+	display: none;
+}
+.facebook_btn_normal {
+	position: absolute;
+	top: 308px;
+	left: 347px;
+	cursor: pointer;
+}
+.facebook_btn_over {
+	position: absolute;
+	top: 300px;
+	left: 340px;
+	cursor: pointer;
+}
+
+#facebook_btn_over .over {
+	position: absolute;
+	top: 308px;
+	left: 347px;
+	cursor: pointer;
+}
+
+/* INSIRA NUMERO DO CARTAO ***************************/
+#insira_numero_cartao {
+	background: url('../assets/interna/base_numero_cartao.jpg') no-repeat;
+	display: none;
+}
+#insira_numero_cartao input {
 	background: none;
-	left: 28px;
-	top: 83px;
-	width: 263px;
-	height: 22px;
-	font-family: Arial;
-	color: #B4915B;
+	width: 316px;
+	height: 25px;
+	position: absolute;
+	top: 363px;
+	left: 527px;
 	text-align: center;
+	color: #B4915B;
 }
-#leitor input:focus {
+#insira_numero_cartao input:focus {
 	outline: none;
 }
-
-/************ Resultado da Compra ********/
-#compra_ok {
+#ok_btn {
 	position: absolute;
-	background: url("../assets/modal_compra-efetuada.png") no-repeat top left;
+	top: 430px;
+	left: 650px;
+	cursor: pointer;
+}
+
+/* TELA DE SALDO DO CHIP ***************************/
+#tie_balance {
+	background: url('../assets/interna/base.jpg') no-repeat left top;
+	display: none;
+}
+
+#balance_modal {
 	width: 320px;
-	height: 160px;
-	top: 271px;
-	left: 525px;
-	font-size: 14px;
-}
-
-#debitados {
-	top: 42px;
-	width: 316px;
-	height: 16px;
-	left: 1px;
+	height: 203px;
+	background: url('../assets/interna/modal_gravata_cadastrada.png') no-repeat left top;
 	position: absolute;
-	text-align: center;
-}
-
-#saldo {
-	top: 73px;
-	width: 316px;
-	height: 16px;
-	left: 1px;
-	position: absolute;
-	text-align: center;
-}
-
-#erro_compra {
-	position: absolute;
-	background: url("../assets/modal_pagamento_negado.png") no-repeat top left;
-	width: 320px;
-	height: 160px;
-	top: 271px;
+	top: 282px;
 	left: 525px;
 	font-size: 13px;
 }
-#erro_saldo {
-	top: 96px;
-	width: 316px;
-	height: 16px;
+
+#balance_modal_value {
 	position: absolute;
+	top: 120px;
+	left: 1px;
+	width: 316px;	
+}
+
+#balance_modal_value p {
 	text-align: center;
 }
-#erro_cadastro {
+
+#infos {
 	position: absolute;
-	background: url("../assets/modal_nao_cadastrada.png") no-repeat top left;
 	width: 320px;
-	height: 160px;
-	top: 271px;
-	left: 525px;
-	font-size: 14px;
+	height: 79px;
+	top: 195px;
+	left: 365px;
 }
+#user_name {
+	position: absolute;
+	width: 133px;
+	height: 18px;
+	color: #7A1B10;
+	top: 4px;
+	left: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#user_balance {
+	position: absolute;
+	width: 160px;
+	height: 39px;
+	color: #7A1B10;
+	top: 39px;
+	left: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+/* COMPRA DE CRÉDITOS ************************/
+#escolher_valor {
+	background: url('../assets/interna/base.jpg') no-repeat left top;
+	display: none;
+}
+
+#valores_list {
+	background: url('../assets/compra/compras.png') no-repeat left top;
+	width: 778px;
+	height: 256px;
+	position: absolute;
+	top: 224px;
+	left: 356px;
+}
+#valor_escolhido {
+	position: absolute;
+	width: 95px;
+	height: 21px;
+	top: 239px;
+	left: 667px;
+	text-align: center;
+	font-size: 11px;
+}
+#valor_mark {
+	width: 34px;
+	height: 17px;
+}
+
+.inv_btn {
+	cursor: pointer;
+}
+
+.box_value {
+	position: absolute;
+	width: 252px;
+	height: 138px;
+}
+
+#val_10 {
+	top: 97px;
+	left: 10px;
+}
+
+#val_20 {
+	top: 97px;
+	left: 260px;
+}
+
+#val_50 {
+	top: 97px;
+	left: 509px;
+}
+
+#valor_mark {
+	width: 34px;
+	height: 17px;
+	background: url('../assets/compra/over.png') no-repeat left top;
+	position: absolute;
+	top: 218px;
+	left: 226px;
+}
+
+#next_btn {
+	position: absolute;
+	top: 520px;
+	left: 674px;
+	cursor: pointer;
+}
+
+#infos_escolher_valor {
+	position: absolute;
+	width: 320px;
+	height: 79px;
+	top: 195px;
+	left: 365px;
+}
+
+#user_name_escolher_valor {
+	position: absolute;
+	width: 133px;
+	height: 18px;
+	color: #7A1B10;
+	top: 4px;
+	left: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#user_balance_escolher_valor {
+	position: absolute;
+	width: 160px;
+	height: 39px;
+	color: #7A1B10;
+	top: 39px;
+	left: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
