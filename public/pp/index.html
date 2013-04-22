@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<script src="//connect.facebook.net/en_US/all.js"></script>
+	<script src="js/jquery/jQuery1.9.1.js"></script>
+	<script src="js/gsap/plugins/CSSPlugin.min.js"></script>
+	<script src="js/gsap/TweenLite.min.js"></script>
+	
+	<!-- Cuffon fonts -->
+	<script src="js/cuffon/cuffon.js" type="text/javascript"></script>
+	<script src="js/cuffon/Deming_EP_400.font.js" type="text/javascript"></script>
+	<script src="js/cuffon/Cubano_400.font.js" type="text/javascript"></script>
+		
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css"> 
+  	
+  	<script type="text/javascript">
+	  	// Faz as substituições das fontes ao carregar a página. Cada vez que houver mudança dos textos (valores, etc)
+	  	// o script deverá ser rodado 
+	  	function updateFonts() {
+	  		Cufon.replace($('#balance_modal_value'), { fontFamily: 'Deming EP'});
+	  		Cufon.replace($('#user_name'), { fontFamily: 'Cubano'});	  		
+	  		Cufon.replace($('#user_balance'), { fontFamily: 'Deming EP'});
+	  		Cufon.replace($('#valor_escolhido'), { fontFamily: 'Deming EP'});
+	  		Cufon.replace($('#user_name_escolher_valor'), { fontFamily: 'Cubano'});	  		
+	  		Cufon.replace($('#user_balance_escolher_valor'), { fontFamily: 'Deming EP'});
+	  		
+	  	}
+  	
+		function doFacebookLogin(evt) {
+			if (evt) evt.preventDefault ();
+			login();
+		}
+		
+		function login() {
+			FB.login(function(response) {
+			  if (response.authResponse) {
+			    console.log('Welcome!  Fetching your information.... ');
+			    FB.api('/me', function(response) {
+			      	// trocar o botão para "logout" depois de fazer o login no Facebook:
+			      	$(".login_btn img").attr("src", "assets/home/logout.png");
+			      	$(".login_btn").click(doFacebookLogout);
+			      	
+			      	saveUser(response);
+			    });
+			  } else {
+			    console.log('User cancelled login or did not fully authorize.');
+			  }
+			}, {scope:"email"});
+		}
+				
+		function getLoginStatus() {
+			
+		}
+		
+		function logout() {
+			FB.logout(function(){});
+		}
+		
+		function doFacebookLogout(evt) {
+			if (evt) evt.preventDefault();
+			FB.logout();
+		}
+		
+		function showConnectDiv() {
+			$("#home").hide();
+			$("#connect").show();
+		}
+		
+		var buyValue = 10;
+		function changeValue(val) {
+			buyValue = val;
+			console.log("Valor desejado de compra de creditos:", val);
+			
+			// Posicionar a marquinha de valor nos boxes:
+			var xp = [];
+			xp[10] = 226;
+			xp[20] = 477;
+			xp[50] = 728;
+			
+			$("#valor_mark").css("left", xp[val]);
+			$('#valor_escolhido').html('<p>R$ '+ val +',00</p>');
+			updateFonts();
+		}
+		
+		function saveUser(resp) {
+	        console.log('saving');
+	        $.ajax({
+	            url: '/saveUser', 
+	            data: {
+	                userId: resp.id, 
+	                userName: resp.name,
+	                userEmail: resp.email
+	            }, 
+	            type: 'POST',
+	            success: function(data) {
+	                //makePost(data.status);
+	                //se usuario ja estava cadastrado nao faz post
+	                if(!data.status || data.status !== 'USER_IS_BACK') {
+	                    makePost('');
+	                }
+	            }
+	        });
+	    }
+
+		function showCreditCard(evt) {
+			if (evt) evt.preventDefault();
+			
+			// O valor da compra escolhido está na variável buyValue
+			
+		}
+		
+		$(document).ready(function() {
+			$("#login_btn").click(showConnectDiv);
+			
+			// Over na imagem do botao do Facebook
+			/*$("#fb_btn").mouseover(function() {
+				$("#fb_btn").html('<img src="assets/connect/FB_buttom_over.png" width="165" height="186"/>');
+				$('#fb_btn').removeClass('facebook_btn_normal');
+				$('#fb_btn').addClass('facebook_btn_over');
+			});
+			
+			$('#fb_btn').mouseout(function() {
+				$("#fb_btn").html('<img src="assets/connect/FB_buttom.png" width="155" height="176"/>');
+				$('#fb_btn').removeClass('facebook_btn_over');
+				$('#fb_btn').addClass('facebook_btn_normal');
+			});
+			*/
+			
+			$('#fb_btn').click(doFacebookLogin);
+			$('#next_btn').click(showCreditCard);
+			
+			updateFonts();
+		});
+		
+	</script>
+	
+</head>
+<body>
+<div id="fb-root"></div>
+<script type="text/javascript">
+window.fbAsyncInit = function() {
+	FB.init({
+	   appId: '118773068319648', 
+	   status: true, 
+	   cookie: true, 
+	   xfbml: true
+	});
+	
+	// Load the SDK asynchronously
+	(function(d, s, id){
+	   var js, fjs = d.getElementsByTagName(s)[0];
+	   if (d.getElementById(id)) {return;}
+	   js = d.createElement(s); js.id = id;
+	   js.src = "//connect.facebook.net/en_US/all.js";
+	   fjs.parentNode.insertBefore(js, fjs);
+	 }(document, 'script', 'facebook-jssdk'));
+}
+</script>
+
+
+<div id="page">
+<div id="master">
+
+<div id="home" class="full_screen">
+	
+	<div class="login_btn">
+		<img src="assets/home/login.png" width="105" height="25"/>
+	</div>
+	
+	<div id="cadastrar_btn" onclick="showConnectDiv();">
+		<img src="assets/transparent.gif" />
+	</div>
+</div>
+
+<div id="connect" class="full_screen">
+	<div class="login_btn">
+		<img src="assets/home/login.png" width="105" height="25"/>
+	</div>
+	
+	<div id="fb_btn" class="facebook_btn_normal">
+		<img src="assets/connect/FB_buttom.png" width="155" height="175"/>
+	</div>
+</div>
+
+<div id="insira_numero_cartao" class="full_screen">
+	<input type="text" />
+	<div id="ok_btn">
+		<img src="assets/interna/OK.png" width="80" height="40" />
+	</div>
+</div>
+
+<div id="tie_balance" class="full_screen">
+	<div id="infos">
+		<div id="user_name"><p>OLÁ, THIAGO</p></div>
+		<div id="user_balance"><p>20,00</p></div>
+	</div>
+	
+	<div id="balance_modal">
+		<div id="balance_modal_value"><p>R$ 20,00</p></div>
+	</div>
+</div>
+
+<!-- Página de escolher o valor para compra de novos créditos -->
+<div id="escolher_valor" class="full_screen">
+	<div id="valores_list">
+		<div id="val_10" class="inv_btn box_value" onclick="changeValue(10);">
+			<img src="assets/transparent.gif" width="254" height="140"/>
+		</div>
+		<div id="val_20" class="inv_btn box_value" onclick="changeValue(20);">
+			<img src="assets/transparent.gif" width="254" height="140"/>
+		</div>
+		<div id="val_50" class="inv_btn box_value" onclick="changeValue(50);">
+			<img src="assets/transparent.gif" width="254" height="140"/>
+		</div>
+		<div id="valor_mark"></div>
+		<div id="valor_escolhido">
+			<p>R$ 10,00</p>
+		</div>
+	</div>
+	
+	<div id="next_btn" onclick="showCreditCard">
+		<img src="assets/compra/proximo.png" width="99" height="49" />
+	</div>
+	
+	<div id="infos_escolher_valor">
+		<div id="user_name_escolher_valor"><p>OLÁ, THIAGO</p></div>
+		<div id="user_balance_escolher_valor"><p>20,00</p></div>
+	</div>
+</div>
+
+
+<!-- Página de "pagamento" com cartão de crédito -->
+<div id
+
+
+
+<!-- /master -->	
+</div>
+<!-- /page -->
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
