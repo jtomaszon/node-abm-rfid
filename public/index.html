@@ -214,8 +214,10 @@
 				sum += parseInt(buyValue);
 				sum = sum.toString();
 				$('#user_balance_escolher_valor').html('<p>'+ sum +',00</p>');
+				$('#buyValueSuccess').html('<p>R$ '+sum+',00</p>');
+				
 				$('#select_PaymentCard').hide();
-				$('#buyValueSuccess').html('<p>'+sum+'</p>');
+				$('#buyOk').show();
 				
 				sum = 0;
 				updateFonts();

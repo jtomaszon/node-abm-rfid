@@ -368,8 +368,14 @@
 	height: 180px;
 	left: 607px;
 	top: 301px;
-	border: 1px solid white;
 	position: absolute;	
+}
+
+#buyValueSuccess {
+	position: absolute;
+	top: 117px;
+	width: 299px;
+	text-align: center;
 }
 
 
