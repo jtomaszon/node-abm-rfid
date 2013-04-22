@@ -361,6 +361,17 @@
 	margin-right: 184px;
 }
 
+#buyOk {
+	background: url('../assets/compra/gravata_carregada.png') no-repeat left top;
+	display: none;
+	width: 300px;
+	height: 180px;
+	left: 607px;
+	top: 301px;
+	border: 1px solid white;
+	position: absolute;	
+}
+
 
 
 
