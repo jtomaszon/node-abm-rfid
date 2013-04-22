@@ -199,6 +199,8 @@
 				    		sum += parseInt(buyValue);
 				    		sum = sum.toString();
 				    		$('#user_balance_escolher_valor').html('<p>'+ sum +',00</p>');
+				    		
+				    		updateFonts();
 				    	}
 				    }
 				});
@@ -307,7 +309,7 @@
 <!-- Página de escolher o valor para compra de novos créditos -->
 <div id="escolher_valor" class="full_screen">
 	<div class="login_btn" onclick="logout();">
-		<img src="assets/home/transparent.gif" width="105" height="25"/>
+		<img src="assets/transparent.gif" width="105" height="25"/>
 	</div>
 	
 	<div id="valores_list">
