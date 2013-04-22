@@ -58,6 +58,12 @@
 		
 		function logout() {
 			FB.logout(function(){});
+			$(".full_screen").hide();
+			$('#home').show();
+		}
+		
+		function hideAll() {
+			var all = 
 		}
 		
 		function doFacebookLogout(evt) {
@@ -127,7 +133,7 @@
 	    	mainUser.name = mainUser.name.substr(0, mainUser.name.indexOf(" ", 0));
 	    	$('#user_name').html('<p>'+ mainUser.name+'</p>');
 	    	$('#user_balance').html('<p>'+data.credit+',00</p>');
-	    	$('#balance_modal_value').html('<p>'+data.credit+',00</p>');
+	    	$('#balance_modal_value').html('<p>R$ '+data.credit+',00</p>');
 	    	updateFonts();
 	    	
 	    	$('#connect').hide();
@@ -142,10 +148,8 @@
 		}
 
 		function showCreditCard(evt) {
-			if (evt) evt.preventDefault();
-				
+			if (evt) evt.preventDefault();	
 			// O valor da compra escolhido está na variável buyValue
-			
 		}
 		
 		$(document).ready(function() {
