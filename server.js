@@ -319,6 +319,11 @@ app.get('/site/cadastro', function(req, res){
     })
 })
 
+app.get('/site/balance', function(req, res){
+    res.render('home-usr', {
+        section: 2
+    })
+})
 // Telas do bar
 app.get('/bar', function(req, res) {
     res.render('home-bar', {
