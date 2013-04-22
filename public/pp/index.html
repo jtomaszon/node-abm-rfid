@@ -140,15 +140,16 @@
 <body>
 <div id="fb-root"></div>
 <script type="text/javascript">
-window.fbAsyncInit = function() {
-	FB.init({
-	   appId: '118773068319648', 
-	   status: true, 
-	   cookie: true, 
-	   xfbml: true
-	});
-	
-	$('#fb_btn').click(doFacebookLogin);
+	window.fbAsyncInit = function() {
+		FB.init({
+		   appId: '118773068319648', 
+		   status: true, 
+		   cookie: true, 
+		   xfbml: true
+		});
+			
+		$('#fb_btn').click(doFacebookLogin);
+	}
 	
 	// Load the SDK asynchronously
 	(function(d, s, id){
@@ -157,8 +158,7 @@ window.fbAsyncInit = function() {
 	   js = d.createElement(s); js.id = id;
 	   js.src = "//connect.facebook.net/en_US/all.js";
 	   fjs.parentNode.insertBefore(js, fjs);
-	 }(document, 'script', 'facebook-jssdk'));
-}
+	}(document, 'script', 'facebook-jssdk'));
 </script>
 
 
