@@ -32,6 +32,8 @@
   	
 		function doFacebookLogin(evt) {
 			if (evt) evt.preventDefault ();
+			mainUser.target = 'login';
+			
 			login();
 		}
 		
@@ -49,6 +51,7 @@
 		}
 		
 		function logout() {
+			mainUser.target = 'login';
 			FB.logout(function(){});
 			$(".full_screen").hide();
 			$('#home').show();
@@ -95,6 +98,11 @@
 	            success: function(data) {
 	                //makePost(data.status);
 	                //se usuario ja estava cadastrado nao faz post
+	                if (main.target == 'creditScreen') {
+	                	showCreditScreen(null);
+	                	return;	
+	                }
+	                
 	                if(!data.status || data.status !== 'USER_IS_BACK') {
 	                    showInsertCard();
 	                } else {
@@ -140,6 +148,7 @@
 			
 			// Se não está logado no Facebook, mandar logar e abraço
 			if (!mainUser.name) {
+				mainUser.target = 'creditScreen';
 				login();
 				return;
 			}
@@ -215,7 +224,7 @@
 
 <div id="home" class="full_screen">
 	
-	<div class="login_btn" onclick="login();">
+	<div class="login_btn" onclick="doFacebookLogin();">
 		<img src="assets/home/login.png" width="105" height="25"/>
 	</div>
 	<div class="credito_btn" onclick="showCreditScreen();">
@@ -228,12 +237,11 @@
 </div>
 
 <div id="connect" class="full_screen">
-	<div class="login_btn" onclick="login();">
+	<div class="login_btn" onclick="doFacebookLogin();">
 		<img src="assets/home/login.png" width="105" height="25"/>
 	</div>
 	
-	<div id="fb_btn" class="facebook_btn_normal">
-		<img src="assets/connect/FB_buttom.png" width="155" height="175"/>
+	<div id="fb_btn" class="facebook_btn">
 	</div>
 </div>
 
