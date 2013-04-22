@@ -19,7 +19,7 @@
   	<script type="text/javascript">
 	  	// Faz as substituições das fontes ao carregar a página. Cada vez que houver mudança dos textos (valores, etc)
 	  	// o script deverá ser rodado 
-	  	function updateFonts() {
+	  	function updateFonts() 
 	  		Cufon.replace($('#balance_modal_value'), { fontFamily: 'Deming EP'});
 	  		Cufon.replace($('#user_name'), { fontFamily: 'Cubano'});	  		
 	  		Cufon.replace($('#user_balance'), { fontFamily: 'Deming EP'});
@@ -129,7 +129,6 @@
 			});
 			*/
 			
-			$('#fb_btn').click(doFacebookLogin);
 			$('#next_btn').click(showCreditCard);
 			
 			updateFonts();
@@ -148,6 +147,8 @@ window.fbAsyncInit = function() {
 	   cookie: true, 
 	   xfbml: true
 	});
+	
+	$('#fb_btn').click(doFacebookLogin);
 	
 	// Load the SDK asynchronously
 	(function(d, s, id){
