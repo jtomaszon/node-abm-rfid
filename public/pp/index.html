@@ -73,8 +73,7 @@
 		var buyValue = 10;
 		function changeValue(val) {
 			buyValue = val;
-			console.log("Valor desejado de compra de creditos:", val);
-			
+						
 			// Posicionar a marquinha de valor nos boxes:
 			var xp = [];
 			xp[10] = 226;
@@ -131,6 +130,7 @@
 	    	$('#balance_modal_value').html('<p>'+data.credit+' . ,00</p>');
 	    	updateFonts();
 	    	
+	    	$('#connect').hide();
 	    	$('#insira_numero_cartao').hide();
 	    	$('#tie_balance').show();	    	
 	    }
