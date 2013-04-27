@@ -33,10 +33,6 @@ var price = 7,
     mytag = '00000000';
 
 //Routes
-app.get('/', function(req, res){
-    res.render('home');
-});
-
 // Legacy
 app.get('/privacy', function(req, res){
     res.end('Privacy');
